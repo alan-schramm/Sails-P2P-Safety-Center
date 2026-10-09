@@ -1,0 +1,1 @@
+module.exports = {safetySidebar: [{type: 'doc', id: 'intro'}, {type: 'category', label: 'Pagamentos e fraudes', items: ['pagamentos/terceiros', 'pagamentos/destinatario-divergente']}, {type: 'category', label: 'Disputas e evidências', items: ['disputas/preservar-evidencias']}]};
