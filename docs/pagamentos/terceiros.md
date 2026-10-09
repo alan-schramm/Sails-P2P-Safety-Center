@@ -1,5 +1,4 @@
 ---
-id: pagamentos/terceiros
 title: Pagamento envolvendo terceiros
 ---
 
