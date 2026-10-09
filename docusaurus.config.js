@@ -3,10 +3,11 @@ const config = {
   title: 'Sails P2P Safety Center',
   tagline: 'Safer peer-to-peer trading starts with better information',
   favicon: 'img/favicon.svg',
-  url: 'https://example.com', // Set the production domain before deployment
-  baseUrl: '/',
+  url: 'https://alan-schramm.github.io',
+  baseUrl: '/Sails-P2P-Safety-Center/',
   organizationName: 'alan-schramm',
   projectName: 'Sails-P2P-Safety-Center',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   i18n: {defaultLocale: 'pt-BR', locales: ['pt-BR']},
   presets: [['classic', {
