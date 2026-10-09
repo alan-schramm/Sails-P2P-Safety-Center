@@ -11,8 +11,8 @@ Este checklist é um documento de engenharia. **Não implica que o site esteja p
 ## Gate técnico
 
 - [x] Primeiro build Docusaurus aprovado no GitHub Actions (PR #1, commit ec1c96b).
-- [ ] Revalidar o CI no HEAD final do PR.
-- [ ] Gerar e versionar `package-lock.json`, mudar a instalação de CI para `npm ci`.
+- [x] Revalidar o CI no HEAD final do PR #1 (GitHub Actions, sucesso).
+- [x] Gerar e versionar `package-lock.json`, mudar a instalação de CI para `npm ci`.
 - [ ] Revisar navegação, responsividade, acessibilidade e links em preview.
 - [ ] Confirmar que não há segredos nem informações pessoais nos artigos.
 
@@ -26,7 +26,7 @@ Este checklist é um documento de engenharia. **Não implica que o site esteja p
 ## Publicação
 
 - [ ] Em GitHub Settings → Pages, escolher **Source: GitHub Actions**.
-- [ ] Aprovar PR e realizar merge na `main` após gates.
+- [x] Aprovar PR #1 e realizar merge na `main` após build verde (1d6b3da).
 - [ ] Confirmar sucesso do job de deploy e acesso a https://alan-schramm.github.io/Sails-P2P-Safety-Center/.
 - [ ] Testar links diretos para artigos, navegação móvel e HTTPS.
 
