@@ -1,5 +1,4 @@
 ---
-id: pagamentos/reversao-e-estorno
 title: Pagamentos contestados, revertidos ou estornados
 ---
 
