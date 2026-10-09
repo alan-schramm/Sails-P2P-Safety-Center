@@ -7,7 +7,7 @@ Open-source P2P safety knowledge base built with Docusaurus. Independent from Sa
 Requires Node.js 22 or newer.
 
 ```bash
-npm install
+npm ci
 npm start
 ```
 
@@ -30,7 +30,7 @@ Never publish personally identifying payment details, secrets, private dispute e
 
 ## Release status
 
-**Foundation under development.** GitHub Pages is configured in Docusaurus and the deployment workflow, but the site is not confirmed live. Review PR #1, verify the build, add a dependency lockfile, merge after approval, and enable **Settings → Pages → Build and deployment → Source: GitHub Actions**. The deployment runs on pushes to `main` only. Planned URL: https://alan-schramm.github.io/Sails-P2P-Safety-Center/.
+**Foundation merged into `main`.** The locked-dependency build passed, but the first Pages deployment returned HTTP 404 because GitHub Pages is not enabled. An administrator must select **Settings → Pages → Build and deployment → Source: GitHub Actions**, then re-run the failed deployment or trigger the workflow. The deployment runs on pushes to `main` only. Intended URL: https://alan-schramm.github.io/Sails-P2P-Safety-Center/.
 
 ## License
 
