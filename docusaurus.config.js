@@ -1,18 +1,29 @@
 // @ts-check
 const config = {
   title: 'Sails P2P Safety Center',
-  tagline: 'Practical guidance for safer peer-to-peer trading',
+  tagline: 'Safer peer-to-peer trading starts with better information',
   favicon: 'img/favicon.svg',
-  url: 'https://example.com', // Replace before publishing
+  url: 'https://example.com', // Set the production domain before deployment
   baseUrl: '/',
   organizationName: 'alan-schramm',
   projectName: 'Sails-P2P-Safety-Center',
   onBrokenLinks: 'throw',
   i18n: {defaultLocale: 'pt-BR', locales: ['pt-BR']},
-  presets: [['classic', {docs: {routeBasePath: '/', sidebarPath: './sidebars.js'}, blog: false, theme: {customCss: './src/css/custom.css'}}]],
+  presets: [['classic', {
+    docs: {routeBasePath: 'guias', sidebarPath: './sidebars.js', editUrl: 'https://github.com/alan-schramm/Sails-P2P-Safety-Center/edit/main/'},
+    blog: false,
+    theme: {customCss: './src/css/custom.css'}
+  }]],
   themeConfig: {
-    navbar: {title: 'Sails P2P Safety Center', items: [{type: 'docSidebar', sidebarId: 'safetySidebar', position: 'left', label: 'Guias'}, {href: 'https://github.com/alan-schramm/Sails-P2P-Safety-Center', label: 'GitHub', position: 'right'}]},
-    footer: {style: 'dark', copyright: 'Sails P2P Safety Center. Educational guidance, not a guarantee of payment finality.'},
+    navbar: {title: 'Sails Safety Center', items: [
+      {to: '/', label: 'Início', position: 'left'},
+      {type: 'docSidebar', sidebarId: 'safetySidebar', position: 'left', label: 'Guias'},
+      {href: 'https://github.com/alan-schramm/Sails-P2P-Safety-Center', label: 'GitHub', position: 'right'}
+    ]},
+    footer: {style: 'dark', links: [
+      {title: 'Segurança', items: [{label: 'Comece por aqui', to: '/guias/'}, {label: 'Pagamento a terceiros', to: '/guias/pagamentos/terceiros'}]},
+      {title: 'Projeto', items: [{label: 'Código e contribuições', href: 'https://github.com/alan-schramm/Sails-P2P-Safety-Center'}]}
+    ], copyright: 'Sails P2P Safety Center. Informação educativa, não garantia de liquidação.'},
     colorMode: {defaultMode: 'dark', respectPrefersColorScheme: true},
   },
 };
