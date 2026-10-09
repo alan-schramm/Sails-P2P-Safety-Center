@@ -1,5 +1,4 @@
 ---
-id: fraudes/pressao-e-phishing
 title: Pressão, links falsos e phishing
 ---
 
