@@ -1,5 +1,4 @@
 ---
-id: pagamentos/destinatario-divergente
 title: Destinatário diferente no banco
 ---
 
