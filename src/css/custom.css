@@ -1,0 +1,30 @@
+:root {
+  --ifm-color-primary:#087f78;
+  --ifm-color-primary-dark:#07736c;
+  --ifm-color-primary-darker:#066c66;
+  --ifm-color-primary-darkest:#055950;
+  --ifm-color-primary-light:#099187;
+  --ifm-color-primary-lighter:#0a988f;
+  --ifm-color-primary-lightest:#0bb0a4;
+}
+[data-theme='dark'] {
+  --ifm-color-primary:#51d9c4;
+  --ifm-background-color:#0b1319;
+  --ifm-background-surface-color:#14232b;
+  --ifm-navbar-background-color:#0d1920;
+}
+.navbar__title {font-weight:750;letter-spacing:-.03em}
+.safetyHero {padding:5rem 0 3.5rem;background:radial-gradient(ellipse at 75% 15%,rgba(81,217,196,.09),transparent 48%);}
+.safetyEyebrow {font-size:.8rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ifm-color-primary);font-weight:700}
+.safetyHero h1 {font-size:clamp(2.5rem,5.8vw,4.6rem);line-height:1.08;letter-spacing:-.055em;max-width:830px}
+.safetyLead {font-size:1.18rem;max-width:670px;color:var(--ifm-color-emphasis-700)}
+.safetyActions {display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem}
+.safetySection {padding:2.4rem 0 5rem}
+.safetyGrid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.safetyCard {display:block;border:1px solid var(--ifm-color-emphasis-300);border-radius:14px;padding:1.5rem;background:var(--ifm-background-surface-color);color:var(--ifm-font-color-base);transition:border-color .2s,transform .2s}
+.safetyCard:hover {border-color:var(--ifm-color-primary);transform:translateY(-2px);text-decoration:none;color:var(--ifm-font-color-base)}
+.safetyCard h3 {font-size:1.1rem;margin:.7rem 0}
+.safetyCard p {font-size:.94rem;color:var(--ifm-color-emphasis-700);margin-bottom:0}
+.safetyCardIcon {font-size:1.5rem}
+.safetyNotice {margin-top:2rem;padding:1.1rem 1.4rem;border-left:3px solid var(--ifm-color-primary);background:var(--ifm-background-surface-color);border-radius:0 8px 8px 0}
+@media(max-width:800px){.safetyGrid{grid-template-columns:1fr}.safetyHero{padding:3.5rem 0 2rem}}
