@@ -30,7 +30,7 @@ Never publish personally identifying payment details, secrets, private dispute e
 
 ## Release status
 
-**Foundation under development.** The site is not deployed. Before publication, choose a domain, replace the placeholder URL in `docusaurus.config.js`, verify CI, create a dependency lockfile and configure a reviewed deployment workflow.
+**Foundation under development.** GitHub Pages is configured in Docusaurus and the deployment workflow, but the site is not confirmed live. Review PR #1, verify the build, add a dependency lockfile, merge after approval, and enable **Settings → Pages → Build and deployment → Source: GitHub Actions**. The deployment runs on pushes to `main` only. Planned URL: https://alan-schramm.github.io/Sails-P2P-Safety-Center/.
 
 ## License
 
