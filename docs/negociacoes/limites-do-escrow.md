@@ -1,5 +1,4 @@
 ---
-id: negociacoes/limites-do-escrow
 title: O que o escrow protege e o que não protege
 ---
 
