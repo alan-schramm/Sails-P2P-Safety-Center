@@ -21,5 +21,5 @@ Joint accounts, business accounts, and third-party payments can have legitimate 
 **Status:** general guidance; does not claim the protocol verifies bank-account ownership.
 
 ## Related guides
-- [Mule accounts and compromised payment details](/guides/pagamentos/conta-mula)
-- [Payment reconciliation](/guides/operacoes/conciliacao-de-pagamentos)
+- [Mule accounts and compromised payment details](../pagamentos/conta-mula.md)
+- [Payment reconciliation](../operacoes/conciliacao-de-pagamentos.md)
