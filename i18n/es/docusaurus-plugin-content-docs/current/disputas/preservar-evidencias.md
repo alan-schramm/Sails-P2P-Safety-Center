@@ -12,3 +12,7 @@ title: Cómo conservar pruebas
 5. No supongas que una captura de pantalla aislada demuestra liquidación o titularidad.
 
 **Estado:** orientación general. Los procedimientos, la admisibilidad y las garantías dependen de las políticas vigentes y verificadas.
+
+## Guías relacionadas
+- [Gestión de pruebas para operadores](/guides/operacoes/gestao-de-evidencias)
+- [Respuesta a incidentes](/guides/operacoes/resposta-a-incidentes)
