@@ -19,5 +19,5 @@ title: Disputed, reversed, or refunded payments
 **Status:** general guidance; release and dispute rules depend on the current implementation and policies.
 
 ## Related guides
-- [Fake payment receipts](/guides/fraudes/comprovantes-falsos)
-- [Payment reconciliation](/guides/operacoes/conciliacao-de-pagamentos)
+- [Fake payment receipts](../fraudes/comprovantes-falsos.md)
+- [Payment reconciliation](../operacoes/conciliacao-de-pagamentos.md)
