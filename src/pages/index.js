@@ -27,9 +27,9 @@ export default function Home() {
             <div className="safetyHeroChecklist" aria-label="Cuidados essenciais"><span><strong>✓</strong> Confira o beneficiário</span><span><strong>✓</strong> Desconfie de urgência</span><span><strong>✓</strong> Preserve evidências</span></div>
           </div>
         </header>
-        <section className="safetySection">
+        <section className="safetySection" aria-labelledby="safety-topics-title">
           <div className="container">
-            <h2>Escolha o guia para sua situação</h2>
+            <h2 id="safety-topics-title">Escolha o guia para sua situação</h2>
             <p>Entenda sinais de alerta, riscos e próximos passos antes de agir.</p>
             <div className="safetyGrid">
               {topics.map(topic => <Link className="safetyCard" to={topic.to} key={topic.title}>
@@ -38,7 +38,7 @@ export default function Home() {
                 <p>{topic.description}</p>
               </Link>)}
             </div>
-            <div className="safetyNotice"><strong>Importante:</strong> este portal oferece orientação educativa. Ele não verifica contas bancárias, não substitui canais oficiais de disputa e não promete recuperar fundos.</div>
+            <aside className="safetyNotice" role="note"><strong>Importante:</strong> este portal oferece orientação educativa. Ele não verifica contas bancárias, não substitui canais oficiais de disputa e não promete recuperar fundos.</aside>
           </div>
         </section>
       </main>
