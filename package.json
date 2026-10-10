@@ -9,7 +9,8 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "clear": "docusaurus clear",
+    "postbuild": "node scripts/finalize-knowledge.cjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.8.1",
