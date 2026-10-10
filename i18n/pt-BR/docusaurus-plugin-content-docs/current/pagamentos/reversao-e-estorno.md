@@ -18,3 +18,7 @@ title: Pagamentos contestados, revertidos ou estornados
 4. Não envie reembolsos para uma conta diferente sem verificação apropriada.
 
 **Status:** orientação geral; regras de liberação e disputa dependem da implementação e política vigentes.
+
+## Guias relacionados
+- [Comprovantes falsos](/guides/fraudes/comprovantes-falsos)
+- [Conciliação de pagamentos](/guides/operacoes/conciliacao-de-pagamentos)
