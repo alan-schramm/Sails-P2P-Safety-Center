@@ -1,17 +1,10 @@
 :root {
-  --ifm-color-primary:#087f78;
-  --ifm-color-primary-dark:#07736c;
-  --ifm-color-primary-darker:#066c66;
-  --ifm-color-primary-darkest:#055950;
-  --ifm-color-primary-light:#099187;
-  --ifm-color-primary-lighter:#0a988f;
-  --ifm-color-primary-lightest:#0bb0a4;
+ --ifm-color-primary:#c76b0b;--ifm-color-primary-dark:#b3600a;--ifm-color-primary-darker:#a95b09;--ifm-color-primary-darkest:#8b4b07;--ifm-color-primary-light:#dd760c;--ifm-color-primary-lighter:#e97d0d;--ifm-color-primary-lightest:#f7931a;
+ --sails-orange:#f7931a;--sails-blue:#2563eb;--sails-success:#16a34a;--sails-warning:#eab308;--sails-danger:#dc2626;--sails-info:#0ea5e9;
 }
 [data-theme='dark'] {
-  --ifm-color-primary:#51d9c4;
-  --ifm-background-color:#0b1319;
-  --ifm-background-surface-color:#14232b;
-  --ifm-navbar-background-color:#0d1920;
+ --ifm-color-primary:#f7931a;--ifm-color-primary-dark:#e7830e;--ifm-color-primary-darker:#d9780d;--ifm-color-primary-darkest:#ad600a;--ifm-color-primary-light:#f9a13b;--ifm-color-primary-lighter:#faac52;--ifm-color-primary-lightest:#fcc27f;
+ --ifm-background-color:#0c111a;--ifm-background-surface-color:#141d2a;--ifm-navbar-background-color:#101824;
 }
 .navbar__title {font-weight:750;letter-spacing:-.03em}
 .safetyHero {padding:5rem 0 3.5rem;background:radial-gradient(ellipse at 75% 15%,rgba(81,217,196,.09),transparent 48%);}
@@ -28,3 +21,24 @@
 .safetyCardIcon {font-size:1.5rem}
 .safetyNotice {margin-top:2rem;padding:1.1rem 1.4rem;border-left:3px solid var(--ifm-color-primary);background:var(--ifm-background-surface-color);border-radius:0 8px 8px 0}
 @media(max-width:800px){.safetyGrid{grid-template-columns:1fr}.safetyHero{padding:3.5rem 0 2rem}}
+
+.navbar {box-shadow:0 1px 0 rgba(120,145,180,.18)}
+.safetyHero {background:linear-gradient(110deg,rgba(247,147,26,.09),transparent 60%);border-bottom:1px solid var(--ifm-color-emphasis-200)}
+.safetyHero .container {max-width:1160px}
+.safetyHero h1 {max-width:900px}
+.safetyActions .button--primary {background:var(--sails-orange);border-color:var(--sails-orange);color:#17120b;border-radius:10px}
+.safetyActions .button--primary:hover {background:#e5810c;border-color:#e5810c;color:#17120b}
+.safetyActions .button--secondary {border-color:var(--sails-blue);color:var(--sails-blue);border-radius:10px}
+[data-theme='dark'] .safetyActions .button--secondary {color:#8db4ff;border-color:#477de8}
+.safetySection h2 {font-size:clamp(1.8rem,3vw,2.5rem);letter-spacing:-.04em}
+.safetyCard {border-color:var(--ifm-color-emphasis-200);border-radius:18px;min-height:210px;display:flex;flex-direction:column}
+.safetyCard:hover {box-shadow:0 12px 30px rgba(0,0,0,.09)}
+.safetyCard:focus-visible {outline:3px solid var(--sails-blue);outline-offset:3px}
+.safetyCardIcon {display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:rgba(37,99,235,.12);color:var(--sails-blue)}
+[data-theme='dark'] .safetyCardIcon {color:#8db4ff}
+.safetyNotice {border-left:4px solid var(--sails-warning);background:rgba(234,179,8,.07)}
+.safetyHeroChecklist {display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}
+.safetyHeroChecklist span {padding:.6rem .85rem;border:1px solid var(--ifm-color-emphasis-300);border-radius:10px;font-size:.85rem;font-weight:650}
+.safetyHeroChecklist strong {color:var(--sails-success)}
+@media(max-width:800px){.safetyHeroChecklist{gap:.5rem}.safetyHeroChecklist span{width:100%}.safetyCard{min-height:0}}
+@media(prefers-reduced-motion:reduce){.safetyCard{transition:none}.safetyCard:hover{transform:none}}
