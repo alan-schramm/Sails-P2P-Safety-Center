@@ -12,3 +12,7 @@ title: How to preserve evidence
 5. Do not assume a screenshot alone proves settlement or account ownership.
 
 **Status:** general guidance. Procedures, admissibility, and guarantees depend on actual, verified policies.
+
+## Related guides
+- [Evidence handling for professional traders](/guides/operacoes/gestao-de-evidencias)
+- [Incident response](/guides/operacoes/resposta-a-incidentes)
