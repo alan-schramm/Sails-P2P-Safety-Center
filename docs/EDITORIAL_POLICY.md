@@ -1,20 +1,19 @@
 ---
 id: editorial-policy
-title: Política editorial
+title: Editorial policy
 sidebar_position: 99
 ---
+# Editorial policy
 
-# Política editorial
+These articles are educational. The normative source for Sails Protocol economic and technical policies remains the [Sails Protocol repository](https://github.com/sails-protocol/Sails-Protocol).
 
-Os artigos são materiais educativos. A fonte normativa de políticas econômicas e técnicas do Sails Protocol permanece no repositório [Sails Protocol](https://github.com/sails-protocol/Sails-Protocol).
+## Claim categories
+- **General guidance:** preventive best practices without claiming protocol functionality.
+- **Proposed policy:** not yet approved; must not be presented as an active rule.
+- **Approved policy:** a traceable institutional decision, not necessarily implemented.
+- **Implemented and evidenced:** technical claims supported by code, tests, and an approval decision.
 
-## Classes de afirmação
-- **Orientação geral:** boa prática preventiva, sem alegar funcionalidade do protocolo.
-- **Política proposta:** discussão ainda não aprovada; não apresentar como regra vigente.
-- **Política aprovada:** decisão institucional com referência rastreável, não necessariamente implementada.
-- **Implementado e evidenciado:** afirmação técnica apoiada por código, testes e decisão de aprovação.
+## Review
+Each article must cover a scenario, warning signs, practical actions, limits, privacy considerations, and claim classification. Do not publish personal data, absolute guarantees, or unverified financial procedures.
 
-## Revisão
-Todo artigo deve ter cenário, sinais de alerta, ações práticas, limites, cuidados de privacidade e classificação da afirmação. Não publicar dados pessoais, garantias absolutas ou procedimentos financeiros não verificados.
-
-Atualizações são propostas por Pull Request. Publicação exige revisão editorial e verificação de links e build.
+Changes are proposed by Pull Request. Publication requires editorial review, link checks, and a successful build.
