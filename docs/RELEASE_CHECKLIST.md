@@ -27,7 +27,7 @@ Este checklist é um documento de engenharia. **Não implica que o site esteja p
 
 - [ ] Em GitHub Settings → Pages, escolher **Source: GitHub Actions**.
 - [x] Aprovar PR #1 e realizar merge na `main` após build verde (1d6b3da).
-- [ ] Confirmar sucesso do job de deploy e acesso a https://alan-schramm.github.io/Sails-P2P-Safety-Center/.
+- [ ] Confirmar sucesso do job de deploy e acesso a https://sails-protocol.github.io/Sails-P2P-Safety-Center/.
 - [ ] Testar links diretos para artigos, navegação móvel e HTTPS.
 
 ## Pós-publicação
