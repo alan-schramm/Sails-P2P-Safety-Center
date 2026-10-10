@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const translations = {
   en: {
@@ -69,6 +70,7 @@ const translations = {
 export default function Home() {
   const {i18n} = useDocusaurusContext();
   const t = translations[i18n.currentLocale] || translations.en;
+  const aiIndexUrl = useBaseUrl('/llms.txt');
   return (
     <Layout title={t.title} description={t.lead}>
       <main>
@@ -97,7 +99,7 @@ export default function Home() {
                 <p>{description}</p>
               </Link>)}
             </div>
-            <section className="safetyAiPanel" aria-labelledby="safety-ai-heading"><div><span className="safetyAiKicker">OPEN KNOWLEDGE</span><h2 id="safety-ai-heading">{t.aiTitle}</h2><p>{t.aiBody}</p></div><a href="/Sails-P2P-Safety-Center/llms.txt" className="safetyAiLink">{t.aiLink} ↗</a></section>
+            <section className="safetyAiPanel" aria-labelledby="safety-ai-heading"><div><span className="safetyAiKicker">OPEN KNOWLEDGE</span><h2 id="safety-ai-heading">{t.aiTitle}</h2><p>{t.aiBody}</p></div><a href={aiIndexUrl} className="safetyAiLink">{t.aiLink} ↗</a></section>
             <aside className="safetyNotice" role="note"><strong>{t.notice}</strong> {t.noticeBody}</aside>
           </div>
         </section>
