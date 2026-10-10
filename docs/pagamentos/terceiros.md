@@ -19,3 +19,7 @@ title: Payments involving third parties
 Joint accounts, business accounts, and third-party payments can have legitimate uses. A mismatch requires verification, not an automatic fraud accusation.
 
 **Status:** general guidance; does not claim the protocol verifies bank-account ownership.
+
+## Related guides
+- [Mule accounts and compromised payment details](/guides/pagamentos/conta-mula)
+- [Payment reconciliation](/guides/operacoes/conciliacao-de-pagamentos)
