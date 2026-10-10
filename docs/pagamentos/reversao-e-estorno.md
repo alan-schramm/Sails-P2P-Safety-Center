@@ -1,20 +1,19 @@
 ---
-title: Pagamentos contestados, revertidos ou estornados
+title: Disputed, reversed, or refunded payments
 ---
+# Disputed, reversed, or refunded payments
 
-# Pagamentos contestados, revertidos ou estornados
+**Scenario:** a payment appears complete but is later disputed, blocked, or reversed by a financial provider.
 
-**Cenário:** o pagamento parece concluído, mas depois é contestado, bloqueado ou revertido pelo provedor financeiro.
+## What to verify
+- A receipt sent by someone else does not necessarily prove that funds have settled and are available.
+- Dispute windows and reversal rules vary by payment method and jurisdiction.
+- Crypto escrow does not eliminate risks in external banking systems.
 
-## O que verificar
-- Um comprovante enviado por outra pessoa não equivale necessariamente a crédito liquidado e disponível.
-- Os prazos e possibilidades de contestação variam conforme o meio de pagamento e a jurisdição.
-- Uma operação com criptoativos em escrow não elimina os riscos externos do sistema bancário.
+## What to do
+1. Check payment status directly with your bank or provider, not just screenshots.
+2. Do not release crypto solely on the promise of payment.
+3. If disputed, preserve transaction identifiers and use official banking and trading channels.
+4. Do not refund to a different account without appropriate verification.
 
-## Como agir
-1. Consulte o status diretamente no seu banco ou provedor, não apenas em capturas de tela.
-2. Não aceite pressão para liberar criptoativos com base apenas em uma promessa de pagamento.
-3. Em caso de contestação, preserve os identificadores e utilize os canais oficiais do banco e da negociação.
-4. Não envie reembolsos para uma conta diferente sem verificação apropriada.
-
-**Status:** orientação geral; regras de liberação e disputa dependem da implementação e política vigentes.
+**Status:** general guidance; release and dispute rules depend on the current implementation and policies.
