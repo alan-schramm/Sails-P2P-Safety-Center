@@ -19,5 +19,5 @@ title: Pressure tactics, fake links, and phishing
 **Status:** general prevention guidance, not an implemented automated detection feature.
 
 ## Related guides
-- [Fake support and arbitration pressure](/guides/fraudes/falsa-arbitragem)
-- [Incident response](/guides/operacoes/resposta-a-incidentes)
+- [Fake support and arbitration pressure](../fraudes/falsa-arbitragem.md)
+- [Incident response](../operacoes/resposta-a-incidentes.md)
