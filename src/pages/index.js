@@ -6,6 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const translations = {
   en: {
+    aiKicker: 'OPEN KNOWLEDGE',
     title: 'Safety starts before the trade.',
     lead: 'Learn to recognize scams, verify payments, and preserve evidence. Practical guidance for safer peer-to-peer decisions.',
     explore: 'Explore guides', payment: 'Third-party payments',
@@ -26,6 +27,7 @@ const translations = {
     ]
   },
   'pt-BR': {
+    aiKicker: 'CONHECIMENTO ABERTO',
     title: 'Segurança começa antes da negociação.',
     lead: 'Aprenda a reconhecer fraudes, conferir pagamentos e preservar evidências. Orientação clara para decisões mais informadas em negociações P2P.',
     explore: 'Explorar os guias', payment: 'Pagamento a terceiros',
@@ -46,6 +48,7 @@ const translations = {
     ]
   },
   es: {
+    aiKicker: 'CONOCIMIENTO ABIERTO',
     title: 'La seguridad comienza antes de operar.',
     lead: 'Aprende a reconocer fraudes, verificar pagos y conservar pruebas. Orientación práctica para tomar decisiones más informadas en operaciones P2P.',
     explore: 'Explorar las guías', payment: 'Pagos de terceros',
@@ -99,7 +102,7 @@ export default function Home() {
                 <p>{description}</p>
               </Link>)}
             </div>
-            <section className="safetyAiPanel" aria-labelledby="safety-ai-heading"><div><span className="safetyAiKicker">OPEN KNOWLEDGE</span><h2 id="safety-ai-heading">{t.aiTitle}</h2><p>{t.aiBody}</p></div><a href={aiIndexUrl} className="safetyAiLink">{t.aiLink} ↗</a></section>
+            <section className="safetyAiPanel" aria-labelledby="safety-ai-heading"><div><span className="safetyAiKicker">{t.aiKicker}</span><h2 id="safety-ai-heading">{t.aiTitle}</h2><p>{t.aiBody}</p></div><a href={aiIndexUrl} className="safetyAiLink">{t.aiLink} ↗</a></section>
             <aside className="safetyNotice" role="note"><strong>{t.notice}</strong> {t.noticeBody}</aside>
           </div>
         </section>
