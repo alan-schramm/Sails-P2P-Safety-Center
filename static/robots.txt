@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sails-protocol.github.io/Sails-P2P-Safety-Center/sitemap.xml
