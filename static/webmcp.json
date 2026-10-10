@@ -1,0 +1,10 @@
+{
+  "name": "Sails P2P Safety Center",
+  "purpose": "Read-only access to public educational guides in en, pt-BR and es.",
+  "registration": "document.modelContext.registerTool",
+  "availability": "Registered in supported browser contexts. WebMCP is experimental; this metadata file is documentation, not an MCP server or a browser registration mechanism.",
+  "tools": ["search_safety_guides", "read_safety_guide", "get_safety_portal_scope"],
+  "fallbackCatalogue": "knowledge/index.json",
+  "privacy": "Tools read bundled public articles only. No credentials, transaction actions, personal records, analytics or external AI provider requests.",
+  "authority": "Educational content is not evidence of implemented protocol guarantees. Cite canonical article URLs and preserve limitations."
+}

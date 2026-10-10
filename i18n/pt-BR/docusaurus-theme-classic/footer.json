@@ -1,0 +1,20 @@
+{
+  "link.title.Safety": {
+    "message": "Segurança"
+  },
+  "link.title.Project": {
+    "message": "Projeto"
+  },
+  "link.item.label.Start here": {
+    "message": "Comece por aqui"
+  },
+  "link.item.label.Third-party payments": {
+    "message": "Pagamentos a terceiros"
+  },
+  "link.item.label.Code and contributions": {
+    "message": "Código e contribuições"
+  },
+  "copyright": {
+    "message": "© 2026 Sails Protocol. Conteúdo educativo, sem garantia de liquidação."
+  }
+}

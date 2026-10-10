@@ -13,3 +13,12 @@ Este portal é **educativo**. Um escrow de criptoativos não comprova titularida
 Explore os guias no menu lateral. As orientações não substituem as regras do método de pagamento, da jurisdição ou a análise de uma disputa concreta.
 
 **Status:** conteúdo educativo inicial; não representa garantia técnica implementada no Sails Protocol.
+
+## Explore os guias
+
+- [Fraudes e golpes](./fraudes/pressao-e-phishing.md)
+- [Pagamentos](./pagamentos/terceiros.md)
+- [Escrow e negociações](./negociacoes/limites-do-escrow.md)
+- [Disputas e evidências](./disputas/preservar-evidencias.md)
+- [Identidade e privacidade](./identidade/conta-comprometida.md)
+- [Operações profissionais](./operacoes/checklist-antes-de-negociar.md)
