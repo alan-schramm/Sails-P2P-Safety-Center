@@ -8,6 +8,7 @@ const translations = {
     title: 'Safety starts before the trade.',
     lead: 'Learn to recognize scams, verify payments, and preserve evidence. Practical guidance for safer peer-to-peer decisions.',
     explore: 'Explore guides', payment: 'Third-party payments',
+    quickLabel: 'A practical safety knowledge base', urgent: 'If something looks wrong', urgentBody: 'Pause the trade. Check payment details through trusted channels and keep relevant evidence.', readGuide: 'Read the guide', aiTitle: 'Clear for people. Structured for AI.', aiBody: 'Guides use explicit scenarios, warning signs, actions, and limitations. AI readers can find canonical links and interpretation boundaries in our machine-readable index.', aiLink: 'AI reading index',
     checks: ['Verify the recipient', 'Watch for pressure', 'Preserve evidence'],
     heading: 'Find the guide for your situation',
     subheading: 'Understand warning signs, risks, and next steps before you act.',
@@ -25,6 +26,7 @@ const translations = {
     title: 'Segurança começa antes da negociação.',
     lead: 'Aprenda a reconhecer fraudes, conferir pagamentos e preservar evidências. Orientação clara para decisões mais informadas em negociações P2P.',
     explore: 'Explorar os guias', payment: 'Pagamento a terceiros',
+    quickLabel: 'Base prática de conhecimento em segurança', urgent: 'Se algo parecer errado', urgentBody: 'Interrompa a negociação. Confira os dados de pagamento em canais confiáveis e preserve as evidências.', readGuide: 'Ler o guia', aiTitle: 'Claro para pessoas. Estruturado para IA.', aiBody: 'Os guias apresentam cenários, alertas, ações e limites. Sistemas de IA encontram links oficiais e regras de interpretação em nosso índice.', aiLink: 'Índice para IA',
     checks: ['Confira o beneficiário', 'Desconfie de urgência', 'Preserve evidências'],
     heading: 'Escolha o guia para sua situação',
     subheading: 'Entenda sinais de alerta, riscos e próximos passos antes de agir.',
@@ -42,6 +44,7 @@ const translations = {
     title: 'La seguridad comienza antes de operar.',
     lead: 'Aprende a reconocer fraudes, verificar pagos y conservar pruebas. Orientación práctica para tomar decisiones más informadas en operaciones P2P.',
     explore: 'Explorar las guías', payment: 'Pagos de terceros',
+    quickLabel: 'Base práctica de conocimientos de seguridad', urgent: 'Si algo parece incorrecto', urgentBody: 'Detén la operación. Verifica los datos de pago por canales confiables y conserva las pruebas.', readGuide: 'Leer la guía', aiTitle: 'Claro para personas. Estructurado para IA.', aiBody: 'Las guías incluyen situaciones, alertas, acciones y límites. Los sistemas de IA pueden consultar enlaces oficiales y criterios de interpretación en nuestro índice.', aiLink: 'Índice para IA',
     checks: ['Verifica al beneficiario', 'Desconfía de la urgencia', 'Conserva pruebas'],
     heading: 'Encuentra la guía para tu situación',
     subheading: 'Conoce las señales de alerta, los riesgos y los próximos pasos antes de actuar.',
@@ -65,7 +68,7 @@ export default function Home() {
       <main>
         <header className="safetyHero">
           <div className="container">
-            <div className="safetyEyebrow">Sails P2P Safety Center</div>
+            <div className="safetyEyebrow"><span className="safetyEyebrowDot" aria-hidden="true" /> {t.quickLabel}</div>
             <h1>{t.title}</h1>
             <p className="safetyLead">{t.lead}</p>
             <div className="safetyActions">
@@ -75,6 +78,7 @@ export default function Home() {
             <div className="safetyHeroChecklist" aria-label={t.heading}>{t.checks.map(check => <span key={check}><strong>✓</strong> {check}</span>)}</div>
           </div>
         </header>
+        <section className="safetyAlertBand" aria-labelledby="safety-alert-heading"><div className="container safetyAlertInner"><div className="safetyAlertIcon" aria-hidden="true">!</div><div><h2 id="safety-alert-heading">{t.urgent}</h2><p>{t.urgentBody}</p></div><Link className="safetyAlertLink" to="/guides/fraudes/pressao-e-phishing">{t.readGuide} →</Link></div></section>
         <section className="safetySection" aria-labelledby="safety-topics-title">
           <div className="container">
             <h2 id="safety-topics-title">{t.heading}</h2>
@@ -86,6 +90,7 @@ export default function Home() {
                 <p>{description}</p>
               </Link>)}
             </div>
+            <section className="safetyAiPanel" aria-labelledby="safety-ai-heading"><div><span className="safetyAiKicker">OPEN KNOWLEDGE</span><h2 id="safety-ai-heading">{t.aiTitle}</h2><p>{t.aiBody}</p></div><a href="/Sails-P2P-Safety-Center/llms.txt" className="safetyAiLink">{t.aiLink} ↗</a></section>
             <aside className="safetyNotice" role="note"><strong>{t.notice}</strong> {t.noticeBody}</aside>
           </div>
         </section>
