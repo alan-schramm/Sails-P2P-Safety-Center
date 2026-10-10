@@ -37,3 +37,7 @@ Uma pessoa conhecer detalhes da negociação não prova que ela seja suporte ou 
 **Fontes desta revisão:** [Requisitos operacionais P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
 
 **Revisão editorial:** 2026-10-10.
+
+## Continue a leitura
+
+- [Como interpretar alertas de IA](../operacoes/limites-dos-alertas-de-ia.md)

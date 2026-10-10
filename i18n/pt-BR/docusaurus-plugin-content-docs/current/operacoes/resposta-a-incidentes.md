@@ -21,3 +21,7 @@ Este guia não é um serviço de emergência. Recuperação, reversão, prazos e
 **Status: orientação educativa geral; não é afirmação de proteção implementada.**
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+## Continue a leitura
+
+- [Operação com resultado desconhecido](../operacoes/resultado-desconhecido.md)

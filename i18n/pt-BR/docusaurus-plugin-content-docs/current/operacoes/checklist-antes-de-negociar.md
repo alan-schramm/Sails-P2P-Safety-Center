@@ -21,3 +21,7 @@ Este checklist não comprova titularidade bancária, não impede estornos e não
 **Status: orientação educativa geral; não é afirmação de proteção implementada.**
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+## Continue a leitura
+
+- [Confira ativo, rede, endereço e taxas](../negociacoes/conferir-envio.md)
