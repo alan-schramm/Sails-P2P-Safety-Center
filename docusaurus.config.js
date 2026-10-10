@@ -5,19 +5,20 @@ const config = {
   favicon: 'img/favicon.svg',
   url: 'https://sails-protocol.github.io',
   baseUrl: '/Sails-P2P-Safety-Center/',
+  customFields: {knowledgeBaseUrl: '/Sails-P2P-Safety-Center/'},
   organizationName: 'sails-protocol',
   projectName: 'Sails-P2P-Safety-Center',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   i18n: {defaultLocale: 'en', locales: ['en', 'pt-BR', 'es'], localeConfigs: {en: {label: 'English'}, 'pt-BR': {label: 'Português'}, es: {label: 'Español'}}},
   presets: [['classic', {
-    docs: {routeBasePath: 'guides', sidebarPath: './sidebars.js', editUrl: 'https://github.com/sails-protocol/Sails-P2P-Safety-Center/edit/main/'},
+    docs: {routeBasePath: 'guides', sidebarPath: './sidebars.js', editLocalizedFiles: true, editUrl: 'https://github.com/sails-protocol/Sails-P2P-Safety-Center/edit/main/'},
     blog: false,
     theme: {customCss: './src/css/custom.css'}
   }]],
   themeConfig: {
     navbar: {title: 'Sails Safety Center', items: [
-      {to: '/', label: 'Home', position: 'left'},
+      {to: '/', label: 'Home', position: 'left', activeBaseRegex: '^/Sails-P2P-Safety-Center(?:/(?:pt-BR|es))?/?$'},
       {type: 'docSidebar', sidebarId: 'safetySidebar', position: 'left', label: 'Guides'},
       {type: 'localeDropdown', position: 'right'},
       {href: 'https://github.com/sails-protocol/Sails-P2P-Safety-Center', label: 'GitHub', position: 'right'}

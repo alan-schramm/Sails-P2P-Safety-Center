@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import Heading from '@theme/Heading';
+import SafetyIcon from '../components/SafetyIcon';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -17,13 +19,13 @@ const translations = {
     subheading: 'Understand warning signs, risks, and next steps before you act.',
     notice: 'Important:', noticeBody: 'This portal provides educational guidance. It does not verify bank accounts, replace official dispute channels, or promise fund recovery.',
     topics: [
-      ['⚠', 'Scams and phishing', 'Spot pressure tactics, fake links, and suspicious requests.', '/guides/fraudes/pressao-e-phishing'],
-      ['↗', 'Payments', 'Check recipients and understand third-party payment risks.', '/guides/pagamentos/terceiros'],
-      ['◈', 'Escrow and trades', 'Learn what crypto escrow can and cannot protect.', '/guides/negociacoes/limites-do-escrow'],
-      ['▤', 'Disputes and evidence', 'Know which records to keep and how to protect sensitive data.', '/guides/disputas/preservar-evidencias'],
-      ['◎', 'Identity and privacy', 'Respond to suspected account compromise.', '/guides/identidade/conta-comprometida'],
-      ['▦', 'Professional operations', 'Checklists, reconciliation, and incident response for active traders.', '/guides/operacoes/checklist-antes-de-negociar'],
-      ['✓', 'Start here', 'Understand the portal’s limits and basic safety precautions.', '/guides/']
+      ['Scams and phishing', 'Spot pressure tactics, fake links, and suspicious requests.', '/guides/fraudes/pressao-e-phishing'],
+      ['Payments', 'Check recipients and understand third-party payment risks.', '/guides/pagamentos/terceiros'],
+      ['Escrow and trades', 'Learn what crypto escrow can and cannot protect.', '/guides/negociacoes/limites-do-escrow'],
+      ['Disputes and evidence', 'Know which records to keep and how to protect sensitive data.', '/guides/disputas/preservar-evidencias'],
+      ['Identity and privacy', 'Respond to suspected account compromise.', '/guides/identidade/conta-comprometida'],
+      ['Professional operations', 'Checklists, reconciliation, and incident response for active traders.', '/guides/operacoes/checklist-antes-de-negociar'],
+      ['Start here', 'Understand the portal’s limits and basic safety precautions.', '/guides/']
     ]
   },
   'pt-BR': {
@@ -38,13 +40,13 @@ const translations = {
     subheading: 'Entenda sinais de alerta, riscos e próximos passos antes de agir.',
     notice: 'Importante:', noticeBody: 'Este portal oferece orientação educativa. Não verifica contas bancárias, não substitui canais oficiais de disputa e não promete recuperar fundos.',
     topics: [
-      ['⚠', 'Fraudes e golpes', 'Identifique pressão, phishing e pedidos suspeitos.', '/guides/fraudes/pressao-e-phishing'],
-      ['↗', 'Pagamentos', 'Confira o beneficiário e entenda riscos de pagamentos a terceiros.', '/guides/pagamentos/terceiros'],
-      ['◈', 'Escrow e negociações', 'Entenda o que a proteção de criptoativos cobre e não cobre.', '/guides/negociacoes/limites-do-escrow'],
-      ['▤', 'Disputas e evidências', 'Saiba quais registros preservar e como reduzir a exposição de dados.', '/guides/disputas/preservar-evidencias'],
-      ['◎', 'Identidade e privacidade', 'O que fazer diante de uma conta possivelmente comprometida.', '/guides/identidade/conta-comprometida'],
-      ['▦', 'Operações profissionais', 'Checklists, conciliação e resposta a incidentes.', '/guides/operacoes/checklist-antes-de-negociar'],
-      ['✓', 'Comece por aqui', 'Conheça os limites do portal e os cuidados básicos.', '/guides/']
+      ['Fraudes e golpes', 'Identifique pressão, phishing e pedidos suspeitos.', '/guides/fraudes/pressao-e-phishing'],
+      ['Pagamentos', 'Confira o beneficiário e entenda riscos de pagamentos a terceiros.', '/guides/pagamentos/terceiros'],
+      ['Escrow e negociações', 'Entenda o que a proteção de criptoativos cobre e não cobre.', '/guides/negociacoes/limites-do-escrow'],
+      ['Disputas e evidências', 'Saiba quais registros preservar e como reduzir a exposição de dados.', '/guides/disputas/preservar-evidencias'],
+      ['Identidade e privacidade', 'O que fazer diante de uma conta possivelmente comprometida.', '/guides/identidade/conta-comprometida'],
+      ['Operações profissionais', 'Checklists, conciliação e resposta a incidentes.', '/guides/operacoes/checklist-antes-de-negociar'],
+      ['Comece por aqui', 'Conheça os limites do portal e os cuidados básicos.', '/guides/']
     ]
   },
   es: {
@@ -59,13 +61,13 @@ const translations = {
     subheading: 'Conoce las señales de alerta, los riesgos y los próximos pasos antes de actuar.',
     notice: 'Importante:', noticeBody: 'Este portal ofrece información educativa. No verifica cuentas bancarias, no sustituye los canales oficiales de disputas ni promete recuperar fondos.',
     topics: [
-      ['⚠', 'Fraudes y phishing', 'Identifica presiones, enlaces falsos y solicitudes sospechosas.', '/guides/fraudes/pressao-e-phishing'],
-      ['↗', 'Pagos', 'Comprueba los destinatarios y los riesgos de pagos de terceros.', '/guides/pagamentos/terceiros'],
-      ['◈', 'Escrow y operaciones', 'Entiende qué puede y qué no puede proteger el escrow.', '/guides/negociacoes/limites-do-escrow'],
-      ['▤', 'Disputas y pruebas', 'Aprende qué registros conservar y cómo proteger tus datos.', '/guides/disputas/preservar-evidencias'],
-      ['◎', 'Identidad y privacidad', 'Qué hacer ante una posible cuenta comprometida.', '/guides/identidade/conta-comprometida'],
-      ['▦', 'Operaciones profesionales', 'Listas, conciliación y respuesta a incidentes.', '/guides/operacoes/checklist-antes-de-negociar'],
-      ['✓', 'Empieza aquí', 'Conoce los límites del portal y las precauciones básicas.', '/guides/']
+      ['Fraudes y phishing', 'Identifica presiones, enlaces falsos y solicitudes sospechosas.', '/guides/fraudes/pressao-e-phishing'],
+      ['Pagos', 'Comprueba los destinatarios y los riesgos de pagos de terceros.', '/guides/pagamentos/terceiros'],
+      ['Escrow y operaciones', 'Entiende qué puede y qué no puede proteger el escrow.', '/guides/negociacoes/limites-do-escrow'],
+      ['Disputas y pruebas', 'Aprende qué registros conservar y cómo proteger tus datos.', '/guides/disputas/preservar-evidencias'],
+      ['Identidad y privacidad', 'Qué hacer ante una posible cuenta comprometida.', '/guides/identidade/conta-comprometida'],
+      ['Operaciones profesionales', 'Listas, conciliación y respuesta a incidentes.', '/guides/operacoes/checklist-antes-de-negociar'],
+      ['Empieza aquí', 'Conoce los límites del portal y las precauciones básicas.', '/guides/']
     ]
   }
 };
@@ -74,36 +76,60 @@ export default function Home() {
   const {i18n} = useDocusaurusContext();
   const t = translations[i18n.currentLocale] || translations.en;
   const aiIndexUrl = useBaseUrl('/llms.txt');
+  const editorial = {
+    en: {brand:'SAILS / SAFETY CENTER', kicker:'P2P SAFETY LIBRARY', section:'Start with your situation', library:'Browse the knowledge base', libraryDesc:'Focused guidance, organized by the risks you need to understand.', note:'Before you proceed', resources:'Resources and transparency', resourceLabel:'Machine-readable guide index', view:'Open guide'},
+    'pt-BR': {brand:'SAILS / CENTRO DE SEGURANÇA', kicker:'BIBLIOTECA DE SEGURANÇA P2P', section:'Comece pela sua situação', library:'Biblioteca de segurança', libraryDesc:'Orientações organizadas pelos riscos que você precisa compreender.', note:'Antes de continuar', resources:'Recursos e transparência', resourceLabel:'Índice de guias para sistemas de IA', view:'Abrir guia'},
+    es: {brand:'SAILS / CENTRO DE SEGURIDAD', kicker:'BIBLIOTECA DE SEGURIDAD P2P', section:'Empieza por tu situación', library:'Biblioteca de seguridad', libraryDesc:'Guías organizadas por los riesgos que necesitas comprender.', note:'Antes de continuar', resources:'Recursos y transparencia', resourceLabel:'Índice de guías para sistemas de IA', view:'Abrir guía'}
+  }[i18n.currentLocale] || {
+    brand:'SAILS / SAFETY CENTER', kicker:'P2P SAFETY LIBRARY', section:'Start with your situation', library:'Browse the knowledge base', libraryDesc:'Focused guidance, organized by the risks you need to understand.', note:'Before you proceed', resources:'Resources and transparency', resourceLabel:'Machine-readable guide index', view:'Open guide'
+  };
   return (
     <Layout title={t.title} description={t.lead}>
-      <main>
-        <header className="safetyHero">
-          <div className="container">
-            <div className="safetyEyebrow"><span className="safetyEyebrowDot" aria-hidden="true" /> {t.quickLabel}</div>
+      <main className="editorialHome">
+        <header className="editorialHero">
+          <div className="container editorialContainer">
+            <p className="editorialEyebrow"><span className="editorialBrandMark" aria-hidden="true"/> {editorial.kicker}</p>
             <h1>{t.title}</h1>
-            <p className="safetyLead">{t.lead}</p>
-            <div className="safetyActions">
-              <Link className="button button--primary button--lg" to="/guides/">{t.explore} →</Link>
-              <Link className="button button--outline button--secondary button--lg" to="/guides/pagamentos/terceiros">{t.payment}</Link>
+            <p className="editorialIntro">{t.lead}</p>
+            <div className="editorialHeroActions">
+              <Link className="editorialPrimary" to="#library-heading">{t.explore} <SafetyIcon name="arrow"/></Link>
+              <Link className="editorialSecondary" to="/guides/pagamentos/terceiros">{t.payment} <SafetyIcon name="arrow"/></Link>
             </div>
-            <div className="safetyHeroChecklist" aria-label={t.heading}>{t.checks.map(check => <span key={check}><strong>✓</strong> {check}</span>)}</div>
           </div>
         </header>
-        <section className="safetyAlertBand" aria-labelledby="safety-alert-heading"><div className="container safetyAlertInner"><div className="safetyAlertIcon" aria-hidden="true">!</div><div><h2 id="safety-alert-heading">{t.urgent}</h2><p>{t.urgentBody}</p></div><Link className="safetyAlertLink" to="/guides/fraudes/pressao-e-phishing">{t.readGuide} →</Link></div></section>
-        <section className="safetyPaths" aria-labelledby="safety-paths-title"><div className="container"><h2 id="safety-paths-title">{t.pathsTitle}</h2><p>{t.pathsIntro}</p><div className="safetyPathsGrid">{t.paths.map(([title,description,to]) => <Link className="safetyPath" to={to} key={title}><span className="safetyPathArrow" aria-hidden="true">↗</span><strong>{title}</strong><span>{description}</span></Link>)}</div></div></section>
-        <section className="safetySection" aria-labelledby="safety-topics-title">
-          <div className="container">
-            <h2 id="safety-topics-title">{t.heading}</h2>
-            <p>{t.subheading}</p>
-            <div className="safetyGrid">
-              {t.topics.map(([icon, title, description, to]) => <Link className="safetyCard" to={to} key={title}>
-                <span className="safetyCardIcon" aria-hidden="true">{icon}</span>
-                <h3>{title} →</h3>
-                <p>{description}</p>
-              </Link>)}
+        <section className="editorialSection editorialSituations" aria-labelledby="situations-heading">
+          <div className="container editorialContainer">
+            <div className="editorialSectionHeading">
+              <div><p className="editorialSectionLabel">01 / {editorial.section}</p><h2 id="situations-heading">{t.pathsTitle}</h2><p>{t.pathsIntro}</p></div>
             </div>
-            <section className="safetyAiPanel" aria-labelledby="safety-ai-heading"><div><span className="safetyAiKicker">{t.aiKicker}</span><h2 id="safety-ai-heading">{t.aiTitle}</h2><p>{t.aiBody}</p></div><a href={aiIndexUrl} className="safetyAiLink">{t.aiLink} ↗</a></section>
-            <aside className="safetyNotice" role="note"><strong>{t.notice}</strong> {t.noticeBody}</aside>
+            <div className="editorialSituationList">
+              {t.paths.map(([title,description,to],index) => (
+                <Link to={to} className="editorialSituation" key={to}>
+                  <span className="editorialIndex">{String(index+1).padStart(2,'0')}</span>
+                  <span className="editorialSituationCopy"><strong>{title}</strong><span>{description}</span></span>
+                  <SafetyIcon name="arrow" className="editorialRowArrow"/>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="editorialSection editorialLibrary" aria-labelledby="library-heading">
+          <div className="container editorialContainer">
+            <div className="editorialSectionHeading"><div><p className="editorialSectionLabel">02 / {editorial.library}</p><Heading as="h2" id="library-heading">{editorial.library}</Heading><p>{editorial.libraryDesc}</p></div></div>
+            <Link className="editorialStart" to="/guides/">{t.topics[6][0]}<span>{t.topics[6][1]}</span><span aria-hidden="true"><SafetyIcon name="arrow"/></span></Link>
+            <div className="editorialTopicGrid">
+              {t.topics.slice(0, 6).map(([title,description,to],index) => (
+                <Link className="editorialTopic" to={to} key={to}>
+                  <div className="editorialTopicTitle"><SafetyIcon name={['fraud','payment','escrow','evidence','privacy','operations'][index]}/><h3>{title}</h3></div><p>{description}</p><span className="editorialTopicLink">{editorial.view} <SafetyIcon name="arrow"/></span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="editorialSection editorialBottom" aria-labelledby="safety-note-heading">
+          <div className="container editorialContainer">
+            <div className="editorialNotice"><div><p className="editorialSectionLabel">{editorial.note}</p><h2 id="safety-note-heading">{t.urgent}</h2><p>{t.urgentBody}</p><p className="editorialLimit"><strong>{t.notice}</strong> {t.noticeBody}</p></div><Link to="/guides/fraudes/pressao-e-phishing">{t.readGuide} <SafetyIcon name="arrow"/></Link></div>
+            <div className="editorialResources"><span>{editorial.resources}</span><a href={aiIndexUrl}>{editorial.resourceLabel} <SafetyIcon name="arrow"/></a></div>
           </div>
         </section>
       </main>

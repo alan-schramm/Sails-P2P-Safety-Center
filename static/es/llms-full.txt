@@ -1,0 +1,475 @@
+# Sails P2P Safety Center — es
+
+Sails P2P Safety Center — AI reading notes
+
+Publisher: Sails Protocol
+Primary language: English. Additional locales: Portuguese (pt-BR) and Spanish (es).
+Scope: general P2P trading safety education; not protocol policy or evidence of deployed features.
+Normative technical authority: https://github.com/sails-protocol/Sails-Protocol
+Editorial classification: general guidance; proposed policy; approved policy; implemented and evidenced.
+Important distinction: escrow controls over cryptoassets do not automatically validate fiat recipients or prevent payment reversals.
+Cite the canonical guide URL and indicate the article's stated scope and limitations.
+Avoid inferring guarantees, implemented capabilities, or universal dispute outcomes from educational guidance.
+
+## Machine-readable resources
+- Structured catalogue: https://sails-protocol.github.io/Sails-P2P-Safety-Center/knowledge/index.json
+- Full text: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/llms-full.txt
+- WebMCP documentation: https://sails-protocol.github.io/Sails-P2P-Safety-Center/webmcp.json
+
+## Política editorial
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/editorial-policy
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/EDITORIAL_POLICY.md
+
+# Política editorial
+
+Estos artículos son educativos. La fuente normativa de las políticas económicas y técnicas de Sails Protocol sigue siendo el [repositorio Sails Protocol](https://github.com/sails-protocol/Sails-Protocol).
+
+## Categorías de afirmaciones
+- **Orientación general:** buenas prácticas preventivas sin atribuir funciones al protocolo.
+- **Política propuesta:** aún no aprobada; no debe presentarse como regla vigente.
+- **Política aprobada:** decisión institucional rastreable, no necesariamente implementada.
+- **Implementado y demostrado:** afirmación técnica respaldada por código, pruebas y una decisión de aprobación.
+
+## Revisión
+Cada artículo debe incluir situación, señales de alerta, acciones prácticas, límites, privacidad y clasificación de la afirmación. No publicar datos personales, garantías absolutas ni procedimientos financieros no verificados.
+
+Las actualizaciones se proponen mediante Pull Request. La publicación exige revisión editorial, comprobación de enlaces y compilación satisfactoria.
+
+---
+
+## Cómo conservar pruebas
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/disputas/preservar-evidencias
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/disputas/preservar-evidencias.md
+
+# Cómo conservar pruebas
+
+**Situación:** se realizó un pago, pero la otra parte cuestiona la recepción o el cumplimiento de las condiciones acordadas.
+
+1. Conserva el comprobante original, el identificador de la transacción, la fecha y la hora.
+2. Registra las instrucciones de pago acordadas y cualquier modificación posterior.
+3. Usa el canal oficial de disputas de la aplicación o del operador correspondiente.
+4. Comparte únicamente los datos necesarios por canales autorizados; no publiques documentos ni datos bancarios en redes sociales.
+5. No supongas que una captura de pantalla aislada demuestra liquidación o titularidad.
+
+**Estado:** orientación general. Los procedimientos, la admisibilidad y las garantías dependen de las políticas vigentes y verificadas.
+
+## Guías relacionadas
+- [Gestión de pruebas para operadores](../operacoes/gestao-de-evidencias.md)
+- [Respuesta a incidentes](../operacoes/resposta-a-incidentes.md)
+
+---
+
+## Comprobantes falsos y confirmaciones de pago
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/fraudes/comprovantes-falsos
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/fraudes/comprovantes-falsos.md
+
+# Comprobantes falsos y confirmaciones de pago
+
+**Situación:** Alguien envía una captura, PDF o mensaje que afirma que el pago se completó y solicita liberar criptoactivos antes de una verificación independiente.
+
+## Señales de alerta
+- El comprobante es la única prueba; tu banco no confirma los fondos.
+- El importe, destinatario o identificador no coincide.
+- Hay presión para liberar activos de inmediato.
+
+## Cómo actuar
+1. Consulta el pago directamente en tu aplicación bancaria.
+2. Verifica el importe, el destinatario y la disponibilidad real.
+3. No liberes criptoactivos solo por capturas o mensajes.
+4. Si hay diferencias, detén la operación y conserva los registros.
+
+## Límites
+Los comprobantes pueden falsificarse. El escrow no garantiza la liquidación bancaria ni evita impugnaciones. No publiques datos bancarios completos.
+
+**Estado:** orientación educativa general; no constituye una función automática implementada ni una garantía de recuperación.
+
+**Fuente:** [Catálogo de amenazas de Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+---
+
+## Soporte falso y presión en disputas
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/fraudes/falsa-arbitragem
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/fraudes/falsa-arbitragem.md
+
+# Soporte falso y presión en disputas
+
+**Situación:** Alguien se presenta como soporte, moderador o árbitro y solicita secretos, pagos adicionales o acciones fuera del canal oficial.
+
+## Señales de alerta
+- Contacto privado no solicitado de supuesto soporte.
+- Solicitud de frase de recuperación, clave privada o códigos.
+- Exigencia de pago externo para desbloquear escrow.
+- Decisión presentada solo como mensaje o imagen.
+
+## Cómo actuar
+1. Accede al soporte y a las disputas mediante la aplicación oficial.
+2. Verifica el identificador y estado de la disputa.
+3. No envíes fondos adicionales ni credenciales a supuestas autoridades.
+4. Conserva los mensajes y denuncia la suplantación.
+
+## Límites
+Las reglas y facultades de los árbitros dependen de cada implementación. No se presume activo ningún modo de arbitraje ni detector.
+
+**Estado:** orientación educativa general; no constituye una función automática implementada ni una garantía de recuperación.
+
+**Fuente:** [Catálogo de amenazas de Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+---
+
+## Presión, enlaces falsos y phishing
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/fraudes/pressao-e-phishing
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/fraudes/pressao-e-phishing.md
+
+# Presión, enlaces falsos y phishing
+
+**Situación:** alguien envía un supuesto enlace de soporte, exige confirmación inmediata o intenta trasladar la operación a otro canal.
+
+## Señales de alerta
+- Amenazas de cancelación, bloqueo o pérdida de fondos para forzar una decisión.
+- Páginas que solicitan frases de recuperación, contraseñas o firmas ajenas a la operación.
+- Instrucciones de pago enviadas por mensajes que no coinciden con los términos acordados.
+
+## Cómo actuar
+1. Nunca compartas tu frase de recuperación, clave privada ni códigos de autenticación.
+2. Verifica la dirección del servicio de forma independiente, sin usar el enlace sospechoso.
+3. Detén la operación si hay presión o instrucciones contradictorias.
+4. Conserva los registros relevantes y contacta al soporte oficial de la aplicación.
+
+**Estado:** orientación general de prevención, no una función de detección automática implementada.
+
+## Guías relacionadas
+- [Soporte falso y presión en disputas](../fraudes/falsa-arbitragem.md)
+- [Respuesta a incidentes](../operacoes/resposta-a-incidentes.md)
+
+---
+
+## Manipulación de reputación y estafas de salida
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/fraudes/reputation-farming
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/fraudes/reputation-farming.md
+
+# Manipulación de reputación y estafas de salida
+
+**Situación:** Un participante construye un historial con operaciones pequeñas y luego propone una operación mucho mayor o inusual.
+
+## Señales de alerta
+- Muchas operaciones pequeñas seguidas de un aumento brusco.
+- Historial concentrado en pocas contrapartes.
+- Presión para evitar límites o cambiar instrucciones.
+
+## Cómo actuar
+1. Evalúa el riesgo de la operación actual, no solo la puntuación.
+2. Respeta los límites y el proceso de liquidación aplicables.
+3. Verifica condiciones extraordinarias y cambios de pago.
+4. Detén la operación si el riesgo actual difiere del historial.
+
+## Límites
+La reputación no garantiza identidad ni honestidad futura. El análisis de redes Sybil, el decaimiento temporal y la diversidad de contrapartes figuran como planes, no protecciones universales.
+
+**Estado:** orientación educativa general; no constituye una función automática implementada ni una garantía de recuperación.
+
+**Fuente:** [Catálogo de amenazas de Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+---
+
+## Sospecha de cuenta comprometida
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/identidade/conta-comprometida
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/identidade/conta-comprometida.md
+
+# Sospecha de cuenta comprometida
+
+**Situación:** detectas cambios en los datos, métodos de pago o mensajes que no reconoces.
+
+## Primeras medidas
+1. Detén las operaciones sospechosas si puedes hacerlo con seguridad.
+2. Accede al servicio mediante una dirección o aplicación conocida, no por enlaces recibidos en mensajes.
+3. Revoca sesiones y credenciales comprometidas mediante los controles realmente disponibles.
+4. Protege tu billetera y cuentas financieras siguiendo los procedimientos oficiales de cada proveedor.
+5. Conserva pruebas relevantes sin publicar datos personales ni secretos de autenticación.
+
+**Atención:** eliminar un método de pago de la interfaz no significa necesariamente revocar permisos ya concedidos ni modificar operaciones en curso. Verifica las garantías reales del servicio.
+
+**Estado:** orientación general; no se afirma que exista una función implementada de revocación entre aplicaciones.
+
+---
+
+## Empieza aquí
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/intro.md
+
+# Sails P2P Safety Center
+
+Orientación práctica para reconocer riesgos en operaciones entre personas, verificar instrucciones de pago y saber cuándo detener una operación.
+
+Este portal es **educativo**. El escrow de criptoactivos no demuestra la titularidad de cuentas bancarias ni garantiza la irreversibilidad de pagos externos.
+
+Explora las guías en el menú lateral. Estas recomendaciones no sustituyen las reglas del método de pago, la legislación aplicable ni el análisis de una disputa concreta.
+
+**Estado:** contenido educativo inicial; no constituye una garantía técnica implementada en Sails Protocol.
+
+## Explora las guías
+
+- [Fraudes y phishing](./fraudes/pressao-e-phishing.md)
+- [Pagos](./pagamentos/terceiros.md)
+- [Escrow y operaciones](./negociacoes/limites-do-escrow.md)
+- [Disputas y pruebas](./disputas/preservar-evidencias.md)
+- [Identidad y privacidad](./identidade/conta-comprometida.md)
+- [Operaciones profesionales](./operacoes/checklist-antes-de-negociar.md)
+
+---
+
+## Liquidez falsa y ofertas demasiado buenas
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/negociacoes/falsa-liquidez
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/negociacoes/falsa-liquidez.md
+
+# Liquidez falsa y ofertas demasiado buenas
+
+**Situación:** Una oferta P2P muestra precio o volumen muy atractivo, pero no tiene un historial verificable equivalente.
+
+## Señales de alerta
+- Precio muy distinto de ofertas comparables.
+- Gran volumen anunciado sin historial confiable.
+- Solicitud de adelanto o liquidación fuera de escrow.
+
+## Cómo actuar
+1. Compara precios, límites, comisiones y métodos de pago.
+2. Consulta el historial sin tratarlo como garantía.
+3. Verifica la liquidación real que ofrece la aplicación.
+4. No transfieras fondos fuera del flujo acordado por urgencia.
+
+## Límites
+Una oferta no demuestra disponibilidad real. No debe suponerse implementada la detección automática de liquidez falsa.
+
+**Estado:** orientación educativa general; no constituye una función automática implementada ni una garantía de recuperación.
+
+**Fuente:** [Catálogo de amenazas de Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+---
+
+## Qué protege y qué no protege el escrow
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/negociacoes/limites-do-escrow
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/negociacoes/limites-do-escrow.md
+
+# Qué protege y qué no protege el escrow
+
+El escrow puede establecer condiciones para mover criptoactivos durante una operación. **No controla el banco del comprador ni el del vendedor.**
+
+## No supongas que escrow significa
+- Verificación de la titularidad real de una cuenta bancaria.
+- Confirmación automática de liquidación definitiva de una transferencia.
+- Eliminación del fraude, la coacción, los contracargos o las disputas.
+- Recuperación garantizada del dinero enviado a terceros.
+
+## Antes de operar
+Confirma los términos y las instrucciones de pago por canales autorizados. Detén la operación ante diferencias y conserva pruebas protegiendo la privacidad.
+
+**Estado:** explicación conceptual. Toda afirmación específica sobre mecanismos de Sails Protocol requiere pruebas verificadas de implementación.
+
+---
+
+## Lista de seguridad antes de operar
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/operacoes/checklist-antes-de-negociar
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/operacoes/checklist-antes-de-negociar.md
+
+# Lista de seguridad antes de operar
+
+Antes de aceptar una operación P2P, verifica la contraparte, el método de pago, las instrucciones y el importe. Conocer al operador o ver una puntuación alta no es suficiente.
+
+## Lista operativa
+1. Confirma activo, importe, red, precio, comisiones y plazo.
+2. Comprueba beneficiario y datos bancarios en el flujo autorizado.
+3. Considera historial y señales de confianza como indicadores, no garantías.
+4. Verifica las reglas reales de escrow y disputas de la aplicación y red elegidas.
+5. Utiliza canales autorizados; nunca compartas frases de recuperación ni códigos.
+
+## Detente y verifica
+Si cambia el destinatario, interviene un tercero o te presionan para salir de la plataforma, detente y verifica.
+
+## Límites
+Esta lista no demuestra titularidad bancaria, no impide reversiones ni garantiza la operación.
+
+**Estado: orientación educativa general; no afirma una protección implementada.**
+
+**Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Conciliación de pagos antes de liberar activos
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/operacoes/conciliacao-de-pagamentos
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/operacoes/conciliacao-de-pagamentos.md
+
+# Conciliación de pagos antes de liberar activos
+
+Un operador P2P profesional debe distinguir avisos o comprobantes de fondos verificados de forma independiente con su propio proveedor financiero.
+
+## Lista operativa
+1. Localiza la transacción en tu banco o proveedor.
+2. Compara importe, moneda, referencia, hora y destinatario con la operación.
+3. Revisa estados pendientes, bloqueados o impugnados cuando estén disponibles.
+4. Mantén un registro por operación sin publicar identificadores completos.
+5. Escala diferencias por canales oficiales del banco y de disputas.
+
+## Detente y verifica
+No liberes criptoactivos solo porque la contraparte envió un comprobante o afirmó que la transferencia es instantánea.
+
+## Límites
+Los estados bancarios y los derechos de reversión dependen del método y la jurisdicción. Ninguna lista garantiza irreversibilidad.
+
+**Estado: orientación educativa general; no afirma una protección implementada.**
+
+**Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Gestión de pruebas para operadores P2P
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/operacoes/gestao-de-evidencias
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/operacoes/gestao-de-evidencias.md
+
+# Gestión de pruebas para operadores P2P
+
+Una buena gestión de pruebas conserva lo acordado y lo ocurrido, reduciendo la exposición de datos personales y financieros.
+
+## Lista operativa
+1. Registra identificador de operación, términos, horas e instrucciones autorizadas.
+2. Conserva referencias bancarias y mensajes originales cuando esté permitido; distingue originales de imágenes editadas.
+3. Anota cuándo apareció la discrepancia y qué canal oficial recibió el aviso.
+4. Restringe el acceso y oculta datos personales innecesarios antes de compartirlos.
+5. Sigue las reglas aplicables de disputas, conservación y privacidad.
+
+## Detente y verifica
+No alteres originales para hacerlos más convincentes, no acuses públicamente a la contraparte ni divulgues credenciales.
+
+## Límites
+La validez de las pruebas depende de la aplicación y jurisdicción. Un análisis de IA no certifica por sí solo la autenticidad.
+
+**Estado: orientación educativa general; no afirma una protección implementada.**
+
+**Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Respuesta a incidentes durante operaciones P2P
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/operacoes/resposta-a-incidentes
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/operacoes/resposta-a-incidentes.md
+
+# Respuesta a incidentes durante operaciones P2P
+
+Ante datos de pago contradictorios, cuentas comprometidas, sospechas de fraude o liquidaciones impugnadas, utiliza un procedimiento consistente en lugar de improvisar bajo presión.
+
+## Lista operativa
+1. Suspende pagos voluntarios o liberaciones todavía no completados.
+2. Verifica acceso a la cuenta y estado del pago en canales oficiales.
+3. Conserva identificadores, mensajes, comprobantes y horas sin compartir secretos.
+4. Contacta al banco, proveedor de billetera o soporte y disputas autorizados según corresponda.
+5. Documenta la respuesta y reanuda solo cuando entiendas riesgos y próximos pasos.
+
+## Detente y verifica
+Evita supuestos agentes de recuperación por mensajes privados, destinos de reembolso no verificados y pagos adicionales para desbloquear fondos.
+
+## Límites
+Esta guía no es un servicio de emergencias. Recuperación, reversión, plazos y deberes legales dependen de proveedores y jurisdicción.
+
+**Estado: orientación educativa general; no afirma una protección implementada.**
+
+**Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Cuentas de terceros y datos bancarios comprometidos
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/pagamentos/conta-mula
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/pagamentos/conta-mula.md
+
+# Cuentas de terceros y datos bancarios comprometidos
+
+**Situación:** Los datos de pago pertenecen a una persona inesperada o a una cuenta posiblemente controlada por terceros.
+
+## Señales de alerta
+- Cambio repentino de destinatario o clave PIX.
+- Solicitud de pago o reembolso a un amigo o empresa no acordada.
+- Cambio de cuenta justo antes de liquidar.
+
+## Cómo actuar
+1. Compara al destinatario con las instrucciones acordadas.
+2. Verifica los cambios dentro del canal autorizado.
+3. Detén la operación y usa soporte o disputas si no se aclara.
+4. Conserva solo los registros necesarios sin publicarlos.
+
+## Límites
+Las cuentas empresariales y los pagos de terceros pueden ser legítimos. Un historial antiguo no demuestra quién controla actualmente una cuenta ni elimina el riesgo de reversión.
+
+**Estado:** orientación educativa general; no constituye una función automática implementada ni una garantía de recuperación.
+
+**Fuente:** [Catálogo de amenazas de Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+---
+
+## Destinatario bancario diferente
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/pagamentos/destinatario-divergente
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/pagamentos/destinatario-divergente.md
+
+# Destinatario bancario diferente
+
+**Situación:** la aplicación bancaria muestra un beneficiario distinto del esperado antes de confirmar un PIX o una transferencia.
+
+**Antes de enviar:** no confirmes por impulso. Compara las instrucciones originales, comprueba si hubo cambios y suspende la operación si no puedes aclarar la diferencia por un canal confiable.
+
+**Si ya enviaste:** conserva el comprobante, registra la hora, contacta inmediatamente a tu banco para conocer los procedimientos disponibles y sigue el proceso de soporte o disputas de la operación.
+
+No confíes únicamente en capturas de pantalla, códigos QR o mensajes fuera del flujo acordado.
+
+**Estado:** orientación general. El escrow de criptoactivos no revierte automáticamente pagos bancarios.
+
+---
+
+## Pagos impugnados, revertidos o reembolsados
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/pagamentos/reversao-e-estorno
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/pagamentos/reversao-e-estorno.md
+
+# Pagos impugnados, revertidos o reembolsados
+
+**Situación:** un pago parece completado, pero luego es impugnado, bloqueado o revertido por el proveedor financiero.
+
+## Qué verificar
+- Un comprobante enviado por otra persona no demuestra necesariamente que los fondos estén liquidados y disponibles.
+- Los plazos y posibilidades de impugnación varían según el método de pago y la jurisdicción.
+- El escrow de criptoactivos no elimina los riesgos externos del sistema bancario.
+
+## Cómo actuar
+1. Consulta el estado directamente con tu banco o proveedor, no solo mediante capturas de pantalla.
+2. No liberes criptoactivos basándote únicamente en una promesa de pago.
+3. Ante una impugnación, conserva los identificadores y usa los canales oficiales del banco y de la operación.
+4. No envíes reembolsos a otra cuenta sin la verificación adecuada.
+
+**Estado:** orientación general; las reglas de liberación y disputas dependen de la implementación y políticas vigentes.
+
+## Guías relacionadas
+- [Comprobantes falsos](../fraudes/comprovantes-falsos.md)
+- [Conciliación de pagos](../operacoes/conciliacao-de-pagamentos.md)
+
+---
+
+## Pagos que involucran a terceros
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/guides/pagamentos/terceiros
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/es/docusaurus-plugin-content-docs/current/pagamentos/terceiros.md
+
+# Pagos que involucran a terceros
+
+**Situación:** alguien pide pagar a una cuenta distinta de la acordada, o el pago llega de una persona diferente del comprador.
+
+## Señales de alerta
+- Cambio inesperado de beneficiario o clave PIX.
+- Presión para pagar rápidamente o continuar fuera del flujo acordado.
+- Solicitud de reembolso a una cuenta diferente de la cuenta de origen.
+
+## Qué hacer
+1. No consideres que el nombre mostrado por el banco demuestra por sí solo que la operación es segura.
+2. Compara los datos del beneficiario con las instrucciones formalmente acordadas.
+3. Si existen diferencias, **detén el pago** y utiliza el canal de soporte o disputas correspondiente.
+4. Conserva comprobantes y mensajes sin publicar datos personales o bancarios.
+
+Las cuentas conjuntas, empresariales y los pagos de terceros pueden tener usos legítimos. Una diferencia exige verificación, no una acusación automática de fraude.
+
+**Estado:** orientación general; no afirma que el protocolo verifique la titularidad bancaria.
+
+## Guías relacionadas
+- [Cuentas de terceros y datos comprometidos](../pagamentos/conta-mula.md)
+- [Conciliación de pagos](../operacoes/conciliacao-de-pagamentos.md)

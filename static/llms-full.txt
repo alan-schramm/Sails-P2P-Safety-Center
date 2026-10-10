@@ -1,0 +1,513 @@
+# Sails P2P Safety Center — en
+
+Sails P2P Safety Center — AI reading notes
+
+Publisher: Sails Protocol
+Primary language: English. Additional locales: Portuguese (pt-BR) and Spanish (es).
+Scope: general P2P trading safety education; not protocol policy or evidence of deployed features.
+Normative technical authority: https://github.com/sails-protocol/Sails-Protocol
+Editorial classification: general guidance; proposed policy; approved policy; implemented and evidenced.
+Important distinction: escrow controls over cryptoassets do not automatically validate fiat recipients or prevent payment reversals.
+Cite the canonical guide URL and indicate the article's stated scope and limitations.
+Avoid inferring guarantees, implemented capabilities, or universal dispute outcomes from educational guidance.
+
+## Machine-readable resources
+- Structured catalogue: https://sails-protocol.github.io/Sails-P2P-Safety-Center/knowledge/index.json
+- Full text: https://sails-protocol.github.io/Sails-P2P-Safety-Center/llms-full.txt
+- WebMCP documentation: https://sails-protocol.github.io/Sails-P2P-Safety-Center/webmcp.json
+
+## Editorial policy
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/editorial-policy
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/EDITORIAL_POLICY.md
+
+# Editorial policy
+
+These articles are educational. The normative source for Sails Protocol economic and technical policies remains the [Sails Protocol repository](https://github.com/sails-protocol/Sails-Protocol).
+
+## Claim categories
+- **General guidance:** preventive best practices without claiming protocol functionality.
+- **Proposed policy:** not yet approved; must not be presented as an active rule.
+- **Approved policy:** a traceable institutional decision, not necessarily implemented.
+- **Implemented and evidenced:** technical claims supported by code, tests, and an approval decision.
+
+## Review
+Each article must cover a scenario, warning signs, practical actions, limits, privacy considerations, and claim classification. Do not publish personal data, absolute guarantees, or unverified financial procedures.
+
+Changes are proposed by Pull Request. Publication requires editorial review, link checks, and a successful build.
+
+---
+
+## Checklist de publicação
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/release-checklist
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/RELEASE_CHECKLIST.md
+
+# Checklist de publicação
+
+Este checklist é um documento de engenharia. **Não implica que o site esteja publicado.**
+
+## Gate técnico
+
+- [x] Primeiro build Docusaurus aprovado no GitHub Actions (PR #1, commit ec1c96b).
+- [x] Revalidar o CI no HEAD final do PR #1 (GitHub Actions, sucesso).
+- [x] Gerar e versionar `package-lock.json`, mudar a instalação de CI para `npm ci`.
+- [ ] Revisar navegação, responsividade, acessibilidade e links em preview.
+- [ ] Confirmar que não há segredos nem informações pessoais nos artigos.
+
+## Gate editorial
+
+- [ ] Revisar a redação dos guias em português.
+- [ ] Confirmar que orientações gerais não são apresentadas como garantias implementadas.
+- [ ] Confirmar links para políticas normativas do Sails Protocol quando necessários.
+- [ ] Definir licença do conteúdo educativo separadamente da licença do código.
+
+## Publicação
+
+- [ ] Em GitHub Settings → Pages, escolher **Source: GitHub Actions**.
+- [x] Aprovar PR #1 e realizar merge na `main` após build verde (1d6b3da).
+- [ ] Confirmar sucesso do job de deploy e acesso a https://sails-protocol.github.io/Sails-P2P-Safety-Center/.
+- [ ] Testar links diretos para artigos, navegação móvel e HTTPS.
+
+## Pós-publicação
+
+- [ ] Expandir o catálogo por cenários com revisão.
+- [ ] Planejar busca e localização EN/ES.
+- [ ] Definir revisão periódica dos artigos e responsáveis.
+
+---
+
+## How to preserve evidence
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/disputas/preservar-evidencias
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/disputas/preservar-evidencias.md
+
+# How to preserve evidence
+
+**Scenario:** a payment was made, but the other party disputes receipt or fulfillment of agreed conditions.
+
+1. Keep the original receipt, transaction identifier, date, and time.
+2. Record agreed payment instructions and any subsequent changes.
+3. Use the official dispute channel of the relevant application or operator.
+4. Share only necessary information through authorized channels; do not publish documents or banking details on social media.
+5. Do not assume a screenshot alone proves settlement or account ownership.
+
+**Status:** general guidance. Procedures, admissibility, and guarantees depend on actual, verified policies.
+
+## Related guides
+- [Evidence handling for professional traders](../operacoes/gestao-de-evidencias.md)
+- [Incident response](../operacoes/resposta-a-incidentes.md)
+
+---
+
+## Fake payment receipts and false confirmations
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/comprovantes-falsos
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/fraudes/comprovantes-falsos.md
+
+# Fake payment receipts and false confirmations
+
+**Scenario:** a counterparty sends a screenshot, PDF, or message claiming payment is complete and asks you to release crypto before you can verify the funds independently.
+
+## Warning signs
+- The receipt is the only evidence of payment; your own bank or provider does not show settled funds.
+- The amount, recipient, timestamp, or transaction identifier differs from the agreed instructions.
+- The counterparty claims an urgent deadline or asks you to rely on a message from a supposed bank employee.
+
+## What to do
+1. Check the transaction directly in your own bank or payment-provider app using a trusted entry point.
+2. Verify the amount, recipient, reference, and actual availability of funds.
+3. Do not release escrowed assets based only on a screenshot or a third party's confirmation.
+4. If information conflicts, pause the trade and preserve the original messages and payment references for the authorized dispute process.
+
+## Limits
+A convincing document can still be forged. A bank receipt does not by itself prove final settlement or that a transfer cannot be contested or reversed. Never publish unredacted financial records.
+
+**Claim status:** general safety guidance. Do not assume Sails Protocol automatically detects forged receipts. The protocol threat registry distinguishes planned PIX/fiat image analysis from implemented, configuration-dependent evidence assessment.
+
+**Protocol references:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Fake support, impersonation, and arbitration pressure
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/falsa-arbitragem
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/fraudes/falsa-arbitragem.md
+
+# Fake support, impersonation, and arbitration pressure
+
+**Scenario:** someone claims to be a platform employee, moderator, or arbiter and asks you to move the conversation, reveal secrets, send an extra payment, or accept an outcome outside the authorized dispute process.
+
+## Warning signs
+- A supposed support agent contacts you through an unsolicited private message.
+- You are asked to disclose a recovery phrase, private key, authentication code, or unrelated wallet signature.
+- Someone claims an off-platform transfer is required to unlock escrow or accelerate arbitration.
+- A ruling is presented only as a screenshot or chat message, without verification in the application's authorized dispute interface.
+
+## What to do
+1. Access support or disputes using the official application interface or a previously verified address.
+2. Check the trade identifier and dispute status in the authorized workflow.
+3. Do not send extra funds or secrets to someone claiming special authority.
+4. Preserve the conversation and report suspected impersonation through the relevant official channel.
+
+## Limits
+Arbitration models vary by implementation. An arbiter's role, selection, appeal rights, and authority must be verified against the actual application's policies. A claimed ruling is not proof of a valid settlement instruction.
+
+**Claim status:** general guidance. This page does not assert that any particular arbitration mode, appeal, or fraud detector is enabled in a given deployment.
+
+**Protocol references:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Pressure tactics, fake links, and phishing
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/pressao-e-phishing
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/fraudes/pressao-e-phishing.md
+
+# Pressure tactics, fake links, and phishing
+
+**Scenario:** someone sends a purported support link, demands immediate confirmation, or tries to move a trade to another channel.
+
+## Warning signs
+- Threats of cancellation, account lockout, or loss of funds to force a decision.
+- Pages asking for a recovery phrase, password, or signature unrelated to the trade.
+- Payment instructions sent in messages that differ from agreed terms.
+
+## What to do
+1. Never disclose your recovery phrase, private key, or authentication codes.
+2. Verify the service address independently without following the suspicious link.
+3. Stop the trade if you face pressure or conflicting instructions.
+4. Preserve relevant records and contact the application's official support channel.
+
+**Status:** general prevention guidance, not an implemented automated detection feature.
+
+## Related guides
+- [Fake support and arbitration pressure](../fraudes/falsa-arbitragem.md)
+- [Incident response](../operacoes/resposta-a-incidentes.md)
+
+---
+
+## Reputation farming and exit scams
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/reputation-farming
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/fraudes/reputation-farming.md
+
+# Reputation farming and exit scams
+
+**Scenario:** a trader builds a reassuring history with small transactions, then proposes a much larger or unusual transaction that exposes the counterparty to greater loss.
+
+## Warning signs
+- Many small, repetitive trades followed by a sudden request for a much larger amount.
+- An account's positive history is concentrated among a few counterparties.
+- Pressure to bypass limits, change payment instructions, or transact outside the agreed flow.
+
+## What to do
+1. Evaluate the specific trade amount, payment method, account details, and settlement risk, not just a reputation score.
+2. Keep the transaction within the applicable platform limits and documented protections.
+3. Treat unusually favorable terms and requests for exceptions as reasons to verify, not proof of fraud.
+4. Pause when the trade's risk differs materially from the history you relied on.
+
+## Limits
+Reputation is a risk signal, not an identity guarantee. Colluding accounts may manufacture apparent activity, and a legitimate account may later be compromised. Neither high trade volume nor a signed payment account eliminates loss risk.
+
+**Claim status:** general safety guidance. The protocol's anti-Sybil graph analysis, time decay, and counterparty-diversity scoring are described as planned, not universally deployed controls.
+
+**Protocol references:** [Sybil mitigation strategy](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/security/SYBIL_MITIGATION.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Suspected account compromise
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/identidade/conta-comprometida
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/identidade/conta-comprometida.md
+
+# Suspected account compromise
+
+**Scenario:** you notice changes to details, payment methods, or messages you do not recognize.
+
+## First steps
+1. Stop suspicious activity if it is safe to do so.
+2. Access the service through a known address or app, not links in messages.
+3. Revoke compromised sessions and credentials using controls actually provided by the application.
+4. Secure your wallet and financial accounts using each provider's official procedures.
+5. Preserve relevant evidence without publishing personal data or authentication secrets.
+
+**Caution:** removing a payment method from the interface does not necessarily revoke existing permissions or change ongoing trade terms. Verify the service's actual guarantees.
+
+**Status:** general guidance; no cross-app revocation capability is claimed as implemented.
+
+---
+
+## Start here
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/intro.md
+
+# Sails P2P Safety Center
+
+Practical guidance to recognize risks in peer-to-peer trades, verify payment instructions, and know when to stop a transaction.
+
+This portal is **educational**. Crypto escrow does not establish ownership of bank accounts or guarantee that external payments cannot be reversed.
+
+Explore the guides in the sidebar. This guidance does not replace payment-method rules, applicable law, or case-specific dispute review.
+
+**Status:** introductory educational content; not a claim of implemented technical guarantees in Sails Protocol.
+
+## Browse the guides
+
+- [Scams and phishing](./fraudes/pressao-e-phishing.md)
+- [Payments](./pagamentos/terceiros.md)
+- [Escrow and trades](./negociacoes/limites-do-escrow.md)
+- [Disputes and evidence](./disputas/preservar-evidencias.md)
+- [Identity and privacy](./identidade/conta-comprometida.md)
+- [Professional operations](./operacoes/checklist-antes-de-negociar.md)
+
+---
+
+## Fake liquidity and offers that look too good
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/negociacoes/falsa-liquidez
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/negociacoes/falsa-liquidez.md
+
+# Fake liquidity and offers that look too good
+
+**Scenario:** an attractive P2P offer promises unusually favorable pricing or large available volume but has limited verifiable completion history.
+
+## Warning signs
+- Prices are far outside comparable offers without a clear explanation.
+- Large advertised volume with little independently verifiable trading history.
+- Requests to pay upfront, bypass escrow, or move settlement to an unrelated channel.
+
+## What to do
+1. Compare terms, limits, fees, and payment method with other available offers.
+2. Check the trader's relevant history without treating ratings as a guarantee.
+3. Confirm that the selected application's actual settlement flow provides the protections it advertises.
+4. Do not transfer funds outside the agreed process because of a supposedly limited-time offer.
+
+## Limits
+An offer's appearance does not prove available liquidity, and a platform may have no independent way to verify every claim. Trust scores and transaction caps are not substitutes for settlement verification.
+
+**Claim status:** general safety guidance. The Sails Protocol threat registry identifies fake liquidity as a high-severity threat; QVAC-based offer scoring is not a universally implemented safeguard.
+
+**Protocol reference:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+---
+
+## What escrow does and does not protect
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/negociacoes/limites-do-escrow
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/negociacoes/limites-do-escrow.md
+
+# What escrow does and does not protect
+
+Escrow may establish conditions for moving cryptoassets during a trade. **It does not control the buyer's or seller's bank.**
+
+## Do not assume escrow means
+- Verification of the actual owner of a bank account.
+- Automatic confirmation of final bank-transfer settlement.
+- Elimination of fraud, coercion, chargebacks, or disputes.
+- Guaranteed recovery of money sent to third parties.
+
+## Before trading
+Confirm trade terms and payment instructions through authorized channels. Stop when details conflict and preserve evidence while protecting privacy.
+
+**Status:** conceptual explanation. Any specific claim about Sails Protocol mechanisms requires verified implementation evidence.
+
+---
+
+## Pre-trade safety checklist
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/checklist-antes-de-negociar
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/operacoes/checklist-antes-de-negociar.md
+
+# Pre-trade safety checklist
+
+Before accepting a P2P trade, check the specific counterparty, payment method, instructions, and amount. A familiar trader or a high rating is not enough.
+
+## Operational checklist
+1. Confirm the asset, amount, network, rate, fees, and settlement deadline.
+2. Check the agreed fiat beneficiary and account details in the authorized trade interface.
+3. Review any available counterparty history and payment-account signals as risk indicators, not guarantees.
+4. Verify the actual escrow and dispute terms for the selected application and settlement rail.
+5. Use only approved channels; never share recovery phrases or authentication secrets.
+
+## Stop and verify
+If the recipient changes, a third party intervenes, or someone insists on moving off-platform, pause and verify before paying.
+
+## Limits
+This checklist cannot establish bank-account ownership, prevent reversals, or guarantee that a trade will complete.
+
+**Claim status: general educational guidance; not a claim of an implemented safeguard.**
+
+**Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Payment reconciliation before releasing assets
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/conciliacao-de-pagamentos
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/operacoes/conciliacao-de-pagamentos.md
+
+# Payment reconciliation before releasing assets
+
+A professional P2P operator should distinguish a payment notification or receipt from funds independently verified with their own financial provider.
+
+## Operational checklist
+1. Locate the incoming transaction in your own bank or provider account.
+2. Match the amount, currency, reference, time, and beneficiary with the agreed trade.
+3. Check for pending, blocked, disputed, or incomplete status where the provider exposes it.
+4. Keep a trade-by-trade reconciliation record without publishing full account identifiers.
+5. Escalate mismatches using official banking and application dispute channels.
+
+## Stop and verify
+Do not release crypto merely because a counterparty sent a receipt or claimed that a transfer is instant.
+
+## Limits
+A bank's displayed status and reversal rights depend on the payment method and jurisdiction. No checklist guarantees irrevocability.
+
+**Claim status: general educational guidance; not a claim of an implemented safeguard.**
+
+**Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Evidence handling for professional P2P traders
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/gestao-de-evidencias
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/operacoes/gestao-de-evidencias.md
+
+# Evidence handling for professional P2P traders
+
+Good evidence management preserves a reliable record of what was agreed and what happened, while minimizing exposure of sensitive personal and financial data.
+
+## Operational checklist
+1. Record the trade identifier, agreed terms, relevant timestamps, and authorized payment instructions.
+2. Retain original bank transaction references and messages where permitted; distinguish originals from edited screenshots.
+3. Record when a discrepancy was discovered and which official channel received the report.
+4. Restrict access to evidence and redact unnecessary personal data before authorized sharing.
+5. Follow the application's dispute rules and applicable retention and privacy requirements.
+
+## Stop and verify
+Do not alter originals to make them more persuasive, publicly accuse a counterparty, or disclose credentials.
+
+## Limits
+Evidence quality and admissibility vary by application and jurisdiction. AI analysis cannot independently certify that a document is authentic.
+
+**Claim status: general educational guidance; not a claim of an implemented safeguard.**
+
+**Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Incident response during a P2P trade
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/resposta-a-incidentes
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/operacoes/resposta-a-incidentes.md
+
+# Incident response during a P2P trade
+
+When a trade shows conflicting payment information, account compromise, suspected fraud, or a disputed settlement, use a consistent response rather than improvising under pressure.
+
+## Operational checklist
+1. Pause any voluntary payment or asset-release action that has not yet been completed.
+2. Verify account access and payment status through trusted official channels.
+3. Preserve trade identifiers, relevant messages, receipts, and timestamps without sharing secrets.
+4. Notify the relevant bank, wallet provider, or application's authorized support or dispute process as appropriate.
+5. Document the response and only resume when the actual risks and permitted next steps are understood.
+
+## Stop and verify
+Avoid private-message 'recovery agents', unverified refund destinations, and promises that extra payments will unlock funds.
+
+## Limits
+This guide is not an emergency response service. Recovery, reversal, dispute windows, and legal duties depend on the providers and jurisdiction.
+
+**Claim status: general educational guidance; not a claim of an implemented safeguard.**
+
+**Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+---
+
+## Mule accounts and compromised payment details
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/conta-mula
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/pagamentos/conta-mula.md
+
+# Mule accounts and compromised payment details
+
+**Scenario:** payment details belong to an unexpected person or an account that may be controlled by someone other than the apparent trader.
+
+## Warning signs
+- A sudden change in recipient, account number, or PIX key.
+- An explanation that a friend, employee, or unrelated business must receive or refund the funds.
+- A previously used payment account is replaced immediately before settlement.
+
+## What to do
+1. Compare the actual payment recipient with the agreed instructions before sending funds.
+2. Verify changes through the application's authorized trade channel, not a forwarded screenshot or external chat.
+3. Stop and use the applicable support or dispute process if ownership or instructions remain unclear.
+4. Preserve only necessary records and avoid exposing personal or banking data publicly.
+
+## Limits
+A third-party or business account is not automatically fraudulent. A long account history, account signature, or trader reputation cannot conclusively prove who controls an account now. Payment reversals and bank-side investigations remain outside crypto escrow.
+
+**Claim status:** general safety guidance. Payment-account trust ramping is described in RFC-021, but its presence does not guarantee protection from mule accounts or account takeover.
+
+**Protocol references:** [RFC-021, payment-account trust](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md), [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+---
+
+## Unexpected bank recipient
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/destinatario-divergente
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/pagamentos/destinatario-divergente.md
+
+# Unexpected bank recipient
+
+**Scenario:** your banking app shows a different recipient than expected before you confirm a PIX payment or transfer.
+
+**Before sending:** do not confirm impulsively. Compare the original instructions, check for changes, and pause the transfer if you cannot resolve the mismatch through a trusted channel.
+
+**If already sent:** keep the receipt, record the time, contact your bank immediately about available procedures, and follow the trade's support or dispute process.
+
+Do not rely solely on screenshots, QR codes, or messages outside the agreed flow.
+
+**Status:** general guidance. Crypto escrow does not automatically reverse bank payments.
+
+---
+
+## Disputed, reversed, or refunded payments
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/reversao-e-estorno
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/pagamentos/reversao-e-estorno.md
+
+# Disputed, reversed, or refunded payments
+
+**Scenario:** a payment appears complete but is later disputed, blocked, or reversed by a financial provider.
+
+## What to verify
+- A receipt sent by someone else does not necessarily prove that funds have settled and are available.
+- Dispute windows and reversal rules vary by payment method and jurisdiction.
+- Crypto escrow does not eliminate risks in external banking systems.
+
+## What to do
+1. Check payment status directly with your bank or provider, not just screenshots.
+2. Do not release crypto solely on the promise of payment.
+3. If disputed, preserve transaction identifiers and use official banking and trading channels.
+4. Do not refund to a different account without appropriate verification.
+
+**Status:** general guidance; release and dispute rules depend on the current implementation and policies.
+
+## Related guides
+- [Fake payment receipts](../fraudes/comprovantes-falsos.md)
+- [Payment reconciliation](../operacoes/conciliacao-de-pagamentos.md)
+
+---
+
+## Payments involving third parties
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/terceiros
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/pagamentos/terceiros.md
+
+# Payments involving third parties
+
+**Scenario:** someone asks you to pay a different account than agreed, or payment arrives from someone other than the buyer.
+
+## Warning signs
+- An unexpected change in recipient or PIX key.
+- Pressure to pay quickly or continue outside the agreed trade flow.
+- A request to refund an account other than the originating account.
+
+## What to do
+1. Do not treat the name displayed by your bank as sufficient proof of safety.
+2. Compare recipient details with the payment instructions formally agreed in the trade.
+3. If details differ, **stop the payment** and use the applicable support or dispute channel.
+4. Preserve receipts and relevant messages without publicly sharing personal or banking information.
+
+Joint accounts, business accounts, and third-party payments can have legitimate uses. A mismatch requires verification, not an automatic fraud accusation.
+
+**Status:** general guidance; does not claim the protocol verifies bank-account ownership.
+
+## Related guides
+- [Mule accounts and compromised payment details](../pagamentos/conta-mula.md)
+- [Payment reconciliation](../operacoes/conciliacao-de-pagamentos.md)

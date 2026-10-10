@@ -11,20 +11,8 @@
     "message": "Escrow y operaciones",
     "description": "The label for category Escrow and trades in sidebar safetySidebar"
   },
-  "sidebar.safetySidebar.category.Disputes and evidence": {
-    "message": "Disputas y pruebas",
-    "description": "The label for category Disputes and evidence in sidebar safetySidebar"
-  },
-  "sidebar.safetySidebar.category.Privacy and identity": {
-    "message": "Privacidad e identidad",
-    "description": "The label for category Privacy and identity in sidebar safetySidebar"
-  },
   "sidebar.safetySidebar.category.Professional trader operations": {
     "message": "Operaciones profesionales",
     "description": "The label for category Professional trader operations in sidebar safetySidebar"
-  },
-  "sidebar.safetySidebar.category.About this portal": {
-    "message": "Sobre este portal",
-    "description": "The label for category About this portal in sidebar safetySidebar"
   }
 }

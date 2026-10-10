@@ -12,3 +12,12 @@ Este portal es **educativo**. El escrow de criptoactivos no demuestra la titular
 Explora las guías en el menú lateral. Estas recomendaciones no sustituyen las reglas del método de pago, la legislación aplicable ni el análisis de una disputa concreta.
 
 **Estado:** contenido educativo inicial; no constituye una garantía técnica implementada en Sails Protocol.
+
+## Explora las guías
+
+- [Fraudes y phishing](./fraudes/pressao-e-phishing.md)
+- [Pagos](./pagamentos/terceiros.md)
+- [Escrow y operaciones](./negociacoes/limites-do-escrow.md)
+- [Disputas y pruebas](./disputas/preservar-evidencias.md)
+- [Identidad y privacidad](./identidade/conta-comprometida.md)
+- [Operaciones profesionales](./operacoes/checklist-antes-de-negociar.md)
