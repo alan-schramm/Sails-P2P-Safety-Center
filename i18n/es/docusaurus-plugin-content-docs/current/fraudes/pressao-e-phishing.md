@@ -36,3 +36,7 @@ Conocer detalles de una operación no demuestra que alguien sea personal de sopo
 **Fuentes de esta revisión:** [Requisitos operativos P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
 
 **Revisión editorial:** 2026-10-10.
+
+## Continúa leyendo
+
+- [Cómo interpretar alertas de IA](../operacoes/limites-dos-alertas-de-ia.md)

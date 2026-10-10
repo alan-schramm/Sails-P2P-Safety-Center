@@ -21,3 +21,7 @@ This guide is not an emergency response service. Recovery, reversal, dispute win
 **Claim status: general educational guidance; not a claim of an implemented safeguard.**
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+## Continue reading
+
+- [Operations with an unknown outcome](../operacoes/resultado-desconhecido.md)

@@ -36,3 +36,7 @@ Knowing details of a trade does not prove that someone is support staff or autho
 **Sources for this revision:** [P2P operational requirements](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
 
 **Editorial review:** 2026-10-10.
+
+## Continue reading
+
+- [Understanding AI warnings](../operacoes/limites-dos-alertas-de-ia.md)
