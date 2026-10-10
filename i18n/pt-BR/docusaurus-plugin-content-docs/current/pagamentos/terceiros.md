@@ -22,3 +22,7 @@ title: Pagamento envolvendo terceiros
 Contas conjuntas, empresariais e pagamentos por terceiros podem ter usos legítimos. A divergência exige verificação, não uma acusação automática de fraude.
 
 **Status:** orientação geral; não afirma que o protocolo verifica a titularidade bancária.
+
+## Guias relacionados
+- [Contas de terceiros e dados comprometidos](/guides/pagamentos/conta-mula)
+- [Conciliação de pagamentos](/guides/operacoes/conciliacao-de-pagamentos)
