@@ -5,6 +5,17 @@ title: Pagamento parcial ou com valor divergente
 
 **Cenário:** o valor recebido é menor ou maior que o combinado, ou a contraparte afirma que completou o pagamento em várias transferências. A divergência precisa ser esclarecida antes de tratar a negociação como concluída.
 
+## Do combinado à diferença confirmada
+
+<SafetyFlow>
+
+1. **Combinado** Identifique valor, moeda e tratamento das taxas acordadas.
+2. **Créditos** Confira cada crédito separado no banco ou provedor.
+3. **Diferença** Some uma vez cada crédito confirmado e compare com o combinado.
+4. **Resolução** Registre a divergência e use o processo oficial disponível. O total correto, sozinho, não confirma as demais condições.
+
+</SafetyFlow>
+
 ## Sinais de alerta
 
 - Pedido para liberar o valor total com base em um pagamento parcial.

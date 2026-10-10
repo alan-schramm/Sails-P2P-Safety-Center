@@ -1,0 +1,16 @@
+.flow { margin: 1.5rem 0 2rem; }
+.flow > ol { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; padding: 0; margin: 0; list-style: none; counter-reset: flow; }
+.flow > ol > li { position: relative; counter-increment: flow; margin: 0; padding: 1rem; border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; background: var(--ifm-background-surface-color); font-size: .9rem; line-height: 1.55; overflow-wrap: anywhere; }
+.flow > ol > li::before { content: counter(flow, decimal-leading-zero); display: block; margin-bottom: .6rem; color: var(--ifm-color-primary); font-size: .8rem; font-weight: 700; }
+.flow > ol > li:not(:last-child)::after { content: ''; position: absolute; right: -1rem; top: 50%; width: .45rem; height: .45rem; border-top: 1.5px solid var(--ifm-color-emphasis-600); border-right: 1.5px solid var(--ifm-color-emphasis-600); transform: rotate(45deg); }
+.flow strong { display: block; margin-bottom: .35rem; color: var(--ifm-heading-color); }
+.flow p { margin: 0; }
+@media (max-width: 996px) {
+  .flow > ol { grid-template-columns: minmax(0, 1fr); }
+  .flow > ol > li:not(:last-child)::after { right: auto; left: 50%; top: auto; bottom: -1rem; transform: rotate(135deg); }
+}
+@media print {
+  .flow > ol { grid-template-columns: minmax(0, 1fr); }
+  .flow > ol > li { break-inside: avoid; }
+  .flow > ol > li::after { display: none; }
+}

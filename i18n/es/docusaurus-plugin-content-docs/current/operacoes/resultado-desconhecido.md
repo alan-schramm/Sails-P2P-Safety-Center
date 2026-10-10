@@ -5,6 +5,17 @@ title: Operaciones con resultado desconocido
 
 **Situación:** la aplicación pierde conexión o muestra un error después de confirmar una operación. Eso no permite saber, por sí solo, si el pago fue enviado, confirmado o rechazado.
 
+## Secuencia antes de volver a intentarlo
+
+<SafetyFlow>
+
+1. **Pausa** Un mensaje de error no demuestra que la operación falló.
+2. **Registra** Conserva la hora, la referencia y el mensaje de error.
+3. **Comprueba** Consulta al proveedor original y compara el estado de la operación.
+4. **Aclara** Si el resultado sigue siendo incierto, usa el soporte oficial antes de otra transferencia.
+
+</SafetyFlow>
+
 ## Antes de reintentar
 
 1. Registra hora, identificador de la operación y mensaje de error. No compartas credenciales.

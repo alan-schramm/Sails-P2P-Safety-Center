@@ -5,6 +5,17 @@ title: Cómo conservar pruebas
 
 **Situación:** se realizó un pago, pero la otra parte cuestiona la recepción o el cumplimiento de las condiciones acordadas.
 
+## Pruebas: conserva primero, comparte con cuidado
+
+<SafetyFlow>
+
+1. **Conserva** Guarda comprobantes originales, identificadores e instrucciones acordadas.
+2. **Organiza** Registra fechas y cambios posteriores sin modificar los originales.
+3. **Protege** Prepara únicamente la información necesaria para el caso.
+4. **Comparte** Usa canales autorizados de disputa; no publiques registros sensibles.
+
+</SafetyFlow>
+
 1. Conserva el comprobante original, el identificador de la transacción, la fecha y la hora.
 2. Registra las instrucciones de pago acordadas y cualquier modificación posterior.
 3. Usa el canal oficial de disputas de la aplicación o del operador correspondiente.
