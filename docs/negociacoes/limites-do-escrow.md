@@ -1,18 +1,17 @@
 ---
-title: O que o escrow protege e o que não protege
+title: What escrow does and does not protect
 ---
+# What escrow does and does not protect
 
-# O que o escrow protege e o que não protege
+Escrow may establish conditions for moving cryptoassets during a trade. **It does not control the buyer's or seller's bank.**
 
-O escrow pode estabelecer condições para movimentação de criptoativos em uma negociação. **Ele não controla o banco do comprador nem o banco do vendedor.**
+## Do not assume escrow means
+- Verification of the actual owner of a bank account.
+- Automatic confirmation of final bank-transfer settlement.
+- Elimination of fraud, coercion, chargebacks, or disputes.
+- Guaranteed recovery of money sent to third parties.
 
-## Não presuma que escrow significa
-- Verificação da titularidade real de uma conta bancária.
-- Confirmação automática de liquidação definitiva de uma transferência.
-- Impossibilidade de fraude, coação, chargeback ou contestação.
-- Recuperação garantida de dinheiro enviado a terceiros.
+## Before trading
+Confirm trade terms and payment instructions through authorized channels. Stop when details conflict and preserve evidence while protecting privacy.
 
-## Antes de negociar
-Confirme os termos da negociação e as instruções de pagamento nos canais autorizados. Interrompa a operação diante de divergências e preserve evidências com cuidado à privacidade.
-
-**Status:** explicação conceitual. Qualquer afirmação específica sobre mecanismos do Sails Protocol exige referência a implementação e evidências verificadas.
+**Status:** conceptual explanation. Any specific claim about Sails Protocol mechanisms requires verified implementation evidence.
