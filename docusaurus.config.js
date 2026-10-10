@@ -8,11 +8,6 @@ const config = {
   organizationName: 'sails-protocol',
   projectName: 'Sails-P2P-Safety-Center',
   trailingSlash: false,
-  metadata: [
-    {name: 'robots', content: 'index, follow, max-snippet:-1'},
-    {name: 'author', content: 'Sails Protocol'},
-    {name: 'description', content: 'Open educational safety guides for peer-to-peer trading, payments, escrow, identity, and disputes.'}
-  ],
   onBrokenLinks: 'throw',
   i18n: {defaultLocale: 'en', locales: ['en', 'pt-BR', 'es'], localeConfigs: {en: {label: 'English'}, 'pt-BR': {label: 'Português'}, es: {label: 'Español'}}},
   presets: [['classic', {
