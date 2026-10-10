@@ -14,5 +14,5 @@ title: Cómo conservar pruebas
 **Estado:** orientación general. Los procedimientos, la admisibilidad y las garantías dependen de las políticas vigentes y verificadas.
 
 ## Guías relacionadas
-- [Gestión de pruebas para operadores](/guides/operacoes/gestao-de-evidencias)
-- [Respuesta a incidentes](/guides/operacoes/resposta-a-incidentes)
+- [Gestión de pruebas para operadores](../operacoes/gestao-de-evidencias.md)
+- [Respuesta a incidentes](../operacoes/resposta-a-incidentes.md)
