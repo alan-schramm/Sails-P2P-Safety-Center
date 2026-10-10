@@ -5,6 +5,17 @@ title: Partial payments and amount mismatches
 
 **Scenario:** the received amount is lower or higher than agreed, or the counterparty says they completed payment through several transfers. Resolve the mismatch before treating the trade as complete.
 
+## From the agreement to the verified difference
+
+<SafetyFlow>
+
+1. **Agreement** Identify the agreed amount, currency and fee treatment.
+2. **Credits** Verify each separate credit with your bank or provider.
+3. **Difference** Add confirmed credits once and compare with the agreement.
+4. **Resolution** Record any mismatch and use the available official process. A matching total alone does not verify every other condition.
+
+</SafetyFlow>
+
 ## Warning signs
 
 - Requests to release the full asset amount after a partial payment.

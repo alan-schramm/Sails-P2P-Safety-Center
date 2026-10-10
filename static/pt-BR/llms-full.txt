@@ -45,6 +45,15 @@ Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n
 
 **Cenário:** houve pagamento, mas a outra parte contesta recebimento ou cumprimento das condições.
 
+## Evidências: preserve primeiro, compartilhe com cuidado
+
+
+1. **Preserve** Guarde comprovantes originais, identificadores e instruções combinadas.
+2. **Organize** Registre datas e alterações posteriores sem modificar os originais.
+3. **Proteja** Prepare apenas as informações necessárias ao caso.
+4. **Compartilhe** Use canais autorizados de disputa; não publique registros sensíveis.
+
+
 1. Preserve o comprovante original, identificador da transação, data e horário.
 2. Registre as instruções de pagamento acordadas e qualquer alteração posterior.
 3. Use o canal oficial de disputa da aplicação ou operador envolvido.
@@ -56,6 +65,60 @@ Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n
 ## Guias relacionados
 - [Gestão de evidências para operadores](../operacoes/gestao-de-evidencias.md)
 - [Resposta a incidentes](../operacoes/resposta-a-incidentes.md)
+
+## Continue a leitura
+
+- [Privacidade ao compartilhar evidências](./privacidade-das-evidencias.md)
+
+---
+
+## Privacidade ao compartilhar evidências
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/pt-BR/guides/disputas/privacidade-das-evidencias
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/pt-BR/docusaurus-plugin-content-docs/current/disputas/privacidade-das-evidencias.md
+
+# Privacidade ao compartilhar evidências
+
+**Cenário:** você precisa apresentar mensagens ou comprovantes numa disputa, mas os arquivos também contêm dados pessoais, informações bancárias ou detalhes de outras negociações.
+
+## Antes de enviar
+
+Confirme quem solicita o material, por qual canal e para qual finalidade. Uma mensagem que conhece detalhes da negociação não prova que veio do suporte. Abra o atendimento por um caminho já conhecido e confira o pedido no próprio serviço.
+
+Desconfie de solicitações para enviar extrato completo, documento de identidade ou exportação de todas as conversas sem explicação da necessidade. Nunca envie frase de recuperação, chave privada, senha ou código de autenticação como evidência.
+
+## Preserve o original e prepare uma cópia
+
+1. Guarde o arquivo original, sem recortar, sobrescrever ou alterar seu conteúdo, em local com acesso restrito.
+2. Identifique qual negociação e qual divergência o documento ajuda a esclarecer.
+3. Prepare uma cópia para compartilhamento, quando aceita pelo destinatário autorizado. Oculte saldos, transações sem relação com o caso e dados pessoais desnecessários.
+4. Não oculte informações relevantes para verificar o pagamento ou entender a sequência. Se houver dúvida, pergunte ao atendimento quais campos precisam estar visíveis e qual canal seguro está disponível.
+5. Identifique a cópia como parcialmente ocultada e registre quando, para quem e por qual canal foi enviada.
+
+**Exemplo fictício:** um extrato mostra o pagamento discutido e outras compras. Uma cópia pode ocultar as compras sem relação com o caso, mantendo os campos necessários à verificação da transação. O original fica preservado.
+
+## Confira a ocultação
+
+Uma caixa desenhada sobre texto em um PDF ou documento pode deixar o conteúdo selecionável ou recuperável. Use uma função apropriada de remoção de dados na cópia e confira o arquivo exportado. Revise também nome do arquivo, comentários, páginas extras e informações de localização que possam acompanhar imagens.
+
+Evite links públicos ou pastas abertas. Restrinja destinatários e permissões quando o serviço oferecer esses controles. Não envie evidências a grupos, redes sociais ou ferramentas de IA sem necessidade e sem conhecer como os dados serão tratados.
+
+## Retenção e limites
+
+Não apague os originais enquanto forem necessários ao procedimento ou à preservação aplicável. Depois, siga as regras pertinentes de retenção e acesso; este guia não estabelece um prazo universal. Pergunte ao serviço quem pode acessar os arquivos e quais políticas de armazenamento e exclusão se aplicam.
+
+**Status:** orientação educativa geral; não garante admissibilidade, confidencialidade absoluta, criptografia, prazo de exclusão ou armazenamento de evidências implementado no Sails.
+
+## Guias relacionados
+
+- [Como preservar evidências](./preservar-evidencias.md)
+- [Gestão de evidências para operadores](../operacoes/gestao-de-evidencias.md)
+- [Falso suporte e pressão em disputas](../fraudes/falsa-arbitragem.md)
+
+**Fontes:** [Inventário de retenção do Sails](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/DATA_RETENTION_INVENTORY.md) — decisões variam por tipo de dado e não definem prazo universal; [CERT.br: privacidade](https://cartilha.cert.br/fasciculos/privacidade/fasciculo-privacidade.pdf).
+
+[Adobe: remoção de conteúdo sensível e dados ocultos](https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/redact.html).
+
+**Revisão editorial:** 2026-10-10.
 
 ---
 
@@ -78,12 +141,26 @@ Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n
 3. Não libere criptoativos apenas com base em imagens ou mensagens.
 4. Em caso de divergência, interrompa a operação e preserve os registros.
 
+## Quando o mesmo comprovante aparece novamente
+
+Um comprovante de uma negociação anterior pode ser apresentado como se fosse um novo pagamento. Compare o identificador da transação com seus registros, além do valor, horário e destinatário. Dois pagamentos do mesmo valor não são necessariamente a mesma transação.
+
+Se houver coincidência, preserve os arquivos originais e a sequência de mensagens. Não conclua fraude apenas pela aparência das imagens: confira a movimentação diretamente no banco e encaminhe a divergência pelo processo de disputa disponível.
+
+## Integridade do arquivo não confirma o pagamento
+
+Um hash permite comparar o conteúdo exato de arquivos. Ele não demonstra que o documento é autêntico ou que o dinheiro foi recebido. Uma imagem recortada ou reenviada em outro formato pode ter um hash diferente mesmo mostrando o mesmo comprovante.
+
 ## Limites
 Comprovantes podem ser falsificados. O escrow não garante a liquidação bancária nem impede contestações. Não publique dados bancários completos.
 
 **Status:** orientação educativa geral; não representa funcionalidade automática implementada ou garantia de recuperação.
 
 **Fonte:** [Catálogo de ameaças do Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+**Fontes desta revisão:** [Requisitos operacionais P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md); [Banco Central: golpes envolvendo PIX](https://www.bcb.gov.br/meubc/faqs/p/vitima-fez-um-pix-e-caiu-em-um-golpe).
+
+**Revisão editorial:** 2026-10-10.
 
 ---
 
@@ -135,11 +212,81 @@ Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n
 3. Interrompa a negociação se houver pressão ou divergência de instruções.
 4. Preserve registros relevantes e procure o suporte oficial da aplicação utilizada.
 
+## Mudança de canal e de dados de pagamento
+
+O uso de outro canal, por si só, não comprova fraude. O risco aumenta quando a mudança vem acompanhada de uma nova conta, chave PIX, destinatário ou pedido para ignorar as instruções registradas na negociação.
+
+1. Compare a nova instrução com os termos já registrados.
+2. Não faça um novo pagamento para “corrigir” o anterior apenas por solicitação em mensagem.
+3. Confirme a divergência pelo canal autenticado da aplicação e, quando necessário, pelo atendimento oficial do banco.
+4. Preserve as duas versões das instruções e os horários das mensagens para análise.
+
+Uma pessoa conhecer detalhes da negociação não prova que ela seja suporte ou que tenha autorização para alterar o destinatário.
+
 **Status:** orientação geral de prevenção, não detecção automática implementada.
 
 ## Guias relacionados
 - [Falso suporte e pressão em disputas](../fraudes/falsa-arbitragem.md)
 - [Resposta a incidentes](../operacoes/resposta-a-incidentes.md)
+
+**Fontes desta revisão:** [Requisitos operacionais P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
+
+**Revisão editorial:** 2026-10-10.
+
+## Continue a leitura
+
+- [Como interpretar alertas de IA](../operacoes/limites-dos-alertas-de-ia.md)
+
+---
+
+## Pressão por avaliação negativa
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/pt-BR/guides/fraudes/pressao-por-avaliacao
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/pt-BR/docusaurus-plugin-content-docs/current/fraudes/pressao-por-avaliacao.md
+
+# Pressão por avaliação negativa
+
+**Cenário:** a contraparte ameaça prejudicar sua reputação se você não liberar ativos, cancelar a operação ou aceitar condições diferentes das registradas.
+
+## Reclamação ou coerção?
+
+Uma pessoa pode discordar do atendimento ou registrar uma avaliação crítica. O sinal de coerção é condicionar a avaliação a uma ação que contorna as verificações ou muda os termos: “libere agora ou vou acabar com seu perfil”. Uma ameaça não demonstra que o pagamento foi recebido ou que a condição pedida é legítima.
+
+## Sinais de alerta
+
+- Exigência de avaliação positiva antes de concluir as verificações.
+- Ameaça de avaliações coordenadas por outras contas.
+- Pedido de cancelamento com motivo falso para evitar registro da divergência.
+- Promessa de apagar uma avaliação em troca de dinheiro, liberação ou silêncio.
+
+## Como agir
+
+1. Continue verificando pagamento e condições pelos mesmos critérios, independentemente da ameaça.
+2. Responda de forma objetiva, registrando a divergência e o que ainda precisa ser confirmado. Evite discussão ou ameaça de retaliação.
+3. Preserve mensagens anteriores e posteriores ao pedido, com horários e identificador da negociação. Um recorte isolado pode omitir o contexto.
+4. Use o canal oficial para relatar a pressão e perguntar sobre revisão de avaliação ou disputa, quando esses recursos existirem.
+5. Não encerre ou cancele com uma justificativa que você sabe ser falsa apenas para satisfazer a contraparte.
+
+**Exemplo fictício:** depois de enviar uma imagem de comprovante, alguém exige liberação imediata e ameaça uma avaliação negativa. Confira o crédito no seu banco e registre a pressão; a ameaça não substitui a confirmação do pagamento.
+
+## Ao registrar sua própria avaliação
+
+Descreva fatos observáveis e preserve a diferença entre suspeita e confirmação. Não publique documentos, números de conta, telefones ou dados pessoais como forma de exposição. Não combine avaliações retaliatórias nem prometa vantagens para obter uma avaliação positiva.
+
+## Limites
+
+Este guia não garante remoção de avaliação, punição da outra parte ou proteção do seu perfil. A aplicação pode ter regras e recursos diferentes. Reputação é um sinal de histórico, não prova da segurança de um pagamento específico.
+
+**Status:** orientação educativa geral; não afirma moderação automática ou mecanismo de recurso implementado no Sails.
+
+## Guias relacionados
+
+- [Manipulação de reputação e golpes de saída](./reputation-farming.md)
+- [Falso suporte e pressão em disputas](./falsa-arbitragem.md)
+- [Como preservar evidências](../disputas/preservar-evidencias.md)
+
+**Fonte:** [Requisitos operacionais P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md) — relatos e requisitos sobre cancelamentos de má-fé e avaliações punitivas; não estabelece uma política pública de moderação.
+
+**Revisão editorial:** 2026-10-10.
 
 ---
 
@@ -168,6 +315,10 @@ Reputação não garante identidade nem honestidade futura. Análise de grafos S
 **Status:** orientação educativa geral; não representa funcionalidade automática implementada ou garantia de recuperação.
 
 **Fonte:** [Catálogo de ameaças do Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+## Continue a leitura
+
+- [Pressão por avaliação negativa](./pressao-por-avaliacao.md)
 
 ---
 
@@ -214,6 +365,43 @@ Explore os guias no menu lateral. As orientações não substituem as regras do 
 - [Disputas e evidências](./disputas/preservar-evidencias.md)
 - [Identidade e privacidade](./identidade/conta-comprometida.md)
 - [Operações profissionais](./operacoes/checklist-antes-de-negociar.md)
+
+---
+
+## Confira ativo, rede, endereço e taxas
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/pt-BR/guides/negociacoes/conferir-envio
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/pt-BR/docusaurus-plugin-content-docs/current/negociacoes/conferir-envio.md
+
+# Confira ativo, rede, endereço e taxas
+
+**Cenário:** você está prestes a enviar criptoativos. Um nome de ativo ou endereço aparentemente correto não basta para confirmar que o destinatário aceita o envio na rede escolhida.
+
+## Checklist antes de confirmar
+
+1. Confira o ativo exato, a rede de envio e a rede aceita no destino, usando as instruções autenticadas da negociação e do serviço recebedor.
+2. Compare o endereço completo exibido na confirmação. Não confie apenas nos primeiros e últimos caracteres ou numa instrução alterada por mensagem.
+3. Se o destino exigir memo, tag ou outra referência, confira esse campo nas instruções oficiais. Não invente um valor nem suponha que todo destino exige o mesmo campo.
+4. Revise valor enviado, taxas e valor esperado no destino. Confira se há saldo suficiente para as taxas exigidas pela carteira.
+5. Consulte limites e requisitos de confirmação do serviço. Não adote um número universal de confirmações para todas as redes e operações.
+
+## Depois do envio
+
+Guarde a referência da transação e confira seu estado na rede correspondente. A confirmação na rede e o crédito exibido por um serviço são verificações diferentes. Se o destino não mostrar o valor, procure esclarecimento antes de repetir o envio.
+
+## Se encontrar um erro
+
+Interrompa novos envios e consulte o suporte oficial da carteira ou serviço. Não forneça frase de recuperação a supostos agentes de recuperação. A possibilidade de corrigir um erro depende da rede, do destino e de quem controla as chaves; não existe garantia de recuperação.
+
+**Status:** checklist educativo geral, sem lista de redes suportadas pelo Sails ou garantia de validação automática. Regras de taxas e confirmação devem ser verificadas na carteira e no provedor utilizados.
+
+## Guias relacionados
+
+- [Operação com resultado desconhecido](../operacoes/resultado-desconhecido.md)
+- [Limites do escrow](./limites-do-escrow.md)
+
+**Fontes:** [MetaMask: envio para rede ou endereço incorreto](https://support.metamask.io/manage-crypto/move-crypto/send/funds-sent-on-wrong-network) — referência específica dessa carteira; [Bitcoin.org: cuidados e confirmações](https://bitcoin.org/en/you-need-to-know) — referência específica do Bitcoin.
+
+**Revisão editorial:** 2026-10-10.
 
 ---
 
@@ -291,6 +479,10 @@ Este checklist não comprova titularidade bancária, não impede estornos e não
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
 
+## Continue a leitura
+
+- [Confira ativo, rede, endereço e taxas](../negociacoes/conferir-envio.md)
+
 ---
 
 ## Conciliação de pagamentos antes da liberação
@@ -311,12 +503,30 @@ Um operador P2P profissional precisa distinguir notificações ou comprovantes d
 ## Pare e confira
 Não libere criptoativos apenas porque a contraparte enviou um comprovante ou afirmou que a transferência é instantânea.
 
+## Não confunda envio com recebimento
+
+“Agendado”, “enviado” e “em análise” descrevem etapas diferentes. Confira o significado do estado no seu próprio banco ou provedor; a mensagem da contraparte não substitui essa verificação. Se houver bloqueio, pendência ou divergência, esclareça a situação pelo atendimento oficial antes de liberar os ativos.
+
+## Uma conciliação por negociação
+
+Em operações simultâneas, registre separadamente o identificador da negociação, o valor esperado e a referência do pagamento recebido. Marque qual pagamento foi conferido em cada operação. Não use o mesmo crédito para justificar duas liberações.
+
+**Exemplo fictício:** duas negociações esperam R$ 500 cada. Um único crédito de R$ 500 confirma apenas um recebimento; compare os identificadores antes de associá-lo a uma das negociações.
+
 ## Limites
 O status bancário e as possibilidades de reversão dependem do meio de pagamento e da jurisdição. Nenhum checklist garante irreversibilidade.
 
 **Status: orientação educativa geral; não é afirmação de proteção implementada.**
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+**Fontes desta revisão:** [Requisitos operacionais P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
+
+**Revisão editorial:** 2026-10-10.
+
+## Continue a leitura
+
+- [Pagamento parcial ou com valor divergente](../pagamentos/valor-divergente.md)
 
 ---
 
@@ -347,6 +557,50 @@ A validade das evidências depende da aplicação e da jurisdição. Uma anális
 
 ---
 
+## Como interpretar alertas de IA
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/pt-BR/guides/operacoes/limites-dos-alertas-de-ia
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/pt-BR/docusaurus-plugin-content-docs/current/operacoes/limites-dos-alertas-de-ia.md
+
+# Como interpretar alertas de IA
+
+**Cenário:** uma aplicação mostra uma recomendação ou alerta produzido por IA durante uma negociação. Use a indicação para conferir os fatos, sem tratá-la como autorização de pagamento ou prova de fraude.
+
+## O que um alerta significa
+
+Um alerta pode indicar um padrão suspeito e também pode estar errado. A ausência de alerta não demonstra segurança: o recurso pode estar desativado, indisponível ou não reconhecer o caso. Confira os dados da negociação, o pagamento e a identidade do canal independentemente da recomendação.
+
+## Como usar a recomendação
+
+1. Leia qual informação foi analisada e o que a recomendação realmente afirma.
+2. Verifique os fatos por fontes independentes, como seu banco e as instruções autenticadas da negociação.
+3. Revise valores, destinatários e condições de qualquer rascunho antes de autorizar uma ação.
+4. Preserve a recomendação e o contexto se forem relevantes a uma disputa, sem expor informações pessoais desnecessárias.
+
+Não envie senhas, chaves privadas, frases de recuperação ou códigos de autenticação a uma ferramenta de IA.
+
+## Contexto do Sails
+
+A documentação consultada descreve rascunhos e recomendações revisados pelo usuário; alertas de engenharia social dependem de ativação pelo operador. Isso não confirma disponibilidade na aplicação que você utiliza. Verifique os recursos efetivamente habilitados.
+
+Inferência no node não significa necessariamente execução no seu celular ou computador. Antes de enviar dados, confira quem opera o serviço e suas políticas de acesso e retenção. Os recursos de leitura para IA deste portal também não verificam pagamentos nem decidem disputas.
+
+## Limites
+
+Uma recomendação não substitui as verificações nem garante resultado. Este artigo não anuncia agente autônomo, detecção de todos os golpes ou liberação automática.
+
+**Status:** orientação educativa com contexto documental condicionado à configuração; não certificação de proteção implementada em cada implantação.
+
+## Guias relacionados
+
+- [Pressão e phishing](../fraudes/pressao-e-phishing.md)
+- [Privacidade das evidências](../disputas/privacidade-das-evidencias.md)
+
+**Fonte:** [Documentação de agentes e limites](https://github.com/sails-protocol/sails-protocol-docs/blob/1d34c3d37a5b1a791364d0248afdc8e9ed90bf01/guides/ai-agents.mdx).
+
+**Revisão editorial:** 2026-10-10.
+
+---
+
 ## Resposta a incidentes durante negociações P2P
 Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/pt-BR/guides/operacoes/resposta-a-incidentes
 Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/pt-BR/docusaurus-plugin-content-docs/current/operacoes/resposta-a-incidentes.md
@@ -371,6 +625,60 @@ Este guia não é um serviço de emergência. Recuperação, reversão, prazos e
 **Status: orientação educativa geral; não é afirmação de proteção implementada.**
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+## Continue a leitura
+
+- [Operação com resultado desconhecido](../operacoes/resultado-desconhecido.md)
+
+---
+
+## Operação com resultado desconhecido
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/pt-BR/guides/operacoes/resultado-desconhecido
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/pt-BR/docusaurus-plugin-content-docs/current/operacoes/resultado-desconhecido.md
+
+# Operação com resultado desconhecido
+
+**Cenário:** o aplicativo perde conexão ou mostra um erro depois de você confirmar uma operação. Isso, sozinho, não informa se o pagamento foi enviado, confirmado ou recusado.
+
+## Sequência antes de tentar novamente
+
+
+1. **Pause** Uma mensagem de erro não prova que a operação falhou.
+2. **Registre** Guarde horário, referência e mensagem de erro.
+3. **Confira** Consulte o provedor original e compare o estado da negociação.
+4. **Esclareça** Se o resultado continuar incerto, procure atendimento oficial antes de outro envio.
+
+
+## Antes de tentar novamente
+
+1. Registre horário, identificador da negociação e mensagem de erro. Não compartilhe credenciais.
+2. Consulte o histórico no banco, carteira ou provedor utilizado. Procure a referência da operação original.
+3. Para uma transação em blockchain, confira o identificador na rede correta pelo explorador indicado na carteira ou por outro caminho confiável. Para pagamentos bancários, use seu banco.
+4. Compare o resultado com o estado da negociação. Se houver conflito ou falta de informação, procure o atendimento oficial antes de criar outro envio.
+
+Não encontrar uma transação numa consulta não prova que ela falhou. Pode haver atraso de atualização, rede incorreta ou informação incompleta. “Pendente” também não significa “recusada”.
+
+## O que evitar
+
+Não repita o pagamento para fazer a tela avançar. Não cancele e abra outra negociação supondo que os efeitos da anterior desapareceram. Funções de substituir, acelerar ou cancelar variam por rede e carteira: siga a documentação do serviço, sem improvisar parâmetros técnicos.
+
+**Exemplo fictício:** depois de confirmar um envio, aparece um erro de conexão. Antes de enviar novamente, registre a tentativa e confira o histórico; um segundo envio pode gerar um segundo pagamento.
+
+## Limites
+
+O prazo e a forma de esclarecimento dependem do provedor. Este guia não promete reversão ou recuperação e não afirma que o Sails reconcilia automaticamente resultados desconhecidos. Compartilhe referências apenas pelos canais necessários ao caso.
+
+**Status:** orientação educativa geral. A investigação técnica citada descreve evidências e limitações; não prova recuperação em produção.
+
+## Guias relacionados
+
+- [Resposta a incidentes](./resposta-a-incidentes.md)
+- [Conciliação de pagamentos](./conciliacao-de-pagamentos.md)
+- [Conferência antes do envio](../negociacoes/conferir-envio.md)
+
+**Fonte:** [Investigação sobre resultado desconhecido e repetição de operações](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/WDK_UNKNOWN_OUTCOME_RETRY_SAFETY.md).
+
+**Revisão editorial:** 2026-10-10.
 
 ---
 
@@ -475,3 +783,64 @@ Contas conjuntas, empresariais e pagamentos por terceiros podem ter usos legíti
 ## Guias relacionados
 - [Contas de terceiros e dados comprometidos](../pagamentos/conta-mula.md)
 - [Conciliação de pagamentos](../operacoes/conciliacao-de-pagamentos.md)
+
+---
+
+## Pagamento parcial ou com valor divergente
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/pt-BR/guides/pagamentos/valor-divergente
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/i18n/pt-BR/docusaurus-plugin-content-docs/current/pagamentos/valor-divergente.md
+
+# Pagamento parcial ou com valor divergente
+
+**Cenário:** o valor recebido é menor ou maior que o combinado, ou a contraparte afirma que completou o pagamento em várias transferências. A divergência precisa ser esclarecida antes de tratar a negociação como concluída.
+
+## Do combinado à diferença confirmada
+
+
+1. **Combinado** Identifique valor, moeda e tratamento das taxas acordadas.
+2. **Créditos** Confira cada crédito separado no banco ou provedor.
+3. **Diferença** Some uma vez cada crédito confirmado e compare com o combinado.
+4. **Resolução** Registre a divergência e use o processo oficial disponível. O total correto, sozinho, não confirma as demais condições.
+
+
+## Sinais de alerta
+
+- Pedido para liberar o valor total com base em um pagamento parcial.
+- Comprovantes que não correspondem a créditos distintos no seu banco.
+- Pagamento excedente seguido de pedido de devolução para outra conta.
+- Pressão para mudar o preço, o destinatário ou as condições depois do envio.
+
+Uma diferença de valor pode ser um erro. Ela exige verificação, não uma acusação automática de fraude.
+
+## O que conferir
+
+1. Consulte os termos registrados: valor, moeda, destinatário e eventual regra de taxas.
+2. Verifique cada crédito diretamente no seu banco ou provedor, sem depender apenas dos comprovantes.
+3. Compare identificador, valor e horário. Se houver vários pagamentos, registre cada um e não conte o mesmo crédito duas vezes.
+4. Anote o total confirmado e a diferença. Não assuma que uma taxa explica a divergência sem conferir o que foi acordado.
+
+**Exemplo fictício:** a negociação prevê R$ 1.000 e você identifica dois créditos distintos de R$ 400 e R$ 350. O total verificado é R$ 750; uma imagem de outro comprovante não confirma os R$ 250 restantes.
+
+## Como encaminhar a diferença
+
+Registre a divergência no canal autenticado da negociação. Preserve os termos originais e as respostas, sem editar o acordo para fazer o pagamento parecer correto. Se não houver esclarecimento, use o atendimento ou processo de disputa disponível na aplicação.
+
+Não improvise uma liberação proporcional de criptoativos: confirme se o fluxo utilizado permite essa solução e quais autorizações ela exige. Não envie um novo pagamento para uma conta indicada por mensagem como condição para resolver o anterior.
+
+Se houver necessidade de devolver um PIX, consulte seu banco sobre a função de devolução vinculada à transação original. O Banco Central orienta usá-la para devolver um PIX recebido por engano, em vez de criar uma nova transferência para uma chave enviada em mensagem.
+
+## Limites e privacidade
+
+Este guia não define prazo, direito de cancelamento, obrigação de devolução ou resultado de disputa. As regras dependem do método, da aplicação e da jurisdição. Compartilhe comprovantes completos apenas com destinatários autorizados, quando necessários ao atendimento.
+
+**Status:** orientação educativa geral; não anuncia conciliação automática, devolução garantida ou recurso de liberação parcial implementado.
+
+## Guias relacionados
+
+- [Conciliação de pagamentos](../operacoes/conciliacao-de-pagamentos.md)
+- [Destinatário diferente no banco](./destinatario-divergente.md)
+- [Como preservar evidências](../disputas/preservar-evidencias.md)
+
+**Fontes:** [Requisitos operacionais P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md) — contexto de requisitos, não prova de implementação; [Banco Central: devolução de dinheiro com PIX](https://www.bcb.gov.br/meubc/faqs/p/devolucao-de-dinheiro-com-pix).
+
+**Revisão editorial:** 2026-10-10.

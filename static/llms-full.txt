@@ -83,6 +83,15 @@ Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs
 
 **Scenario:** a payment was made, but the other party disputes receipt or fulfillment of agreed conditions.
 
+## Evidence: preserve first, share carefully
+
+
+1. **Preserve** Keep original receipts, identifiers and agreed instructions.
+2. **Organize** Record dates and subsequent changes without altering originals.
+3. **Protect** Prepare only the information necessary for the case.
+4. **Share** Use authorized dispute channels; do not publish sensitive records.
+
+
 1. Keep the original receipt, transaction identifier, date, and time.
 2. Record agreed payment instructions and any subsequent changes.
 3. Use the official dispute channel of the relevant application or operator.
@@ -94,6 +103,60 @@ Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs
 ## Related guides
 - [Evidence handling for professional traders](../operacoes/gestao-de-evidencias.md)
 - [Incident response](../operacoes/resposta-a-incidentes.md)
+
+## Continue reading
+
+- [Privacy when sharing dispute evidence](./privacidade-das-evidencias.md)
+
+---
+
+## Privacy when sharing dispute evidence
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/disputas/privacidade-das-evidencias
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/disputas/privacidade-das-evidencias.md
+
+# Privacy when sharing dispute evidence
+
+**Scenario:** you need to submit messages or receipts in a dispute, but the files also contain personal details, bank information or unrelated trades.
+
+## Before sending
+
+Verify who is requesting the material, through which channel and for what purpose. Knowing trade details does not prove that a message came from support. Open support through a known entry point and verify the request in the service itself.
+
+Question requests for full account statements, identity documents or complete chat exports without an explanation of need. Never submit a recovery phrase, private key, password or authentication code as evidence.
+
+## Preserve the original and prepare a copy
+
+1. Keep the original file without cropping, overwriting or changing its contents, in a location with restricted access.
+2. Identify which trade and discrepancy the document helps explain.
+3. Prepare a sharing copy where the authorized recipient accepts one. Hide balances, unrelated transactions and unnecessary personal information.
+4. Keep information needed to verify the payment or understand the sequence. If unsure, ask support which fields must remain visible and which secure channel is available.
+5. Label the copy as redacted and record when, to whom and through which channel it was sent.
+
+**Fictional example:** a statement shows the disputed payment alongside unrelated purchases. A copy can hide those purchases while keeping the fields needed to verify the transaction. Preserve the original separately.
+
+## Check the redaction
+
+A box drawn over text in a PDF or document may leave the underlying content selectable or recoverable. Use an appropriate redaction function on the copy and inspect the exported file. Also check the filename, comments, additional pages and location information that may accompany images.
+
+Avoid public links and open folders. Restrict recipients and permissions where the service provides these controls. Do not send evidence to groups, social networks or AI tools without a need and an understanding of how they handle the data.
+
+## Retention and limits
+
+Do not delete originals while they remain necessary for the procedure or applicable preservation requirements. Afterwards, follow relevant retention and access rules; this guide sets no universal period. Ask the service who can access files and which storage and deletion policies apply.
+
+**Claim status:** general educational guidance; no guarantee of admissibility, absolute confidentiality, encryption, deletion deadlines or an implemented Sails evidence-storage service.
+
+## Related guides
+
+- [Preserving evidence](./preservar-evidencias.md)
+- [Evidence management for operators](../operacoes/gestao-de-evidencias.md)
+- [Fake support and arbitration pressure](../fraudes/falsa-arbitragem.md)
+
+**Sources:** [Sails retention inventory](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/DATA_RETENTION_INVENTORY.md) — decisions vary by data type and do not establish a universal period; [CERT.br: privacy](https://cartilha.cert.br/fasciculos/privacidade/fasciculo-privacidade.pdf).
+
+[Adobe: removing sensitive content and hidden data](https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/redact.html).
+
+**Editorial review:** 2026-10-10.
 
 ---
 
@@ -116,12 +179,26 @@ Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs
 3. Do not release escrowed assets based only on a screenshot or a third party's confirmation.
 4. If information conflicts, pause the trade and preserve the original messages and payment references for the authorized dispute process.
 
+## When a receipt appears again
+
+A receipt from an earlier trade may be presented as a new payment. Compare the transaction identifier with your records, as well as the amount, time and recipient. Two payments for the same amount are not necessarily the same transaction.
+
+If details match, preserve the original files and message sequence. Do not conclude fraud from the images alone: check your bank activity independently and report the discrepancy through the available dispute process.
+
+## File integrity does not confirm payment
+
+A hash can compare the exact contents of files. It does not establish that a document is authentic or that money was received. A cropped image or a file converted to another format can have a different hash while showing the same receipt.
+
 ## Limits
 A convincing document can still be forged. A bank receipt does not by itself prove final settlement or that a transfer cannot be contested or reversed. Never publish unredacted financial records.
 
 **Claim status:** general safety guidance. Do not assume Sails Protocol automatically detects forged receipts. The protocol threat registry distinguishes planned PIX/fiat image analysis from implemented, configuration-dependent evidence assessment.
 
 **Protocol references:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+**Sources for this revision:** [P2P operational requirements](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md); [Central Bank of Brazil: PIX scams](https://www.bcb.gov.br/meubc/faqs/p/vitima-fez-um-pix-e-caiu-em-um-golpe).
+
+**Editorial review:** 2026-10-10.
 
 ---
 
@@ -173,11 +250,81 @@ Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs
 3. Stop the trade if you face pressure or conflicting instructions.
 4. Preserve relevant records and contact the application's official support channel.
 
+## Changes to the channel and payment details
+
+Using another channel does not, by itself, establish fraud. Risk increases when the move comes with a new account, PIX key, recipient or request to ignore the instructions recorded in the trade.
+
+1. Compare the new instructions with the recorded terms.
+2. Do not make another payment to “correct” an earlier one solely because a message asks you to.
+3. Verify the discrepancy through the application's authenticated channel and, when needed, official bank support.
+4. Preserve both versions of the instructions and message timestamps for review.
+
+Knowing details of a trade does not prove that someone is support staff or authorized to change the recipient.
+
 **Status:** general prevention guidance, not an implemented automated detection feature.
 
 ## Related guides
 - [Fake support and arbitration pressure](../fraudes/falsa-arbitragem.md)
 - [Incident response](../operacoes/resposta-a-incidentes.md)
+
+**Sources for this revision:** [P2P operational requirements](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
+
+**Editorial review:** 2026-10-10.
+
+## Continue reading
+
+- [Understanding AI warnings](../operacoes/limites-dos-alertas-de-ia.md)
+
+---
+
+## Pressure and threats over trade ratings
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/pressao-por-avaliacao
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/fraudes/pressao-por-avaliacao.md
+
+# Pressure and threats over trade ratings
+
+**Scenario:** a counterparty threatens to damage your reputation unless you release assets, cancel a trade or accept terms different from those recorded.
+
+## A complaint or coercion?
+
+Someone may disagree with service or leave a critical review. Coercion ties the rating to bypassing checks or changing terms: “release now or I will ruin your profile”. A threat does not establish that payment arrived or that the requested action is legitimate.
+
+## Warning signs
+
+- Demands for a positive rating before verification is complete.
+- Threats of coordinated negative ratings from other accounts.
+- Requests to cancel with a false reason to avoid recording a discrepancy.
+- Offers to remove a review in exchange for money, release or silence.
+
+## What to do
+
+1. Apply the same payment and agreement checks regardless of the threat.
+2. Respond factually, recording the discrepancy and what remains unverified. Avoid arguments or threats of retaliation.
+3. Preserve messages before and after the demand, with timestamps and the trade identifier. An isolated crop can omit context.
+4. Report the pressure through official channels and ask about rating review or dispute options, where available.
+5. Do not close or cancel a trade using a reason you know is false merely to satisfy the counterparty.
+
+**Fictional example:** after sending a receipt image, someone demands immediate release and threatens a negative review. Verify the credit with your bank and record the pressure; the threat does not replace payment confirmation.
+
+## Leaving your own review
+
+Describe observable facts and distinguish suspicion from confirmation. Do not publish identity documents, account numbers, phone numbers or personal details to expose someone. Do not coordinate retaliatory reviews or offer benefits for positive ratings.
+
+## Limits
+
+This guide cannot guarantee review removal, sanctions or protection of your profile. Applications have different rules and tools. Reputation reflects history; it does not prove the safety of a specific payment.
+
+**Claim status:** general educational guidance; not a claim of automated moderation or an implemented Sails appeal mechanism.
+
+## Related guides
+
+- [Reputation manipulation and exit scams](./reputation-farming.md)
+- [Fake support and arbitration pressure](./falsa-arbitragem.md)
+- [Preserving evidence](../disputas/preservar-evidencias.md)
+
+**Source:** [P2P operational requirements](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md) — reports and requirements concerning bad-faith cancellations and punitive ratings, not a public moderation policy.
+
+**Editorial review:** 2026-10-10.
 
 ---
 
@@ -206,6 +353,10 @@ Reputation is a risk signal, not an identity guarantee. Colluding accounts may m
 **Claim status:** general safety guidance. The protocol's anti-Sybil graph analysis, time decay, and counterparty-diversity scoring are described as planned, not universally deployed controls.
 
 **Protocol references:** [Sybil mitigation strategy](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/security/SYBIL_MITIGATION.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+## Continue reading
+
+- [Pressure and threats over trade ratings](./pressao-por-avaliacao.md)
 
 ---
 
@@ -252,6 +403,43 @@ Explore the guides in the sidebar. This guidance does not replace payment-method
 - [Disputes and evidence](./disputas/preservar-evidencias.md)
 - [Identity and privacy](./identidade/conta-comprometida.md)
 - [Professional operations](./operacoes/checklist-antes-de-negociar.md)
+
+---
+
+## Check asset, network, address and fees
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/negociacoes/conferir-envio
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/negociacoes/conferir-envio.md
+
+# Check asset, network, address and fees
+
+**Scenario:** you are about to send crypto. An asset name or apparently correct address alone does not establish that the recipient accepts payment on your selected network.
+
+## Before confirming
+
+1. Verify the exact asset, sending network and network accepted at the destination using authenticated trade and receiving-service instructions.
+2. Compare the full address on the confirmation screen. Do not rely only on its beginning and end or on changed instructions in a message.
+3. If the destination requires a memo, tag or other reference, verify it in official instructions. Do not invent a value or assume every destination requires the same field.
+4. Review the amount sent, fees and expected amount at the destination. Check sufficient balance for the wallet's required fees.
+5. Check the service's limits and confirmation requirements. Do not apply one universal confirmation count to all networks and trades.
+
+## After sending
+
+Keep the transaction reference and check its status on the corresponding network. Network confirmation and the credit shown by a service are different checks. If the destination does not show the funds, seek clarification before sending again.
+
+## If something is wrong
+
+Stop new transfers and consult official wallet or service support. Do not give recovery phrases to supposed recovery agents. Correction depends on the network, destination and control of keys; recovery is not guaranteed.
+
+**Claim status:** general educational checklist, not a list of Sails-supported networks or a guarantee of automatic validation. Verify fee and confirmation rules with your actual wallet and provider.
+
+## Related guides
+
+- [Unknown outcomes](../operacoes/resultado-desconhecido.md)
+- [Escrow limits](./limites-do-escrow.md)
+
+**Sources:** [MetaMask: wrong network or address](https://support.metamask.io/manage-crypto/move-crypto/send/funds-sent-on-wrong-network) — wallet-specific reference; [Bitcoin.org: precautions and confirmations](https://bitcoin.org/en/you-need-to-know) — Bitcoin-specific reference.
+
+**Editorial review:** 2026-10-10.
 
 ---
 
@@ -329,6 +517,10 @@ This checklist cannot establish bank-account ownership, prevent reversals, or gu
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
 
+## Continue reading
+
+- [Check asset, network, address and fees](../negociacoes/conferir-envio.md)
+
 ---
 
 ## Payment reconciliation before releasing assets
@@ -349,12 +541,30 @@ A professional P2P operator should distinguish a payment notification or receipt
 ## Stop and verify
 Do not release crypto merely because a counterparty sent a receipt or claimed that a transfer is instant.
 
+## Sending is different from receiving
+
+“Scheduled”, “sent” and “under review” describe different stages. Check what the status means with your own bank or provider; a counterparty's message does not replace that check. Resolve a hold, pending status or discrepancy through official support before releasing assets.
+
+## Reconcile each trade separately
+
+For concurrent trades, record each trade identifier, expected amount and received payment reference separately. Mark which payment you checked for each trade. Do not use one credit to justify two releases.
+
+**Fictional example:** two trades each expect BRL 500. One BRL 500 credit confirms only one receipt of funds; compare identifiers before assigning it to a trade.
+
 ## Limits
 A bank's displayed status and reversal rights depend on the payment method and jurisdiction. No checklist guarantees irrevocability.
 
 **Claim status: general educational guidance; not a claim of an implemented safeguard.**
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+**Sources for this revision:** [P2P operational requirements](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
+
+**Editorial review:** 2026-10-10.
+
+## Continue reading
+
+- [Partial payments and amount mismatches](../pagamentos/valor-divergente.md)
 
 ---
 
@@ -385,6 +595,50 @@ Evidence quality and admissibility vary by application and jurisdiction. AI anal
 
 ---
 
+## Understanding AI warnings
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/limites-dos-alertas-de-ia
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/operacoes/limites-dos-alertas-de-ia.md
+
+# Understanding AI warnings
+
+**Scenario:** an application displays an AI recommendation or warning during a trade. Use it to investigate facts, not as payment authorization or proof of fraud.
+
+## What a warning means
+
+A warning can identify a suspicious pattern and can also be wrong. No warning does not establish safety: the feature may be disabled, unavailable or unable to recognize the case. Verify trade details, payment and the channel independently of the recommendation.
+
+## Use recommendations carefully
+
+1. Check which information was analyzed and what the recommendation actually says.
+2. Verify facts independently, using your bank and authenticated trade instructions.
+3. Review amounts, recipients and conditions in every draft before authorizing an action.
+4. Preserve relevant recommendations and context for a dispute without exposing unnecessary personal information.
+
+Never send passwords, private keys, recovery phrases or authentication codes to an AI tool.
+
+## Sails context
+
+The consulted documentation describes drafts and advice reviewed by users; social-engineering warnings depend on operator activation. That does not establish availability in the application you use. Check which features are actually enabled.
+
+Inference on a node does not necessarily mean execution on your phone or computer. Before submitting data, check who operates the service and its access and retention policies. This portal's AI reading tools also do not verify payments or decide disputes.
+
+## Limits
+
+A recommendation does not replace verification or guarantee an outcome. This article announces no autonomous agent, universal fraud detection or automatic release.
+
+**Claim status:** educational guidance with configuration-dependent documentary context, not certification of protections in each deployment.
+
+## Related guides
+
+- [Pressure and phishing](../fraudes/pressao-e-phishing.md)
+- [Evidence privacy](../disputas/privacidade-das-evidencias.md)
+
+**Source:** [Agent documentation and limitations](https://github.com/sails-protocol/sails-protocol-docs/blob/1d34c3d37a5b1a791364d0248afdc8e9ed90bf01/guides/ai-agents.mdx).
+
+**Editorial review:** 2026-10-10.
+
+---
+
 ## Incident response during a P2P trade
 Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/resposta-a-incidentes
 Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/operacoes/resposta-a-incidentes.md
@@ -409,6 +663,60 @@ This guide is not an emergency response service. Recovery, reversal, dispute win
 **Claim status: general educational guidance; not a claim of an implemented safeguard.**
 
 **Protocol context:** [Threat model](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md), [RFC-017](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-017-timeline-and-social-engineering-agent.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+## Continue reading
+
+- [Operations with an unknown outcome](../operacoes/resultado-desconhecido.md)
+
+---
+
+## Operations with an unknown outcome
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/resultado-desconhecido
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/operacoes/resultado-desconhecido.md
+
+# Operations with an unknown outcome
+
+**Scenario:** an application loses connection or displays an error after you confirm an operation. That alone does not tell you whether payment was sent, confirmed or rejected.
+
+## A safe sequence before retrying
+
+
+1. **Pause** An error message does not prove that the operation failed.
+2. **Record** Keep the time, reference and error message.
+3. **Check** Consult the original provider and compare the trade status.
+4. **Resolve** If the outcome remains unclear, use official support before another transfer.
+
+
+## Before retrying
+
+1. Record the time, trade identifier and error message. Do not share credentials.
+2. Check the history in the bank, wallet or provider used. Look for the original operation's reference.
+3. For blockchain transactions, check the identifier on the correct network through the wallet's explorer link or another trusted entry point. For bank payments, use your bank.
+4. Compare the result with the trade status. If information conflicts or is missing, contact official support before creating another transfer.
+
+Not finding a transaction in one lookup does not prove failure. Updates may lag, the network may be wrong or information incomplete. Pending does not mean rejected.
+
+## Avoid repeating the economic action
+
+Do not repeat payment to make the screen advance. Do not cancel and reopen a trade assuming the previous effects disappeared. Replacement, acceleration and cancellation features vary by network and wallet: follow the service documentation rather than improvising technical parameters.
+
+**Fictional example:** a connection error appears after confirming a transfer. Record the attempt and check history before sending again; a second transfer could create a second payment.
+
+## Limits
+
+Resolution methods and timing depend on the provider. This guide promises neither reversal nor recovery and does not claim Sails automatically reconciles unknown outcomes. Share references only through channels necessary for the case.
+
+**Claim status:** general educational guidance. The cited technical investigation documents evidence and limitations, not proof of production recovery.
+
+## Related guides
+
+- [Incident response](./resposta-a-incidentes.md)
+- [Payment reconciliation](./conciliacao-de-pagamentos.md)
+- [Checks before sending](../negociacoes/conferir-envio.md)
+
+**Source:** [Unknown-outcome and retry-safety investigation](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/WDK_UNKNOWN_OUTCOME_RETRY_SAFETY.md).
+
+**Editorial review:** 2026-10-10.
 
 ---
 
@@ -511,3 +819,64 @@ Joint accounts, business accounts, and third-party payments can have legitimate 
 ## Related guides
 - [Mule accounts and compromised payment details](../pagamentos/conta-mula.md)
 - [Payment reconciliation](../operacoes/conciliacao-de-pagamentos.md)
+
+---
+
+## Partial payments and amount mismatches
+Canonical URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/valor-divergente
+Source: https://github.com/sails-protocol/Sails-P2P-Safety-Center/blob/main/docs/pagamentos/valor-divergente.md
+
+# Partial payments and amount mismatches
+
+**Scenario:** the received amount is lower or higher than agreed, or the counterparty says they completed payment through several transfers. Resolve the mismatch before treating the trade as complete.
+
+## From the agreement to the verified difference
+
+
+1. **Agreement** Identify the agreed amount, currency and fee treatment.
+2. **Credits** Verify each separate credit with your bank or provider.
+3. **Difference** Add confirmed credits once and compare with the agreement.
+4. **Resolution** Record any mismatch and use the available official process. A matching total alone does not verify every other condition.
+
+
+## Warning signs
+
+- Requests to release the full asset amount after a partial payment.
+- Receipts that do not match separate credits in your own account.
+- An overpayment followed by a refund request to a different account.
+- Pressure to change the price, recipient or conditions after payment.
+
+An amount mismatch may be a mistake. It calls for verification, not an automatic accusation of fraud.
+
+## What to verify
+
+1. Check the recorded terms: amount, currency, recipient and any agreed fee treatment.
+2. Verify each credit directly with your own bank or provider, rather than relying on receipts alone.
+3. Match identifiers, amounts and times. Record each payment separately and do not count one credit twice.
+4. Record the confirmed total and the difference. Do not assume a fee explains a shortfall without checking the agreement.
+
+**Fictional example:** a trade requires BRL 1,000 and you identify two separate credits of BRL 400 and BRL 350. The verified total is BRL 750; another receipt image does not confirm the remaining BRL 250.
+
+## Address the difference
+
+Record the discrepancy in the trade's authenticated channel. Preserve the original terms and replies; do not edit the agreement to make the payment appear correct. If it remains unresolved, use the application's available support or dispute process.
+
+Do not improvise a proportional crypto release: confirm whether the actual workflow supports it and which authorizations it requires. Do not send another payment to an account supplied in a message as a condition for resolving the earlier one.
+
+For a PIX refund, ask your bank about the refund function linked to the original transaction. Brazil's Central Bank recommends that function for returning a PIX received by mistake, rather than making a new transfer to a key supplied in a message. This is Brazil-specific guidance, not a rule for all payment systems.
+
+## Limits and privacy
+
+This guide does not establish deadlines, cancellation rights, refund obligations or dispute outcomes. Rules depend on the method, application and jurisdiction. Share complete receipts only with authorized recipients when necessary for the case.
+
+**Claim status:** general educational guidance; not a claim of automated reconciliation, guaranteed refunds or an implemented partial-release feature.
+
+## Related guides
+
+- [Payment reconciliation](../operacoes/conciliacao-de-pagamentos.md)
+- [Recipient mismatch](./destinatario-divergente.md)
+- [Preserving evidence](../disputas/preservar-evidencias.md)
+
+**Sources:** [P2P operational requirements](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md) — requirements context, not implementation evidence; [Central Bank of Brazil: PIX refunds](https://www.bcb.gov.br/meubc/faqs/p/devolucao-de-dinheiro-com-pix).
+
+**Editorial review:** 2026-10-10.

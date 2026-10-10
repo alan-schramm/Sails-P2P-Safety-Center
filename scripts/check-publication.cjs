@@ -56,7 +56,7 @@ for (const guide of catalogue.guides) {
   requireCondition(sourcePath.startsWith(path.resolve(root, expectedDirectory) + path.sep), `Source language mismatch: ${guide.locale}:${guide.id}`);
   if (!sourcePath.startsWith(root + path.sep) || !fs.existsSync(sourcePath)) { failures.push(`Missing source: ${guide.source}`); continue; }
   const raw = normalize(fs.readFileSync(sourcePath, 'utf8'));
-  const body = raw.replace(/^---\n[\s\S]*?\n---\n/, '').trim();
+  const body = raw.replace(/^---\n[\s\S]*?\n---\n/, '').replace(/^<\/?SafetyFlow>\s*$/gm, '').trim();
   requireCondition(body === normalize(guide.content), `Catalogue text differs from article: ${guide.locale}:${guide.id}`);
 }
 

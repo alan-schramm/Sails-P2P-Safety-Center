@@ -5,6 +5,17 @@ title: Operação com resultado desconhecido
 
 **Cenário:** o aplicativo perde conexão ou mostra um erro depois de você confirmar uma operação. Isso, sozinho, não informa se o pagamento foi enviado, confirmado ou recusado.
 
+## Sequência antes de tentar novamente
+
+<SafetyFlow>
+
+1. **Pause** Uma mensagem de erro não prova que a operação falhou.
+2. **Registre** Guarde horário, referência e mensagem de erro.
+3. **Confira** Consulte o provedor original e compare o estado da negociação.
+4. **Esclareça** Se o resultado continuar incerto, procure atendimento oficial antes de outro envio.
+
+</SafetyFlow>
+
 ## Antes de tentar novamente
 
 1. Registre horário, identificador da negociação e mensagem de erro. Não compartilhe credenciais.

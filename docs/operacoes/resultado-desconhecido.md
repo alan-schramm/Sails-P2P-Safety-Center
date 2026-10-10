@@ -5,6 +5,17 @@ title: Operations with an unknown outcome
 
 **Scenario:** an application loses connection or displays an error after you confirm an operation. That alone does not tell you whether payment was sent, confirmed or rejected.
 
+## A safe sequence before retrying
+
+<SafetyFlow>
+
+1. **Pause** An error message does not prove that the operation failed.
+2. **Record** Keep the time, reference and error message.
+3. **Check** Consult the original provider and compare the trade status.
+4. **Resolve** If the outcome remains unclear, use official support before another transfer.
+
+</SafetyFlow>
+
 ## Before retrying
 
 1. Record the time, trade identifier and error message. Do not share credentials.

@@ -6,6 +6,17 @@ title: Como preservar evidências
 
 **Cenário:** houve pagamento, mas a outra parte contesta recebimento ou cumprimento das condições.
 
+## Evidências: preserve primeiro, compartilhe com cuidado
+
+<SafetyFlow>
+
+1. **Preserve** Guarde comprovantes originais, identificadores e instruções combinadas.
+2. **Organize** Registre datas e alterações posteriores sem modificar os originais.
+3. **Proteja** Prepare apenas as informações necessárias ao caso.
+4. **Compartilhe** Use canais autorizados de disputa; não publique registros sensíveis.
+
+</SafetyFlow>
+
 1. Preserve o comprovante original, identificador da transação, data e horário.
 2. Registre as instruções de pagamento acordadas e qualquer alteração posterior.
 3. Use o canal oficial de disputa da aplicação ou operador envolvido.

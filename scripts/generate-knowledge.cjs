@@ -12,7 +12,7 @@ for(const locale of config.i18n.locales) {
   const raw=fs.readFileSync(file,'utf8');
   const front=raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
   const metadata=Object.fromEntries((front?.[1]||'').split(/\r?\n/).map(line=>line.match(/^(title|id|slug):\s*(.+)$/)).filter(Boolean).map(m=>[m[1],m[2].replace(/^['"]|['"]$/g,'')]));
-  const content=raw.slice(front?.[0].length||0).trim();
+  const content=raw.slice(front?.[0].length||0).replace(/^<\/?SafetyFlow>\s*$/gm,'').trim();
   const id=metadata.id||path.relative(dir,file).replaceAll(path.sep,'/').replace(/\.md$/,'');
   const route=metadata.slug==='/'?'':metadata.slug?.replace(/^\//,'')||id;
   const url=config.url+localeBase+'guides'+(route?'/'+route:'');

@@ -5,6 +5,17 @@ title: Pagos parciales o con importes diferentes
 
 **Situación:** el importe recibido es menor o mayor que el acordado, o la contraparte afirma haber completado el pago mediante varias transferencias. Aclara la diferencia antes de considerar concluida la operación.
 
+## De lo acordado a la diferencia confirmada
+
+<SafetyFlow>
+
+1. **Acuerdo** Identifica el importe, la moneda y las comisiones acordadas.
+2. **Abonos** Verifica cada abono por separado con tu banco o proveedor.
+3. **Diferencia** Suma una vez cada abono confirmado y compáralo con el acuerdo.
+4. **Resolución** Registra la diferencia y usa el proceso oficial disponible. Un total correcto, por sí solo, no verifica las demás condiciones.
+
+</SafetyFlow>
+
 ## Señales de alerta
 
 - Solicitud de liberar todos los activos después de un pago parcial.
