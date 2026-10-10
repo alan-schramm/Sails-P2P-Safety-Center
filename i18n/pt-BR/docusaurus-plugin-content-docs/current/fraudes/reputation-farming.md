@@ -22,3 +22,7 @@ Reputação não garante identidade nem honestidade futura. Análise de grafos S
 **Status:** orientação educativa geral; não representa funcionalidade automática implementada ou garantia de recuperação.
 
 **Fonte:** [Catálogo de ameaças do Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+## Continue a leitura
+
+- [Pressão por avaliação negativa](./pressao-por-avaliacao.md)

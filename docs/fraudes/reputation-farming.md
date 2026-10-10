@@ -22,3 +22,7 @@ Reputation is a risk signal, not an identity guarantee. Colluding accounts may m
 **Claim status:** general safety guidance. The protocol's anti-Sybil graph analysis, time decay, and counterparty-diversity scoring are described as planned, not universally deployed controls.
 
 **Protocol references:** [Sybil mitigation strategy](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/security/SYBIL_MITIGATION.md), [RFC-021](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/rfcs/RFC-021-market-based-arbitration-and-payment-trust.md).
+
+## Continue reading
+
+- [Pressure and threats over trade ratings](./pressao-por-avaliacao.md)

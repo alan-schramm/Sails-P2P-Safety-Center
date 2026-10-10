@@ -16,3 +16,7 @@ title: Cómo conservar pruebas
 ## Guías relacionadas
 - [Gestión de pruebas para operadores](../operacoes/gestao-de-evidencias.md)
 - [Respuesta a incidentes](../operacoes/resposta-a-incidentes.md)
+
+## Continúa leyendo
+
+- [Privacidad al compartir pruebas](./privacidade-das-evidencias.md)
