@@ -16,8 +16,23 @@ title: Presión, enlaces falsos y phishing
 3. Detén la operación si hay presión o instrucciones contradictorias.
 4. Conserva los registros relevantes y contacta al soporte oficial de la aplicación.
 
+## Cambios de canal y de datos de pago
+
+Usar otro canal no demuestra por sí solo un fraude. El riesgo aumenta cuando el cambio incluye una nueva cuenta, clave PIX, destinatario o una petición de ignorar las instrucciones registradas en la operación.
+
+1. Compara las nuevas instrucciones con los términos registrados.
+2. No realices otro pago para “corregir” el anterior solo porque lo pide un mensaje.
+3. Verifica la diferencia por el canal autenticado de la aplicación y, si es necesario, mediante el soporte oficial del banco.
+4. Conserva las dos versiones de las instrucciones y las horas de los mensajes para su revisión.
+
+Conocer detalles de una operación no demuestra que alguien sea personal de soporte ni que esté autorizado a cambiar el destinatario.
+
 **Estado:** orientación general de prevención, no una función de detección automática implementada.
 
 ## Guías relacionadas
 - [Soporte falso y presión en disputas](../fraudes/falsa-arbitragem.md)
 - [Respuesta a incidentes](../operacoes/resposta-a-incidentes.md)
+
+**Fuentes de esta revisión:** [Requisitos operativos P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
+
+**Revisión editorial:** 2026-10-10.

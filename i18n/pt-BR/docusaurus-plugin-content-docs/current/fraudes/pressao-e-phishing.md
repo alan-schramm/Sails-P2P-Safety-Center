@@ -17,8 +17,23 @@ title: Pressão, links falsos e phishing
 3. Interrompa a negociação se houver pressão ou divergência de instruções.
 4. Preserve registros relevantes e procure o suporte oficial da aplicação utilizada.
 
+## Mudança de canal e de dados de pagamento
+
+O uso de outro canal, por si só, não comprova fraude. O risco aumenta quando a mudança vem acompanhada de uma nova conta, chave PIX, destinatário ou pedido para ignorar as instruções registradas na negociação.
+
+1. Compare a nova instrução com os termos já registrados.
+2. Não faça um novo pagamento para “corrigir” o anterior apenas por solicitação em mensagem.
+3. Confirme a divergência pelo canal autenticado da aplicação e, quando necessário, pelo atendimento oficial do banco.
+4. Preserve as duas versões das instruções e os horários das mensagens para análise.
+
+Uma pessoa conhecer detalhes da negociação não prova que ela seja suporte ou que tenha autorização para alterar o destinatário.
+
 **Status:** orientação geral de prevenção, não detecção automática implementada.
 
 ## Guias relacionados
 - [Falso suporte e pressão em disputas](../fraudes/falsa-arbitragem.md)
 - [Resposta a incidentes](../operacoes/resposta-a-incidentes.md)
+
+**Fontes desta revisão:** [Requisitos operacionais P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
+
+**Revisão editorial:** 2026-10-10.
