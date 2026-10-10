@@ -6,6 +6,7 @@
     "prestart": "node scripts/generate-knowledge.cjs",
     "prebuild": "node scripts/generate-knowledge.cjs",
     "test:knowledge": "node --test tests/knowledge.test.mjs",
+    "check:publication": "node scripts/check-publication.cjs",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
