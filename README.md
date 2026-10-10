@@ -35,3 +35,11 @@ Never publish personally identifying payment details, secrets, private dispute e
 ## License
 
 The repository's MIT license applies to software unless otherwise specified. A separate content license for educational articles will be selected before publication.
+
+## V2 preview versus published site
+
+The V2 visual redesign is currently proposed in [draft PR #4](https://github.com/sails-protocol/Sails-P2P-Safety-Center/pull/4), on `feat/safety-center-v2-visual`. A green pull-request build **does not** change the public GitHub Pages website. The workflow deliberately skips artifact upload and deployment for pull requests; only a push to `main` can deploy through GitHub Actions.
+
+To review without publishing, check out the PR branch locally and run `npm ci && npm run build && npm run serve`. Review `/`, `/pt-BR/`, `/es/`, their `/guides/` routes, navigation, mobile layouts and keyboard focus. The local server uses the configured GitHub Pages base path `/Sails-P2P-Safety-Center/`.
+
+**Release gate:** verify current-head CI, perform visual/accessibility and editorial review, approve the PR explicitly, then merge to `main` only when publication is authorized. Do not interpret a successful build as proof of a browser-level visual review.
