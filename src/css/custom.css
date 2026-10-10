@@ -96,3 +96,20 @@
 .safetyAiPanel {flex-direction:column;align-items:flex-start;padding:1.5rem}
 .safetyCard {min-height:0}
 }
+
+
+/* Situation-first navigation: accessible text links with no color-only meaning. */
+.safetyPaths {padding:3.7rem 0 3.9rem;border-bottom:1px solid var(--ifm-color-emphasis-200)}
+.safetyPaths .container {max-width:var(--safety-content-width)}
+.safetyPaths h2 {font-size:clamp(1.45rem,2.2vw,2rem);margin:0 0 .55rem;letter-spacing:-.025em}
+.safetyPaths > .container > p {color:var(--ifm-color-emphasis-700);margin:0 0 1.8rem}
+.safetyPathsGrid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.safetyPath {display:flex;flex-direction:column;align-items:flex-start;gap:.65rem;min-height:190px;padding:1.35rem;border:1px solid var(--ifm-color-emphasis-200);border-radius:14px;background:var(--ifm-background-surface-color);color:var(--ifm-font-color-base);transition:border-color .15s ease,transform .15s ease}
+.safetyPath:hover {border-color:var(--ifm-color-primary);text-decoration:none;color:var(--ifm-font-color-base);transform:translateY(-2px)}
+.safetyPath:focus-visible {outline:3px solid var(--ifm-color-primary);outline-offset:3px}
+.safetyPathArrow {color:var(--ifm-color-primary);font-size:1.25rem}
+.safetyPath strong {font-size:1.02rem;line-height:1.35}
+.safetyPath > span:last-child {font-size:.87rem;line-height:1.55;color:var(--ifm-color-emphasis-700)}
+@media(max-width:996px){.safetyPathsGrid {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.safetyPaths {padding:2.7rem 0}.safetyPathsGrid {grid-template-columns:1fr}.safetyPath {min-height:0}}
+@media(prefers-reduced-motion:reduce){.safetyPath {transition:none}.safetyPath:hover {transform:none}}
