@@ -21,7 +21,7 @@ npm run serve
 ## Source of truth
 
 - This repository owns the public Safety Center site, articles, visual design and translations.
-- [Sails Protocol](https://github.com/alan-schramm/Sails-Protocol) owns normative economic and technical policies.
+- [Sails Protocol](https://github.com/sails-protocol/Sails-Protocol) owns normative economic and technical policies.
 - Changes are reviewed through Pull Requests. An approved policy is not automatically an implemented guarantee.
 
 ## Content rules
@@ -30,7 +30,7 @@ Never publish personally identifying payment details, secrets, private dispute e
 
 ## Release status
 
-**Foundation merged into `main`.** The locked-dependency build passed, but the first Pages deployment returned HTTP 404 because GitHub Pages is not enabled. An administrator must select **Settings → Pages → Build and deployment → Source: GitHub Actions**, then re-run the failed deployment or trigger the workflow. The deployment runs on pushes to `main` only. Intended URL: https://alan-schramm.github.io/Sails-P2P-Safety-Center/.
+**Foundation merged into `main`.** The locked-dependency build passed. After transferring the repository to the organization, verify **Settings → Pages → Build and deployment → Source: GitHub Actions** and confirm a successful deployment on `main`. The deployment runs on pushes to `main` only. Intended URL: https://sails-protocol.github.io/Sails-P2P-Safety-Center/.
 
 ## License
 
