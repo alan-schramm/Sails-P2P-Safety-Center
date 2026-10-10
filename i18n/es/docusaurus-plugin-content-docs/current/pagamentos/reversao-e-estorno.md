@@ -17,3 +17,7 @@ title: Pagos impugnados, revertidos o reembolsados
 4. No envíes reembolsos a otra cuenta sin la verificación adecuada.
 
 **Estado:** orientación general; las reglas de liberación y disputas dependen de la implementación y políticas vigentes.
+
+## Guías relacionadas
+- [Comprobantes falsos](/guides/fraudes/comprovantes-falsos)
+- [Conciliación de pagos](/guides/operacoes/conciliacao-de-pagamentos)
