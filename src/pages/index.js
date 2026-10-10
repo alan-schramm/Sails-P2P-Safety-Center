@@ -74,36 +74,59 @@ export default function Home() {
   const {i18n} = useDocusaurusContext();
   const t = translations[i18n.currentLocale] || translations.en;
   const aiIndexUrl = useBaseUrl('/llms.txt');
+  const editorial = {
+    en: {brand:'SAILS / SAFETY CENTER', kicker:'P2P SAFETY LIBRARY', section:'Start with your situation', library:'Browse the knowledge base', libraryDesc:'Focused guidance, organized by the risks you need to understand.', note:'Before you proceed', resources:'Resources and transparency', resourceLabel:'Machine-readable guide index', view:'Open guide'},
+    'pt-BR': {brand:'SAILS / CENTRO DE SEGURANÇA', kicker:'BIBLIOTECA DE SEGURANÇA P2P', section:'Comece pela sua situação', library:'Biblioteca de segurança', libraryDesc:'Orientações organizadas pelos riscos que você precisa compreender.', note:'Antes de continuar', resources:'Recursos e transparência', resourceLabel:'Índice de guias para sistemas de IA', view:'Abrir guia'},
+    es: {brand:'SAILS / CENTRO DE SEGURIDAD', kicker:'BIBLIOTECA DE SEGURIDAD P2P', section:'Empieza por tu situación', library:'Biblioteca de seguridad', libraryDesc:'Guías organizadas por los riesgos que necesitas comprender.', note:'Antes de continuar', resources:'Recursos y transparencia', resourceLabel:'Índice de guías para sistemas de IA', view:'Abrir guía'}
+  }[i18n.currentLocale] || {
+    brand:'SAILS / SAFETY CENTER', kicker:'P2P SAFETY LIBRARY', section:'Start with your situation', library:'Browse the knowledge base', libraryDesc:'Focused guidance, organized by the risks you need to understand.', note:'Before you proceed', resources:'Resources and transparency', resourceLabel:'Machine-readable guide index', view:'Open guide'
+  };
   return (
     <Layout title={t.title} description={t.lead}>
-      <main>
-        <header className="safetyHero">
-          <div className="container">
-            <div className="safetyEyebrow"><span className="safetyEyebrowDot" aria-hidden="true" /> {t.quickLabel}</div>
+      <main className="editorialHome">
+        <header className="editorialHero">
+          <div className="container editorialContainer">
+            <p className="editorialEyebrow"><span className="editorialBrandMark" aria-hidden="true"/> {editorial.kicker}</p>
             <h1>{t.title}</h1>
-            <p className="safetyLead">{t.lead}</p>
-            <div className="safetyActions">
-              <Link className="button button--primary button--lg" to="/guides/">{t.explore} →</Link>
-              <Link className="button button--outline button--secondary button--lg" to="/guides/pagamentos/terceiros">{t.payment}</Link>
+            <p className="editorialIntro">{t.lead}</p>
+            <div className="editorialHeroActions">
+              <Link className="editorialPrimary" to="/guides/">{t.explore} <span aria-hidden="true">→</span></Link>
+              <Link className="editorialSecondary" to="/guides/pagamentos/terceiros">{t.payment} <span aria-hidden="true">↗</span></Link>
             </div>
-            <div className="safetyHeroChecklist" aria-label={t.heading}>{t.checks.map(check => <span key={check}><strong>✓</strong> {check}</span>)}</div>
           </div>
         </header>
-        <section className="safetyAlertBand" aria-labelledby="safety-alert-heading"><div className="container safetyAlertInner"><div className="safetyAlertIcon" aria-hidden="true">!</div><div><h2 id="safety-alert-heading">{t.urgent}</h2><p>{t.urgentBody}</p></div><Link className="safetyAlertLink" to="/guides/fraudes/pressao-e-phishing">{t.readGuide} →</Link></div></section>
-        <section className="safetyPaths" aria-labelledby="safety-paths-title"><div className="container"><h2 id="safety-paths-title">{t.pathsTitle}</h2><p>{t.pathsIntro}</p><div className="safetyPathsGrid">{t.paths.map(([title,description,to]) => <Link className="safetyPath" to={to} key={title}><span className="safetyPathArrow" aria-hidden="true">↗</span><strong>{title}</strong><span>{description}</span></Link>)}</div></div></section>
-        <section className="safetySection" aria-labelledby="safety-topics-title">
-          <div className="container">
-            <h2 id="safety-topics-title">{t.heading}</h2>
-            <p>{t.subheading}</p>
-            <div className="safetyGrid">
-              {t.topics.map(([icon, title, description, to]) => <Link className="safetyCard" to={to} key={title}>
-                <span className="safetyCardIcon" aria-hidden="true">{icon}</span>
-                <h3>{title} →</h3>
-                <p>{description}</p>
-              </Link>)}
+        <section className="editorialSection editorialSituations" aria-labelledby="situations-heading">
+          <div className="container editorialContainer">
+            <div className="editorialSectionHeading">
+              <div><p className="editorialSectionLabel">01 / {editorial.section}</p><h2 id="situations-heading">{t.pathsTitle}</h2><p>{t.pathsIntro}</p></div>
             </div>
-            <section className="safetyAiPanel" aria-labelledby="safety-ai-heading"><div><span className="safetyAiKicker">{t.aiKicker}</span><h2 id="safety-ai-heading">{t.aiTitle}</h2><p>{t.aiBody}</p></div><a href={aiIndexUrl} className="safetyAiLink">{t.aiLink} ↗</a></section>
-            <aside className="safetyNotice" role="note"><strong>{t.notice}</strong> {t.noticeBody}</aside>
+            <div className="editorialSituationList">
+              {t.paths.map(([title,description,to],index) => (
+                <Link to={to} className="editorialSituation" key={to}>
+                  <span className="editorialIndex">{String(index+1).padStart(2,'0')}</span>
+                  <span className="editorialSituationCopy"><strong>{title}</strong><span>{description}</span></span>
+                  <span className="editorialRowArrow" aria-hidden="true">↗</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="editorialSection editorialLibrary" aria-labelledby="library-heading">
+          <div className="container editorialContainer">
+            <div className="editorialSectionHeading"><div><p className="editorialSectionLabel">02 / {editorial.library}</p><h2 id="library-heading">{t.heading}</h2><p>{editorial.libraryDesc}</p></div></div>
+            <div className="editorialTopicGrid">
+              {t.topics.map(([,title,description,to]) => (
+                <Link className="editorialTopic" to={to} key={to}>
+                  <h3>{title}</h3><p>{description}</p><span className="editorialTopicLink">{editorial.view} <span aria-hidden="true">↗</span></span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="editorialSection editorialBottom" aria-labelledby="safety-note-heading">
+          <div className="container editorialContainer">
+            <div className="editorialNotice"><div><p className="editorialSectionLabel">{editorial.note}</p><h2 id="safety-note-heading">{t.urgent}</h2><p>{t.urgentBody}</p><p className="editorialLimit"><strong>{t.notice}</strong> {t.noticeBody}</p></div><Link to="/guides/fraudes/pressao-e-phishing">{t.readGuide} ↗</Link></div>
+            <div className="editorialResources"><span>{editorial.resources}</span><a href={aiIndexUrl}>{editorial.resourceLabel} ↗</a></div>
           </div>
         </section>
       </main>
