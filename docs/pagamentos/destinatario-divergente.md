@@ -1,15 +1,14 @@
 ---
-title: Destinatário diferente no banco
+title: Unexpected bank recipient
 ---
+# Unexpected bank recipient
 
-# Destinatário diferente no banco
+**Scenario:** your banking app shows a different recipient than expected before you confirm a PIX payment or transfer.
 
-**Cenário:** o aplicativo do banco mostra um beneficiário diferente do esperado antes da confirmação de um PIX ou transferência.
+**Before sending:** do not confirm impulsively. Compare the original instructions, check for changes, and pause the transfer if you cannot resolve the mismatch through a trusted channel.
 
-**Antes de enviar:** não confirme por impulso. Compare as instruções originais, verifique se houve alteração e suspenda a operação se não conseguir esclarecer a divergência por um canal confiável.
+**If already sent:** keep the receipt, record the time, contact your bank immediately about available procedures, and follow the trade's support or dispute process.
 
-**Se já enviou:** guarde o comprovante, registre o horário, contate imediatamente seu banco para avaliar os procedimentos disponíveis e siga o processo de suporte/disputa da negociação.
+Do not rely solely on screenshots, QR codes, or messages outside the agreed flow.
 
-Não confie apenas em capturas de tela, QR codes ou mensagens enviadas fora do fluxo acordado.
-
-**Status:** orientação geral. O escrow de criptoativos não reverte automaticamente pagamentos bancários.
+**Status:** general guidance. Crypto escrow does not automatically reverse bank payments.
