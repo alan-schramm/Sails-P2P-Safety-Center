@@ -18,3 +18,7 @@ title: Pressão, links falsos e phishing
 4. Preserve registros relevantes e procure o suporte oficial da aplicação utilizada.
 
 **Status:** orientação geral de prevenção, não detecção automática implementada.
+
+## Guias relacionados
+- [Falso suporte e pressão em disputas](/guides/fraudes/falsa-arbitragem)
+- [Resposta a incidentes](/guides/operacoes/resposta-a-incidentes)
