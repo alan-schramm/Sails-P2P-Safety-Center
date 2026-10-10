@@ -1,43 +1,109 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-const topics = [
-  {icon: '⚠', title: 'Fraudes e golpes', description: 'Identifique pressão, phishing e pedidos suspeitos durante uma negociação.', to: '/guias/fraudes/pressao-e-phishing'},
-  {icon: '↗', title: 'Pagamentos', description: 'Confira o beneficiário e entenda os riscos de pagamentos a terceiros.', to: '/guias/pagamentos/terceiros'},
-  {icon: '◈', title: 'Escrow e negociações', description: 'Entenda o que a proteção de criptoativos cobre e o que não cobre.', to: '/guias/negociacoes/limites-do-escrow'},
-  {icon: '▤', title: 'Disputas e evidências', description: 'Saiba quais registros preservar e como reduzir a exposição de dados.', to: '/guias/disputas/preservar-evidencias'},
-  {icon: '◎', title: 'Identidade e privacidade', description: 'O que fazer quando há suspeita de comprometimento de uma conta.', to: '/guias/identidade/conta-comprometida'},
-  {icon: '✓', title: 'Comece por aqui', description: 'Conheça os limites do portal e os cuidados básicos antes de negociar.', to: '/guias/'},
-];
+const translations = {
+  en: {
+    aiKicker: 'OPEN KNOWLEDGE',
+    title: 'Safety starts before the trade.',
+    lead: 'Learn to recognize scams, verify payments, and preserve evidence. Practical guidance for safer peer-to-peer decisions.',
+    explore: 'Explore guides', payment: 'Third-party payments',
+    quickLabel: 'A practical safety knowledge base', urgent: 'If something looks wrong', urgentBody: 'Pause the trade. Check payment details through trusted channels and keep relevant evidence.', readGuide: 'Read the guide', aiTitle: 'Clear for people. Structured for AI.', aiBody: 'Guides use explicit scenarios, warning signs, actions, and limitations. AI readers can find canonical links and interpretation boundaries in our machine-readable index.', aiLink: 'AI reading index',
+    checks: ['Verify the recipient', 'Watch for pressure', 'Preserve evidence'],
+    pathsTitle: 'What happened?', pathsIntro: 'Choose a situation to reach the most relevant first step.', paths: [['I received a payment receipt', 'Verify payment independently before releasing assets.', '/guides/fraudes/comprovantes-falsos'], ['The payment recipient changed', 'Check the actual beneficiary and stop if instructions conflict.', '/guides/pagamentos/destinatario-divergente'], ['A dispute has started', 'Preserve original records and use the authorized process.', '/guides/operacoes/gestao-de-evidencias'], ['I trade P2P professionally', 'Follow a repeatable pre-trade and reconciliation workflow.', '/guides/operacoes/checklist-antes-de-negociar']],
+    heading: 'Find the guide for your situation',
+    subheading: 'Understand warning signs, risks, and next steps before you act.',
+    notice: 'Important:', noticeBody: 'This portal provides educational guidance. It does not verify bank accounts, replace official dispute channels, or promise fund recovery.',
+    topics: [
+      ['⚠', 'Scams and phishing', 'Spot pressure tactics, fake links, and suspicious requests.', '/guides/fraudes/pressao-e-phishing'],
+      ['↗', 'Payments', 'Check recipients and understand third-party payment risks.', '/guides/pagamentos/terceiros'],
+      ['◈', 'Escrow and trades', 'Learn what crypto escrow can and cannot protect.', '/guides/negociacoes/limites-do-escrow'],
+      ['▤', 'Disputes and evidence', 'Know which records to keep and how to protect sensitive data.', '/guides/disputas/preservar-evidencias'],
+      ['◎', 'Identity and privacy', 'Respond to suspected account compromise.', '/guides/identidade/conta-comprometida'],
+      ['▦', 'Professional operations', 'Checklists, reconciliation, and incident response for active traders.', '/guides/operacoes/checklist-antes-de-negociar'],
+      ['✓', 'Start here', 'Understand the portal’s limits and basic safety precautions.', '/guides/']
+    ]
+  },
+  'pt-BR': {
+    aiKicker: 'CONHECIMENTO ABERTO',
+    title: 'Segurança começa antes da negociação.',
+    lead: 'Aprenda a reconhecer fraudes, conferir pagamentos e preservar evidências. Orientação clara para decisões mais informadas em negociações P2P.',
+    explore: 'Explorar os guias', payment: 'Pagamento a terceiros',
+    quickLabel: 'Base prática de conhecimento em segurança', urgent: 'Se algo parecer errado', urgentBody: 'Interrompa a negociação. Confira os dados de pagamento em canais confiáveis e preserve as evidências.', readGuide: 'Ler o guia', aiTitle: 'Claro para pessoas. Estruturado para IA.', aiBody: 'Os guias apresentam cenários, alertas, ações e limites. Sistemas de IA encontram links oficiais e regras de interpretação em nosso índice.', aiLink: 'Índice para IA',
+    checks: ['Confira o beneficiário', 'Desconfie de urgência', 'Preserve evidências'],
+    pathsTitle: 'O que aconteceu?', pathsIntro: 'Escolha uma situação para encontrar o primeiro passo mais relevante.', paths: [['Recebi um comprovante', 'Confirme o pagamento no seu banco antes de liberar ativos.', '/guides/fraudes/comprovantes-falsos'], ['O beneficiário mudou', 'Confira o destinatário e pare se houver divergências.', '/guides/pagamentos/destinatario-divergente'], ['Começou uma disputa', 'Preserve os registros originais e siga o processo autorizado.', '/guides/operacoes/gestao-de-evidencias'], ['Opero P2P profissionalmente', 'Use checklists e conciliação em cada negociação.', '/guides/operacoes/checklist-antes-de-negociar']],
+    heading: 'Escolha o guia para sua situação',
+    subheading: 'Entenda sinais de alerta, riscos e próximos passos antes de agir.',
+    notice: 'Importante:', noticeBody: 'Este portal oferece orientação educativa. Não verifica contas bancárias, não substitui canais oficiais de disputa e não promete recuperar fundos.',
+    topics: [
+      ['⚠', 'Fraudes e golpes', 'Identifique pressão, phishing e pedidos suspeitos.', '/guides/fraudes/pressao-e-phishing'],
+      ['↗', 'Pagamentos', 'Confira o beneficiário e entenda riscos de pagamentos a terceiros.', '/guides/pagamentos/terceiros'],
+      ['◈', 'Escrow e negociações', 'Entenda o que a proteção de criptoativos cobre e não cobre.', '/guides/negociacoes/limites-do-escrow'],
+      ['▤', 'Disputas e evidências', 'Saiba quais registros preservar e como reduzir a exposição de dados.', '/guides/disputas/preservar-evidencias'],
+      ['◎', 'Identidade e privacidade', 'O que fazer diante de uma conta possivelmente comprometida.', '/guides/identidade/conta-comprometida'],
+      ['▦', 'Operações profissionais', 'Checklists, conciliação e resposta a incidentes.', '/guides/operacoes/checklist-antes-de-negociar'],
+      ['✓', 'Comece por aqui', 'Conheça os limites do portal e os cuidados básicos.', '/guides/']
+    ]
+  },
+  es: {
+    aiKicker: 'CONOCIMIENTO ABIERTO',
+    title: 'La seguridad comienza antes de operar.',
+    lead: 'Aprende a reconocer fraudes, verificar pagos y conservar pruebas. Orientación práctica para tomar decisiones más informadas en operaciones P2P.',
+    explore: 'Explorar las guías', payment: 'Pagos de terceros',
+    quickLabel: 'Base práctica de conocimientos de seguridad', urgent: 'Si algo parece incorrecto', urgentBody: 'Detén la operación. Verifica los datos de pago por canales confiables y conserva las pruebas.', readGuide: 'Leer la guía', aiTitle: 'Claro para personas. Estructurado para IA.', aiBody: 'Las guías incluyen situaciones, alertas, acciones y límites. Los sistemas de IA pueden consultar enlaces oficiales y criterios de interpretación en nuestro índice.', aiLink: 'Índice para IA',
+    checks: ['Verifica al beneficiario', 'Desconfía de la urgencia', 'Conserva pruebas'],
+    pathsTitle: '¿Qué ocurrió?', pathsIntro: 'Elige una situación para encontrar el primer paso más útil.', paths: [['Recibí un comprobante', 'Verifica el pago en tu banco antes de liberar activos.', '/guides/fraudes/comprovantes-falsos'], ['Cambió el destinatario', 'Comprueba el beneficiario y detente si hay diferencias.', '/guides/pagamentos/destinatario-divergente'], ['Comenzó una disputa', 'Conserva los registros originales y utiliza el proceso autorizado.', '/guides/operacoes/gestao-de-evidencias'], ['Opero P2P profesionalmente', 'Aplica listas y conciliación en cada operación.', '/guides/operacoes/checklist-antes-de-negociar']],
+    heading: 'Encuentra la guía para tu situación',
+    subheading: 'Conoce las señales de alerta, los riesgos y los próximos pasos antes de actuar.',
+    notice: 'Importante:', noticeBody: 'Este portal ofrece información educativa. No verifica cuentas bancarias, no sustituye los canales oficiales de disputas ni promete recuperar fondos.',
+    topics: [
+      ['⚠', 'Fraudes y phishing', 'Identifica presiones, enlaces falsos y solicitudes sospechosas.', '/guides/fraudes/pressao-e-phishing'],
+      ['↗', 'Pagos', 'Comprueba los destinatarios y los riesgos de pagos de terceros.', '/guides/pagamentos/terceiros'],
+      ['◈', 'Escrow y operaciones', 'Entiende qué puede y qué no puede proteger el escrow.', '/guides/negociacoes/limites-do-escrow'],
+      ['▤', 'Disputas y pruebas', 'Aprende qué registros conservar y cómo proteger tus datos.', '/guides/disputas/preservar-evidencias'],
+      ['◎', 'Identidad y privacidad', 'Qué hacer ante una posible cuenta comprometida.', '/guides/identidade/conta-comprometida'],
+      ['▦', 'Operaciones profesionales', 'Listas, conciliación y respuesta a incidentes.', '/guides/operacoes/checklist-antes-de-negociar'],
+      ['✓', 'Empieza aquí', 'Conoce los límites del portal y las precauciones básicas.', '/guides/']
+    ]
+  }
+};
 
 export default function Home() {
+  const {i18n} = useDocusaurusContext();
+  const t = translations[i18n.currentLocale] || translations.en;
+  const aiIndexUrl = useBaseUrl('/llms.txt');
   return (
-    <Layout title="Início" description="Guias públicos de segurança para negociações P2P">
+    <Layout title={t.title} description={t.lead}>
       <main>
         <header className="safetyHero">
           <div className="container">
-            <div className="safetyEyebrow">Sails P2P Safety Center</div>
-            <h1>Negocie com mais informação. Reconheça riscos antes de agir.</h1>
-            <p className="safetyLead">Guias práticos sobre fraudes, pagamentos, escrow e disputas em negociações peer-to-peer. Feito para usuários, operadores e integrações do ecossistema P2P.</p>
+            <div className="safetyEyebrow"><span className="safetyEyebrowDot" aria-hidden="true" /> {t.quickLabel}</div>
+            <h1>{t.title}</h1>
+            <p className="safetyLead">{t.lead}</p>
             <div className="safetyActions">
-              <Link className="button button--primary button--lg" to="/guias/">Explorar os guias</Link>
-              <Link className="button button--outline button--secondary button--lg" to="/guias/pagamentos/terceiros">Pagamento a terceiros</Link>
+              <Link className="button button--primary button--lg" to="/guides/">{t.explore} →</Link>
+              <Link className="button button--outline button--secondary button--lg" to="/guides/pagamentos/terceiros">{t.payment}</Link>
             </div>
+            <div className="safetyHeroChecklist" aria-label={t.heading}>{t.checks.map(check => <span key={check}><strong>✓</strong> {check}</span>)}</div>
           </div>
         </header>
-        <section className="safetySection">
+        <section className="safetyAlertBand" aria-labelledby="safety-alert-heading"><div className="container safetyAlertInner"><div className="safetyAlertIcon" aria-hidden="true">!</div><div><h2 id="safety-alert-heading">{t.urgent}</h2><p>{t.urgentBody}</p></div><Link className="safetyAlertLink" to="/guides/fraudes/pressao-e-phishing">{t.readGuide} →</Link></div></section>
+        <section className="safetyPaths" aria-labelledby="safety-paths-title"><div className="container"><h2 id="safety-paths-title">{t.pathsTitle}</h2><p>{t.pathsIntro}</p><div className="safetyPathsGrid">{t.paths.map(([title,description,to]) => <Link className="safetyPath" to={to} key={title}><span className="safetyPathArrow" aria-hidden="true">↗</span><strong>{title}</strong><span>{description}</span></Link>)}</div></div></section>
+        <section className="safetySection" aria-labelledby="safety-topics-title">
           <div className="container">
-            <h2>Encontre orientação por situação</h2>
-            <p>Escolha um assunto para entender sinais de alerta e próximos passos.</p>
+            <h2 id="safety-topics-title">{t.heading}</h2>
+            <p>{t.subheading}</p>
             <div className="safetyGrid">
-              {topics.map(topic => <Link className="safetyCard" to={topic.to} key={topic.title}>
-                <span className="safetyCardIcon" aria-hidden="true">{topic.icon}</span>
-                <h3>{topic.title} →</h3>
-                <p>{topic.description}</p>
+              {t.topics.map(([icon, title, description, to]) => <Link className="safetyCard" to={to} key={title}>
+                <span className="safetyCardIcon" aria-hidden="true">{icon}</span>
+                <h3>{title} →</h3>
+                <p>{description}</p>
               </Link>)}
             </div>
-            <div className="safetyNotice"><strong>Importante:</strong> este portal oferece orientação educativa. Ele não verifica contas bancárias, não substitui canais oficiais de disputa e não promete recuperar fundos.</div>
+            <section className="safetyAiPanel" aria-labelledby="safety-ai-heading"><div><span className="safetyAiKicker">{t.aiKicker}</span><h2 id="safety-ai-heading">{t.aiTitle}</h2><p>{t.aiBody}</p></div><a href={aiIndexUrl} className="safetyAiLink">{t.aiLink} ↗</a></section>
+            <aside className="safetyNotice" role="note"><strong>{t.notice}</strong> {t.noticeBody}</aside>
           </div>
         </section>
       </main>

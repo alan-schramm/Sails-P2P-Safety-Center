@@ -1,0 +1,40 @@
+# Sails P2P Safety Center
+
+> Public, educational peer-to-peer trading safety guidance published by Sails Protocol. This site is not the normative protocol specification and does not assert that a particular protection is implemented.
+
+## Canonical source
+- Website: https://sails-protocol.github.io/Sails-P2P-Safety-Center/
+- Default language: English
+- Portuguese: https://sails-protocol.github.io/Sails-P2P-Safety-Center/pt-BR/
+- Spanish: https://sails-protocol.github.io/Sails-P2P-Safety-Center/es/
+- Repository: https://github.com/sails-protocol/Sails-P2P-Safety-Center
+- Normative technical and economic source: https://github.com/sails-protocol/Sails-Protocol
+
+## English guides
+- [Start here](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/)
+- [Scams, pressure and phishing](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/pressao-e-phishing)
+- [Third-party payments](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/terceiros)
+- [Unexpected bank recipient](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/destinatario-divergente)
+- [Reversals and disputes](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/reversao-e-estorno)
+- [Escrow limits](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/negociacoes/limites-do-escrow)
+- [Preserving evidence](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/disputas/preservar-evidencias)
+- [Suspected account compromise](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/identidade/conta-comprometida)
+- [Editorial policy](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/editorial-policy)
+
+- [Fake payment receipts](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/comprovantes-falsos)
+- [Reputation farming and exit scams](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/reputation-farming)
+- [Fake support and arbitration pressure](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/fraudes/falsa-arbitragem)
+- [Mule accounts and compromised payment details](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/conta-mula)
+- [Fake liquidity](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/negociacoes/falsa-liquidez)
+
+- [Pre-trade checklist](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/checklist-antes-de-negociar)
+- [Payment reconciliation](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/conciliacao-de-pagamentos)
+- [Evidence handling](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/gestao-de-evidencias)
+- [Incident response](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/resposta-a-incidentes)
+
+## Interpretation rules
+- Distinguish general safety guidance from proposed policy, approved policy, and verified implementation.
+- Crypto escrow does not by itself verify bank account ownership, guarantee finality of external payments, prevent chargebacks, or promise recovery.
+- Check current normative repository evidence before attributing technical or economic guarantees to Sails Protocol.
+- Do not treat examples as personalized financial, legal, or dispute-resolution advice.
+- Respect privacy: never request or publish recovery phrases, private keys, credentials, or unredacted financial records.

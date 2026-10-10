@@ -1,0 +1,30 @@
+{
+  "sidebar.safetySidebar.category.Scams and phishing": {
+    "message": "Fraudes e phishing",
+    "description": "The label for category Scams and phishing in sidebar safetySidebar"
+  },
+  "sidebar.safetySidebar.category.Payments": {
+    "message": "Pagamentos",
+    "description": "The label for category Payments in sidebar safetySidebar"
+  },
+  "sidebar.safetySidebar.category.Escrow and trades": {
+    "message": "Escrow e negociações",
+    "description": "The label for category Escrow and trades in sidebar safetySidebar"
+  },
+  "sidebar.safetySidebar.category.Disputes and evidence": {
+    "message": "Disputas e evidências",
+    "description": "The label for category Disputes and evidence in sidebar safetySidebar"
+  },
+  "sidebar.safetySidebar.category.Privacy and identity": {
+    "message": "Privacidade e identidade",
+    "description": "The label for category Privacy and identity in sidebar safetySidebar"
+  },
+  "sidebar.safetySidebar.category.Professional trader operations": {
+    "message": "Operações profissionais",
+    "description": "The label for category Professional trader operations in sidebar safetySidebar"
+  },
+  "sidebar.safetySidebar.category.About this portal": {
+    "message": "Sobre este portal",
+    "description": "The label for category About this portal in sidebar safetySidebar"
+  }
+}

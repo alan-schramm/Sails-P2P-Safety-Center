@@ -1,15 +1,14 @@
 ---
 id: intro
-title: Comece por aqui
+title: Start here
 slug: /
 ---
-
 # Sails P2P Safety Center
 
-Orientações práticas para reconhecer riscos em negociações entre pessoas, verificar instruções de pagamento e saber quando interromper uma operação.
+Practical guidance to recognize risks in peer-to-peer trades, verify payment instructions, and know when to stop a transaction.
 
-Este portal é **educativo**. Um escrow de criptoativos não comprova titularidade de contas bancárias nem garante a irreversibilidade de pagamentos externos.
+This portal is **educational**. Crypto escrow does not establish ownership of bank accounts or guarantee that external payments cannot be reversed.
 
-Explore os guias no menu lateral. As orientações não substituem as regras do método de pagamento, da jurisdição ou a análise de uma disputa concreta.
+Explore the guides in the sidebar. This guidance does not replace payment-method rules, applicable law, or case-specific dispute review.
 
-**Status:** conteúdo educativo inicial; não representa garantia técnica implementada no Sails Protocol.
+**Status:** introductory educational content; not a claim of implemented technical guarantees in Sails Protocol.

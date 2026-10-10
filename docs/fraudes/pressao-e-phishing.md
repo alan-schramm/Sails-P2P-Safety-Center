@@ -1,20 +1,23 @@
 ---
-title: Pressão, links falsos e phishing
+title: Pressure tactics, fake links, and phishing
 ---
+# Pressure tactics, fake links, and phishing
 
-# Pressão, links falsos e phishing
+**Scenario:** someone sends a purported support link, demands immediate confirmation, or tries to move a trade to another channel.
 
-**Cenário:** uma pessoa envia um link de suposto suporte, exige confirmação imediata ou tenta levar a negociação para outro canal.
+## Warning signs
+- Threats of cancellation, account lockout, or loss of funds to force a decision.
+- Pages asking for a recovery phrase, password, or signature unrelated to the trade.
+- Payment instructions sent in messages that differ from agreed terms.
 
-## Sinais de alerta
-- Ameaças de cancelamento, bloqueio ou perda de fundos para forçar uma decisão.
-- Páginas que solicitam seed phrase, senha ou assinatura de transação não relacionada à negociação.
-- Instruções de pagamento recebidas por mensagens que não correspondem aos termos acordados.
+## What to do
+1. Never disclose your recovery phrase, private key, or authentication codes.
+2. Verify the service address independently without following the suspicious link.
+3. Stop the trade if you face pressure or conflicting instructions.
+4. Preserve relevant records and contact the application's official support channel.
 
-## Como agir
-1. Não informe sua frase de recuperação, chave privada ou códigos de autenticação.
-2. Confira o endereço do serviço por um caminho independente, sem usar o link suspeito.
-3. Interrompa a negociação se houver pressão ou divergência de instruções.
-4. Preserve registros relevantes e procure o suporte oficial da aplicação utilizada.
+**Status:** general prevention guidance, not an implemented automated detection feature.
 
-**Status:** orientação geral de prevenção, não detecção automática implementada.
+## Related guides
+- [Fake support and arbitration pressure](../fraudes/falsa-arbitragem.md)
+- [Incident response](../operacoes/resposta-a-incidentes.md)
