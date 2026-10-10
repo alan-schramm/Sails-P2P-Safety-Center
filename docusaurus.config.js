@@ -25,7 +25,7 @@ const config = {
     ]},
     footer: {style: 'dark', links: [
       {title: 'Safety', items: [{label: 'Start here', to: '/guides/'}, {label: 'Third-party payments', to: '/guides/pagamentos/terceiros'}]},
-      {title: 'Project', items: [{label: 'Code and contributions', href: 'https://github.com/sails-protocol/Sails-P2P-Safety-Center'}]}
+      {title: 'Project', items: [{label: 'Safety Center repository', href: 'https://github.com/sails-protocol/Sails-P2P-Safety-Center'}, {label: 'Sails Protocol — code and technical documentation', href: 'https://github.com/sails-protocol/Sails-Protocol'}]}
     ], copyright: `© ${new Date().getFullYear()} Sails Protocol. Educational content, not a settlement guarantee.`},
     colorMode: {defaultMode: 'dark', respectPrefersColorScheme: true},
   },
