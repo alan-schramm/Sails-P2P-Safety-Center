@@ -18,18 +18,19 @@ export default function Home() {
         <header className="safetyHero">
           <div className="container">
             <div className="safetyEyebrow">Sails P2P Safety Center</div>
-            <h1>Negocie com mais informação. Reconheça riscos antes de agir.</h1>
-            <p className="safetyLead">Guias práticos sobre fraudes, pagamentos, escrow e disputas em negociações peer-to-peer. Feito para usuários, operadores e integrações do ecossistema P2P.</p>
+            <h1>Segurança começa antes da negociação.</h1>
+            <p className="safetyLead">Aprenda a reconhecer fraudes, conferir pagamentos e preservar evidências. Orientação clara para tomar decisões mais informadas em negociações P2P.</p>
             <div className="safetyActions">
-              <Link className="button button--primary button--lg" to="/guias/">Explorar os guias</Link>
+              <Link className="button button--primary button--lg" to="/guias/">Explorar os guias →</Link>
               <Link className="button button--outline button--secondary button--lg" to="/guias/pagamentos/terceiros">Pagamento a terceiros</Link>
             </div>
+            <div className="safetyHeroChecklist" aria-label="Cuidados essenciais"><span><strong>✓</strong> Confira o beneficiário</span><span><strong>✓</strong> Desconfie de urgência</span><span><strong>✓</strong> Preserve evidências</span></div>
           </div>
         </header>
         <section className="safetySection">
           <div className="container">
-            <h2>Encontre orientação por situação</h2>
-            <p>Escolha um assunto para entender sinais de alerta e próximos passos.</p>
+            <h2>Escolha o guia para sua situação</h2>
+            <p>Entenda sinais de alerta, riscos e próximos passos antes de agir.</p>
             <div className="safetyGrid">
               {topics.map(topic => <Link className="safetyCard" to={topic.to} key={topic.title}>
                 <span className="safetyCardIcon" aria-hidden="true">{topic.icon}</span>
