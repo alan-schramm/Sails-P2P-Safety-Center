@@ -1,24 +1,21 @@
 ---
-title: Pagamento envolvendo terceiros
+title: Payments involving third parties
 ---
+# Payments involving third parties
 
-# Pagamento envolvendo terceiros
+**Scenario:** someone asks you to pay a different account than agreed, or payment arrives from someone other than the buyer.
 
-**Cenário:** alguém pede que você pague uma conta diferente da inicialmente combinada, ou o pagamento chega de uma pessoa diferente do comprador.
+## Warning signs
+- An unexpected change in recipient or PIX key.
+- Pressure to pay quickly or continue outside the agreed trade flow.
+- A request to refund an account other than the originating account.
 
-## Sinais de atenção
+## What to do
+1. Do not treat the name displayed by your bank as sufficient proof of safety.
+2. Compare recipient details with the payment instructions formally agreed in the trade.
+3. If details differ, **stop the payment** and use the applicable support or dispute channel.
+4. Preserve receipts and relevant messages without publicly sharing personal or banking information.
 
-- Mudança inesperada do beneficiário ou da chave PIX.
-- Pressão para pagar rapidamente ou continuar a conversa fora do fluxo da negociação.
-- Pedido de reembolso para uma conta diferente da origem do pagamento.
+Joint accounts, business accounts, and third-party payments can have legitimate uses. A mismatch requires verification, not an automatic fraud accusation.
 
-## O que fazer
-
-1. Não trate o nome exibido pelo banco como prova suficiente de que a operação é segura.
-2. Compare os dados do beneficiário com as instruções formalmente acordadas na negociação.
-3. Se houver divergência, **interrompa o pagamento** e use o canal de suporte ou disputa aplicável.
-4. Preserve os comprovantes e as mensagens relevantes, evitando divulgar CPF, conta ou outros dados pessoais publicamente.
-
-Contas conjuntas, empresariais e pagamentos por terceiros podem ter usos legítimos. A divergência exige verificação, não uma acusação automática de fraude.
-
-**Status:** orientação geral; não afirma que o protocolo verifica a titularidade bancária.
+**Status:** general guidance; does not claim the protocol verifies bank-account ownership.
