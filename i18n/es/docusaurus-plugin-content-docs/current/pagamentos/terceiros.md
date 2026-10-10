@@ -21,5 +21,5 @@ Las cuentas conjuntas, empresariales y los pagos de terceros pueden tener usos l
 **Estado:** orientación general; no afirma que el protocolo verifique la titularidad bancaria.
 
 ## Guías relacionadas
-- [Cuentas de terceros y datos comprometidos](/guides/pagamentos/conta-mula)
-- [Conciliación de pagos](/guides/operacoes/conciliacao-de-pagamentos)
+- [Cuentas de terceros y datos comprometidos](../pagamentos/conta-mula.md)
+- [Conciliación de pagos](../operacoes/conciliacao-de-pagamentos.md)
