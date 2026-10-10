@@ -27,6 +27,11 @@
 - [Mule accounts and compromised payment details](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/pagamentos/conta-mula)
 - [Fake liquidity](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/negociacoes/falsa-liquidez)
 
+- [Pre-trade checklist](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/checklist-antes-de-negociar)
+- [Payment reconciliation](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/conciliacao-de-pagamentos)
+- [Evidence handling](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/gestao-de-evidencias)
+- [Incident response](https://sails-protocol.github.io/Sails-P2P-Safety-Center/guides/operacoes/resposta-a-incidentes)
+
 ## Interpretation rules
 - Distinguish general safety guidance from proposed policy, approved policy, and verified implementation.
 - Crypto escrow does not by itself verify bank account ownership, guarantee finality of external payments, prevent chargebacks, or promise recovery.
