@@ -60,6 +60,17 @@ for (const guide of catalogue.guides) {
   requireCondition(body === normalize(guide.content), `Catalogue text differs from article: ${guide.locale}:${guide.id}`);
 }
 
+const sitemapIndex = fs.readFileSync(path.join(build, 'sitemap-index.xml'), 'utf8');
+for (const locale of config.i18n.locales) {
+  const relative = locale === config.i18n.defaultLocale ? '' : locale + '/';
+  const sitemapUrl = config.url + config.baseUrl + relative + 'sitemap.xml';
+  requireCondition(sitemapIndex.includes(`<loc>${sitemapUrl}</loc>`), `Sitemap index omits ${locale}`);
+  const sitemap = fs.readFileSync(path.join(build, relative, 'sitemap.xml'), 'utf8');
+  for (const guide of catalogue.guides.filter(guide => guide.locale === locale)) {
+    requireCondition(sitemap.includes(`<loc>${guide.url}</loc>`), `Sitemap omits guide: ${locale}:${guide.id}`);
+  }
+}
+
 let linksChecked = 0;
 for (const file of walk(build).filter(file => file.endsWith('.html'))) {
   const html = fs.readFileSync(file, 'utf8');
