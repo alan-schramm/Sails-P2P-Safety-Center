@@ -113,3 +113,18 @@
 @media(max-width:996px){.safetyPathsGrid {grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.safetyPaths {padding:2.7rem 0}.safetyPathsGrid {grid-template-columns:1fr}.safetyPath {min-height:0}}
 @media(prefers-reduced-motion:reduce){.safetyPath {transition:none}.safetyPath:hover {transform:none}}
+
+/* Keyboard and narrow-viewport resilience. */
+.safetyAlertLink:focus-visible,.safetyAiLink:focus-visible,.navbar__link:focus-visible,.footer__link-item:focus-visible {
+  outline:3px solid var(--ifm-color-primary);
+  outline-offset:3px;
+  border-radius:3px;
+}
+.safetyCard,.safetyPath,.safetyAiPanel {min-width:0;overflow-wrap:anywhere}
+@media(max-width:600px){
+  .safetyHero h1 {font-size:clamp(2.1rem,10vw,3rem)}
+  .safetyActions {flex-direction:column;align-items:stretch}
+  .safetyActions .button {width:100%;white-space:normal}
+  .safetyAlertLink {margin-left:0}
+  .safetyAiLink {white-space:normal}
+}
