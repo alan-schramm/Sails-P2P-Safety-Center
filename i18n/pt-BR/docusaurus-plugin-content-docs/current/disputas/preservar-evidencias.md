@@ -15,5 +15,5 @@ title: Como preservar evidências
 **Status:** orientação geral. Procedimentos, admissibilidade e garantias dependem das políticas efetivamente vigentes e verificadas.
 
 ## Guias relacionados
-- [Gestão de evidências para operadores](/guides/operacoes/gestao-de-evidencias)
-- [Resposta a incidentes](/guides/operacoes/resposta-a-incidentes)
+- [Gestão de evidências para operadores](../operacoes/gestao-de-evidencias.md)
+- [Resposta a incidentes](../operacoes/resposta-a-incidentes.md)
