@@ -1,15 +1,14 @@
 ---
-title: Como preservar evidências
+title: How to preserve evidence
 ---
+# How to preserve evidence
 
-# Como preservar evidências
+**Scenario:** a payment was made, but the other party disputes receipt or fulfillment of agreed conditions.
 
-**Cenário:** houve pagamento, mas a outra parte contesta recebimento ou cumprimento das condições.
+1. Keep the original receipt, transaction identifier, date, and time.
+2. Record agreed payment instructions and any subsequent changes.
+3. Use the official dispute channel of the relevant application or operator.
+4. Share only necessary information through authorized channels; do not publish documents or banking details on social media.
+5. Do not assume a screenshot alone proves settlement or account ownership.
 
-1. Preserve o comprovante original, identificador da transação, data e horário.
-2. Registre as instruções de pagamento acordadas e qualquer alteração posterior.
-3. Use o canal oficial de disputa da aplicação ou operador envolvido.
-4. Compartilhe apenas os dados necessários, pelos canais autorizados; não publique documentos ou dados bancários em redes sociais.
-5. Não assuma que uma captura de tela isolada prova liquidação ou titularidade.
-
-**Status:** orientação geral. Procedimentos, admissibilidade e garantias dependem das políticas efetivamente vigentes e verificadas.
+**Status:** general guidance. Procedures, admissibility, and guarantees depend on actual, verified policies.
