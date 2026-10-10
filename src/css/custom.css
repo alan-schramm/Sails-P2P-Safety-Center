@@ -52,3 +52,47 @@
 .safetyCard p {line-height:1.65}
 .safetyCard:focus-visible,.safetyActions .button:focus-visible {outline:3px solid var(--sails-blue);outline-offset:3px}
 @media(max-width:800px){.safetyActions .button{max-width:100%}}
+
+
+/* V2 editorial design system: restrained color, generous rhythm, clear hierarchy. */
+:root { --safety-content-width:1160px; }
+.safetyHero {padding:6.5rem 0 4.5rem;background:linear-gradient(125deg,rgba(247,147,26,.085),transparent 55%);}
+.safetyHero .container,.safetySection .container,.safetyAlertBand .container {max-width:var(--safety-content-width)}
+.safetyEyebrow {display:flex;align-items:center;gap:.65rem;font-size:.76rem;letter-spacing:.12em}
+.safetyEyebrowDot {display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--sails-orange);box-shadow:0 0 0 5px rgba(247,147,26,.12)}
+.safetyHero h1 {font-weight:800;max-width:790px;margin:1.3rem 0 1.35rem;text-wrap:balance}
+.safetyLead {font-size:clamp(1.06rem,1.5vw,1.25rem);line-height:1.75;max-width:720px}
+.safetyHeroChecklist {margin-top:2.6rem}
+.safetyHeroChecklist span {background:var(--ifm-background-surface-color);border-color:var(--ifm-color-emphasis-200)}
+.safetyAlertBand {padding:1.4rem 0;border-bottom:1px solid var(--ifm-color-emphasis-200);background:rgba(234,179,8,.045)}
+.safetyAlertInner {display:flex;align-items:center;gap:1.15rem}
+.safetyAlertIcon {width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;background:rgba(234,179,8,.14);color:#b77900;font-size:1.3rem;font-weight:800}
+[data-theme='dark'] .safetyAlertIcon {color:#facc15}
+.safetyAlertInner h2 {font-size:1.05rem;letter-spacing:-.01em;margin:0 0 .2rem}
+.safetyAlertInner p {font-size:.92rem;line-height:1.5;margin:0;color:var(--ifm-color-emphasis-700)}
+.safetyAlertLink {margin-left:auto;white-space:nowrap;font-weight:700;font-size:.88rem}
+.safetySection {padding:4.5rem 0 6rem}
+.safetySection > .container > p {max-width:690px;color:var(--ifm-color-emphasis-700);margin-bottom:2rem}
+.safetyGrid {gap:1.15rem}
+.safetyCard {position:relative;padding:1.7rem;min-height:220px;border-radius:16px}
+.safetyCard h3 {font-weight:750;margin:1.2rem 0 .55rem}
+.safetyCard p {max-width:34ch}
+.safetyAiPanel {display:flex;justify-content:space-between;align-items:center;gap:2rem;margin-top:3rem;padding:2.2rem 2.4rem;border-radius:18px;background:var(--ifm-background-surface-color);border:1px solid var(--ifm-color-emphasis-200)}
+.safetyAiKicker {color:var(--ifm-color-primary);font-weight:800;font-size:.72rem;letter-spacing:.15em}
+.safetyAiPanel h2 {font-size:1.5rem;margin:.55rem 0}
+.safetyAiPanel p {max-width:670px;color:var(--ifm-color-emphasis-700);line-height:1.65;margin:0}
+.safetyAiLink {white-space:nowrap;border:1px solid var(--sails-blue);color:var(--sails-blue);border-radius:10px;padding:.75rem 1rem;font-weight:700}
+[data-theme='dark'] .safetyAiLink {color:#8db4ff;border-color:#477de8}
+.safetyAiLink:hover {text-decoration:none;background:rgba(37,99,235,.08)}
+.safetyNotice {margin-top:1.5rem;font-size:.9rem;line-height:1.65}
+.theme-doc-markdown {line-height:1.8}
+.theme-doc-markdown h2 {margin-top:2.4rem}
+.theme-doc-markdown li {margin-bottom:.55rem}
+@media(max-width:800px){
+.safetyHero {padding:4rem 0 3rem}
+.safetyAlertInner {align-items:flex-start;flex-wrap:wrap}
+.safetyAlertLink {margin-left:60px}
+.safetySection {padding:3rem 0 4rem}
+.safetyAiPanel {flex-direction:column;align-items:flex-start;padding:1.5rem}
+.safetyCard {min-height:0}
+}
