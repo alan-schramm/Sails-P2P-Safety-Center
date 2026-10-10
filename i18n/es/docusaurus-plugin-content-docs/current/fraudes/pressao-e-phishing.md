@@ -19,5 +19,5 @@ title: Presión, enlaces falsos y phishing
 **Estado:** orientación general de prevención, no una función de detección automática implementada.
 
 ## Guías relacionadas
-- [Soporte falso y presión en disputas](/guides/fraudes/falsa-arbitragem)
-- [Respuesta a incidentes](/guides/operacoes/resposta-a-incidentes)
+- [Soporte falso y presión en disputas](../fraudes/falsa-arbitragem.md)
+- [Respuesta a incidentes](../operacoes/resposta-a-incidentes.md)
