@@ -13,3 +13,7 @@ title: Como preservar evidências
 5. Não assuma que uma captura de tela isolada prova liquidação ou titularidade.
 
 **Status:** orientação geral. Procedimentos, admissibilidade e garantias dependem das políticas efetivamente vigentes e verificadas.
+
+## Guias relacionados
+- [Gestão de evidências para operadores](/guides/operacoes/gestao-de-evidencias)
+- [Resposta a incidentes](/guides/operacoes/resposta-a-incidentes)
