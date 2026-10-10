@@ -16,3 +16,7 @@ title: How to preserve evidence
 ## Related guides
 - [Evidence handling for professional traders](../operacoes/gestao-de-evidencias.md)
 - [Incident response](../operacoes/resposta-a-incidentes.md)
+
+## Continue reading
+
+- [Privacy when sharing dispute evidence](./privacidade-das-evidencias.md)

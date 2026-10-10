@@ -35,3 +35,7 @@ A bank's displayed status and reversal rights depend on the payment method and j
 **Sources for this revision:** [P2P operational requirements](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
 
 **Editorial review:** 2026-10-10.
+
+## Continue reading
+
+- [Partial payments and amount mismatches](../pagamentos/valor-divergente.md)

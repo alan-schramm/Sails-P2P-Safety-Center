@@ -35,3 +35,7 @@ Los estados bancarios y los derechos de reversión dependen del método y la jur
 **Fuentes de esta revisión:** [Requisitos operativos P2P](https://github.com/sails-protocol/Sails-Protocol/blob/be6d3bc2ddfc384cfafa4276e01b8aacc096d421/docs/rfcs/RFC-007-real-world-p2p-requirements.md).
 
 **Revisión editorial:** 2026-10-10.
+
+## Continúa leyendo
+
+- [Pagos parciales o con importes diferentes](../pagamentos/valor-divergente.md)

@@ -17,3 +17,7 @@ title: Como preservar evidências
 ## Guias relacionados
 - [Gestão de evidências para operadores](../operacoes/gestao-de-evidencias.md)
 - [Resposta a incidentes](../operacoes/resposta-a-incidentes.md)
+
+## Continue a leitura
+
+- [Privacidade ao compartilhar evidências](./privacidade-das-evidencias.md)

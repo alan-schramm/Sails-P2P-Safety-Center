@@ -14,5 +14,9 @@
   "sidebar.safetySidebar.category.Professional trader operations": {
     "message": "Operações profissionais",
     "description": "The label for category Professional trader operations in sidebar safetySidebar"
+  },
+  "sidebar.safetySidebar.category.Disputes and evidence": {
+    "message": "Disputas e evidências",
+    "description": "The label for category Disputes and evidence in sidebar safetySidebar"
   }
 }

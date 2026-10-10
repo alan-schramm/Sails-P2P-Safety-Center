@@ -22,3 +22,7 @@ La reputación no garantiza identidad ni honestidad futura. El análisis de rede
 **Estado:** orientación educativa general; no constituye una función automática implementada ni una garantía de recuperación.
 
 **Fuente:** [Catálogo de amenazas de Sails Protocol](https://github.com/sails-protocol/Sails-Protocol/blob/main/docs/THREAT_MODEL.md).
+
+## Continúa leyendo
+
+- [Presión y amenazas por valoraciones](./pressao-por-avaliacao.md)
