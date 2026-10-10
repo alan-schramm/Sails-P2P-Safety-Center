@@ -17,3 +17,7 @@ title: Disputed, reversed, or refunded payments
 4. Do not refund to a different account without appropriate verification.
 
 **Status:** general guidance; release and dispute rules depend on the current implementation and policies.
+
+## Related guides
+- [Fake payment receipts](/guides/fraudes/comprovantes-falsos)
+- [Payment reconciliation](/guides/operacoes/conciliacao-de-pagamentos)
