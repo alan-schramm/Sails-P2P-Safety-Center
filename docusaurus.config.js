@@ -12,7 +12,7 @@ const config = {
   onBrokenLinks: 'throw',
   i18n: {defaultLocale: 'en', locales: ['en', 'pt-BR', 'es'], localeConfigs: {en: {label: 'English'}, 'pt-BR': {label: 'Português'}, es: {label: 'Español'}}},
   presets: [['classic', {
-    docs: {routeBasePath: 'guides', sidebarPath: './sidebars.js', editLocalizedFiles: true, editUrl: 'https://github.com/sails-protocol/Sails-P2P-Safety-Center/edit/main/'},
+    docs: {routeBasePath: 'guides', sidebarPath: './sidebars.js'},
     blog: false,
     theme: {customCss: './src/css/custom.css'}
   }]],
