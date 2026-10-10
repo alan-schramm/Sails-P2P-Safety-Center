@@ -6,7 +6,7 @@ sidebar_position: 99
 
 # Política editorial
 
-Os artigos são materiais educativos. A fonte normativa de políticas econômicas e técnicas do Sails Protocol permanece no repositório [Sails Protocol](https://github.com/alan-schramm/Sails-Protocol).
+Os artigos são materiais educativos. A fonte normativa de políticas econômicas e técnicas do Sails Protocol permanece no repositório [Sails Protocol](https://github.com/sails-protocol/Sails-Protocol).
 
 ## Classes de afirmação
 - **Orientação geral:** boa prática preventiva, sem alegar funcionalidade do protocolo.
