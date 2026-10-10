@@ -17,3 +17,7 @@ title: Pressure tactics, fake links, and phishing
 4. Preserve relevant records and contact the application's official support channel.
 
 **Status:** general prevention guidance, not an implemented automated detection feature.
+
+## Related guides
+- [Fake support and arbitration pressure](/guides/fraudes/falsa-arbitragem)
+- [Incident response](/guides/operacoes/resposta-a-incidentes)
