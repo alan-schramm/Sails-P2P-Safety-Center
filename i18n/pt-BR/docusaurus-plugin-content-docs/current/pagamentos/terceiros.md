@@ -24,5 +24,5 @@ Contas conjuntas, empresariais e pagamentos por terceiros podem ter usos legíti
 **Status:** orientação geral; não afirma que o protocolo verifica a titularidade bancária.
 
 ## Guias relacionados
-- [Contas de terceiros e dados comprometidos](/guides/pagamentos/conta-mula)
-- [Conciliação de pagamentos](/guides/operacoes/conciliacao-de-pagamentos)
+- [Contas de terceiros e dados comprometidos](../pagamentos/conta-mula.md)
+- [Conciliação de pagamentos](../operacoes/conciliacao-de-pagamentos.md)
