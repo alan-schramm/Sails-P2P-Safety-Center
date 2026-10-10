@@ -19,5 +19,5 @@ title: Pagos impugnados, revertidos o reembolsados
 **Estado:** orientación general; las reglas de liberación y disputas dependen de la implementación y políticas vigentes.
 
 ## Guías relacionadas
-- [Comprobantes falsos](/guides/fraudes/comprovantes-falsos)
-- [Conciliación de pagos](/guides/operacoes/conciliacao-de-pagamentos)
+- [Comprobantes falsos](../fraudes/comprovantes-falsos.md)
+- [Conciliación de pagos](../operacoes/conciliacao-de-pagamentos.md)
