@@ -20,5 +20,5 @@ title: Pagamentos contestados, revertidos ou estornados
 **Status:** orientação geral; regras de liberação e disputa dependem da implementação e política vigentes.
 
 ## Guias relacionados
-- [Comprovantes falsos](/guides/fraudes/comprovantes-falsos)
-- [Conciliação de pagamentos](/guides/operacoes/conciliacao-de-pagamentos)
+- [Comprovantes falsos](../fraudes/comprovantes-falsos.md)
+- [Conciliação de pagamentos](../operacoes/conciliacao-de-pagamentos.md)
