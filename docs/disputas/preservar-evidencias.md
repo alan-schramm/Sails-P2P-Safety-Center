@@ -14,5 +14,5 @@ title: How to preserve evidence
 **Status:** general guidance. Procedures, admissibility, and guarantees depend on actual, verified policies.
 
 ## Related guides
-- [Evidence handling for professional traders](/guides/operacoes/gestao-de-evidencias)
-- [Incident response](/guides/operacoes/resposta-a-incidentes)
+- [Evidence handling for professional traders](../operacoes/gestao-de-evidencias.md)
+- [Incident response](../operacoes/resposta-a-incidentes.md)
