@@ -1,18 +1,17 @@
 ---
-title: Suspeita de conta comprometida
+title: Suspected account compromise
 ---
+# Suspected account compromise
 
-# Suspeita de conta comprometida
+**Scenario:** you notice changes to details, payment methods, or messages you do not recognize.
 
-**Cenário:** você observa alterações de dados, métodos de pagamento ou mensagens que não reconhece.
+## First steps
+1. Stop suspicious activity if it is safe to do so.
+2. Access the service through a known address or app, not links in messages.
+3. Revoke compromised sessions and credentials using controls actually provided by the application.
+4. Secure your wallet and financial accounts using each provider's official procedures.
+5. Preserve relevant evidence without publishing personal data or authentication secrets.
 
-## Medidas iniciais
-1. Interrompa operações suspeitas, se isso puder ser feito com segurança.
-2. Acesse o serviço por endereço ou aplicativo conhecido, não por links recebidos em mensagens.
-3. Revogue sessões e credenciais comprometidas pelos controles realmente disponíveis na aplicação.
-4. Proteja sua carteira e contas financeiras seguindo os procedimentos oficiais de cada provedor.
-5. Preserve evidências relevantes sem publicar dados pessoais ou segredos de autenticação.
+**Caution:** removing a payment method from the interface does not necessarily revoke existing permissions or change ongoing trade terms. Verify the service's actual guarantees.
 
-**Atenção:** apagar um método de pagamento da interface não significa necessariamente revogar permissões já concedidas ou alterar termos de negociações em andamento. Confirme as garantias efetivas do serviço utilizado.
-
-**Status:** orientação geral; nenhuma capacidade de revogação cross-app é afirmada como implementada.
+**Status:** general guidance; no cross-app revocation capability is claimed as implemented.
