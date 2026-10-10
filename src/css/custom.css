@@ -7,7 +7,7 @@
  --ifm-background-color:#0c111a;--ifm-background-surface-color:#141d2a;--ifm-navbar-background-color:#101824;
 }
 .navbar__title {font-weight:750;letter-spacing:-.03em}
-.safetyHero {padding:5rem 0 3.5rem;background:radial-gradient(ellipse at 75% 15%,rgba(81,217,196,.09),transparent 48%);}
+.safetyHero {padding:5rem 0 3.5rem;background:linear-gradient(110deg,rgba(247,147,26,.09),transparent 60%);}
 .safetyEyebrow {font-size:.8rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ifm-color-primary);font-weight:700}
 .safetyHero h1 {font-size:clamp(2.5rem,5.8vw,4.6rem);line-height:1.08;letter-spacing:-.055em;max-width:830px}
 .safetyLead {font-size:1.18rem;max-width:670px;color:var(--ifm-color-emphasis-700)}
@@ -23,7 +23,7 @@
 @media(max-width:800px){.safetyGrid{grid-template-columns:1fr}.safetyHero{padding:3.5rem 0 2rem}}
 
 .navbar {box-shadow:0 1px 0 rgba(120,145,180,.18)}
-.safetyHero {background:linear-gradient(110deg,rgba(247,147,26,.09),transparent 60%);border-bottom:1px solid var(--ifm-color-emphasis-200)}
+.safetyHero {border-bottom:1px solid var(--ifm-color-emphasis-200)}
 .safetyHero .container {max-width:1160px}
 .safetyHero h1 {max-width:900px}
 .safetyActions .button--primary {background:var(--sails-orange);border-color:var(--sails-orange);color:#17120b;border-radius:10px}
@@ -42,3 +42,13 @@
 .safetyHeroChecklist strong {color:var(--sails-success)}
 @media(max-width:800px){.safetyHeroChecklist{gap:.5rem}.safetyHeroChecklist span{width:100%}.safetyCard{min-height:0}}
 @media(prefers-reduced-motion:reduce){.safetyCard{transition:none}.safetyCard:hover{transform:none}}
+
+/* V2: semantic status colors, readable in both color modes. */
+.safetyNotice strong {color:var(--ifm-font-color-base)}
+.safetyHeroChecklist strong {color:#16763a}
+[data-theme='dark'] .safetyHeroChecklist strong {color:#4ade80}
+[data-theme='dark'] .safetyCardIcon {color:#8db4ff}
+.safetyCard h3 {line-height:1.35}
+.safetyCard p {line-height:1.65}
+.safetyCard:focus-visible,.safetyActions .button:focus-visible {outline:3px solid var(--sails-blue);outline-offset:3px}
+@media(max-width:800px){.safetyActions .button{max-width:100%}}
