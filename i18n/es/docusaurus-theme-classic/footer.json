@@ -11,10 +11,13 @@
   "link.item.label.Third-party payments": {
     "message": "Pagos de terceros"
   },
-  "link.item.label.Code and contributions": {
-    "message": "Código y contribuciones"
-  },
   "copyright": {
     "message": "© 2026 Sails Protocol. Contenido educativo, sin garantía de liquidación."
+  },
+  "link.item.label.Safety Center repository": {
+    "message": "Repositorio del Safety Center"
+  },
+  "link.item.label.Sails Protocol — code and technical documentation": {
+    "message": "Sails Protocol — código y documentación técnica"
   }
 }
